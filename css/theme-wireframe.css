@@ -1,0 +1,65 @@
+/**
+ * Tema wireframe: preto, branco e tons de cinza.
+ * Sobrescreve o tema light do DaisyUI para aparência de wireframe.
+ * Deve ser carregado após o DaisyUI.
+ */
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Base: branco e cinzas claros */
+  --color-base-100: oklch(99% 0 0);
+  --color-base-200: oklch(96% 0 0);
+  --color-base-300: oklch(90% 0 0);
+  --color-base-content: oklch(18% 0 0);
+
+  /* Primary: cinza escuro */
+  --color-primary: oklch(22% 0 0);
+  --color-primary-content: oklch(98% 0 0);
+
+  /* Secondary: cinza médio */
+  --color-secondary: oklch(42% 0 0);
+  --color-secondary-content: oklch(98% 0 0);
+
+  /* Accent: cinza médio-claro */
+  --color-accent: oklch(55% 0 0);
+  --color-accent-content: oklch(98% 0 0);
+
+  /* Neutral */
+  --color-neutral: oklch(35% 0 0);
+  --color-neutral-content: oklch(98% 0 0);
+
+  /* Estados semânticos em grayscale */
+  --color-info: oklch(50% 0 0);
+  --color-info-content: oklch(98% 0 0);
+  --color-success: oklch(40% 0 0);
+  --color-success-content: oklch(98% 0 0);
+  --color-warning: oklch(60% 0 0);
+  --color-warning-content: oklch(15% 0 0);
+  --color-error: oklch(30% 0 0);
+  --color-error-content: oklch(98% 0 0);
+
+  /* Fallback: formato antigo DaisyUI (HSL) para compatibilidade com CDN */
+  --p: 0 0% 22%;
+  --pc: 0 0% 98%;
+  --pf: 0 0% 18%;
+  --s: 0 0% 42%;
+  --sc: 0 0% 98%;
+  --sf: 0 0% 35%;
+  --a: 0 0% 55%;
+  --ac: 0 0% 98%;
+  --af: 0 0% 48%;
+  --b1: 0 0% 99%;
+  --b2: 0 0% 96%;
+  --b3: 0 0% 90%;
+  --bc: 0 0% 18%;
+  --n: 0 0% 35%;
+  --nc: 0 0% 98%;
+  --in: 0 0% 50%;
+  --inc: 0 0% 98%;
+  --su: 0 0% 40%;
+  --suc: 0 0% 98%;
+  --wa: 0 0% 60%;
+  --wac: 0 0% 15%;
+  --er: 0 0% 30%;
+  --erc: 0 0% 98%;
+}

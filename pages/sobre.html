@@ -45,25 +45,73 @@
 
       <main class="flex-1 w-full">
         <!-- Nossa História -->
-        <section class="container mx-auto px-4 pt-12 pb-8 max-w-7xl">
-          <h1 class="text-4xl font-bold mb-2">Sobre Nós</h1>
-          <p class="text-lg opacity-70 mb-6">Conheça a trajetória da Associação Habacuque do Brasil e o foco atual da nossa atuação em Guarulhos.</p>
+        <section class="container mx-auto px-4 pt-8 md:pt-12 pb-8 md:pb-12 max-w-7xl">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">Sobre Nós</h1>
+          <p class="text-base md:text-lg opacity-70 mb-4 md:mb-6 max-w-3xl">Conheça a trajetória da Associação Habacuque do Brasil e o foco atual da nossa atuação em Guarulhos.</p>
 
           <img
-            src="../imagens/institucional/sobre-nos.jpg"
+            src="../imagens/sobre.png"
             alt="Atividade institucional da Associação Habacuque do Brasil"
-            class="w-full rounded-box object-cover max-h-[420px] mb-10"
+            class="w-full rounded-box object-cover max-h-[260px] sm:max-h-[320px] md:max-h-[420px] mb-8 md:mb-10"
           />
 
-          <h2 class="text-2xl font-bold mb-8">Nossa História</h2>
-          <ul class="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
+          <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">Nossa História</h2>
+
+          <!-- Versão mobile: linha do tempo com linha à esquerda -->
+          <section class="md:hidden relative space-y-6">
+            <!-- Linha vertical fixa à esquerda -->
+            <div class="absolute left-4 top-0 bottom-0 w-px bg-primary/30"></div>
+
+            <div class="relative pl-10">
+              <div class="absolute left-4 top-2 h-3 w-3 rounded-full bg-primary border-2 border-base-100"></div>
+              <h3 class="text-base font-bold">Primeiras Ações Voluntárias</h3>
+              <p class="mt-1 text-sm">
+                A Associação surgiu a partir de ações voluntárias na região da Praça da Sé, em São Paulo, onde voluntários realizavam ações solidárias com pessoas em situação de rua, oferecendo alimentação, apoio para higiene pessoal, escuta e acolhimento.
+              </p>
+            </div>
+
+            <div class="relative pl-10">
+              <div class="absolute left-4 top-2 h-3 w-3 rounded-full bg-primary border-2 border-base-100"></div>
+              <h3 class="text-base font-bold">Ampliação do Atendimento</h3>
+              <p class="mt-1 text-sm">
+                As ações foram se estruturando e ampliando, passando a oferecer apoio a pessoas em situação de vulnerabilidade social e dependência química, sempre com foco no cuidado, na dignidade e na reintegração social.
+              </p>
+            </div>
+
+            <div class="relative pl-10">
+              <div class="absolute left-4 top-2 h-3 w-3 rounded-full bg-primary border-2 border-base-100"></div>
+              <h3 class="text-base font-bold">Atuação em Guarulhos</h3>
+              <p class="mt-1 text-sm">
+                A instituição direcionou suas atividades para o município de Guarulhos - SP, onde passou a desenvolver ações comunitárias voltadas ao atendimento de famílias em situação de vulnerabilidade, especialmente na região de Maria Dirce e Pimentas.
+              </p>
+            </div>
+
+            <div class="relative pl-10">
+              <div class="absolute left-4 top-2 h-3 w-3 rounded-full bg-primary border-2 border-base-100"></div>
+              <h3 class="text-base font-bold">Reorganização Institucional</h3>
+              <p class="mt-1 text-sm">
+                A Associação passou por um processo de reorganização institucional, concentrando suas ações no atendimento de crianças e adolescentes, por meio de atividades socioeducativas e da execução do Serviço de Convivência e Fortalecimento de Vínculos (SCFV).
+              </p>
+            </div>
+
+            <div class="relative pl-10">
+              <div class="absolute left-4 top-2 h-3 w-3 rounded-full bg-primary border-2 border-base-100"></div>
+              <h3 class="text-base font-bold">Atuação Atual</h3>
+              <p class="mt-1 text-sm">
+                Atualmente, a instituição atua na promoção da convivência comunitária, no fortalecimento dos vínculos familiares e na oferta de atividades que contribuem para o desenvolvimento social, cultural e educativo de crianças e adolescentes de 6 a 14 anos.
+              </p>
+            </div>
+          </section>
+
+          <!-- Versão desktop: timeline -->
+          <ul class="timeline timeline-vertical timeline-snap-icon hidden md:block">
             <li>
               <div class="timeline-middle">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-primary"><circle cx="10" cy="10" r="6" /></svg>
               </div>
               <div class="timeline-start mb-10 md:text-end">
                 <div class="text-lg font-bold">Primeiras Ações Voluntárias</div>
-                <p class="mt-1">A Associação surgiu a partir de ações voluntárias na região da Praça da Sé, em São Paulo, onde voluntários realizavam ações solidárias com pessoas em situação de rua, oferecendo alimentação, apoio para higiene pessoal, escuta e acolhimento.</p>
+                <p class="mt-1 text-base">A Associação surgiu a partir de ações voluntárias na região da Praça da Sé, em São Paulo, onde voluntários realizavam ações solidárias com pessoas em situação de rua, oferecendo alimentação, apoio para higiene pessoal, escuta e acolhimento.</p>
               </div>
               <hr class="bg-primary" />
             </li>
@@ -74,7 +122,7 @@
               </div>
               <div class="timeline-end mb-10">
                 <div class="text-lg font-bold">Ampliação do Atendimento</div>
-                <p class="mt-1">As ações foram se estruturando e ampliando, passando a oferecer apoio a pessoas em situação de vulnerabilidade social e dependência química, sempre com foco no cuidado, na dignidade e na reintegração social.</p>
+                <p class="mt-1 text-base">As ações foram se estruturando e ampliando, passando a oferecer apoio a pessoas em situação de vulnerabilidade social e dependência química, sempre com foco no cuidado, na dignidade e na reintegração social.</p>
               </div>
               <hr class="bg-primary" />
             </li>
@@ -85,7 +133,7 @@
               </div>
               <div class="timeline-start mb-10 md:text-end">
                 <div class="text-lg font-bold">Atuação em Guarulhos</div>
-                <p class="mt-1">A instituição direcionou suas atividades para o município de Guarulhos - SP, onde passou a desenvolver ações comunitárias voltadas ao atendimento de famílias em situação de vulnerabilidade, especialmente na região de Maria Dirce e Pimentas.</p>
+                <p class="mt-1 text-base">A instituição direcionou suas atividades para o município de Guarulhos - SP, onde passou a desenvolver ações comunitárias voltadas ao atendimento de famílias em situação de vulnerabilidade, especialmente na região de Maria Dirce e Pimentas.</p>
               </div>
               <hr class="bg-primary" />
             </li>
@@ -96,7 +144,7 @@
               </div>
               <div class="timeline-end mb-10">
                 <div class="text-lg font-bold">Reorganização Institucional</div>
-                <p class="mt-1">A Associação passou por um processo de reorganização institucional, concentrando suas ações no atendimento de crianças e adolescentes, por meio de atividades socioeducativas e da execução do Serviço de Convivência e Fortalecimento de Vínculos (SCFV).</p>
+                <p class="mt-1 text-base">A Associação passou por um processo de reorganização institucional, concentrando suas ações no atendimento de crianças e adolescentes, por meio de atividades socioeducativas e da execução do Serviço de Convivência e Fortalecimento de Vínculos (SCFV).</p>
               </div>
               <hr class="bg-primary" />
             </li>
@@ -107,7 +155,7 @@
               </div>
               <div class="timeline-start mb-10 md:text-end">
                 <div class="text-lg font-bold">Atuação Atual</div>
-                <p class="mt-1">Atualmente, a instituição atua na promoção da convivência comunitária, no fortalecimento dos vínculos familiares e na oferta de atividades que contribuem para o desenvolvimento social, cultural e educativo de crianças e adolescentes de 6 a 14 anos.</p>
+                <p class="mt-1 text-base">Atualmente, a instituição atua na promoção da convivência comunitária, no fortalecimento dos vínculos familiares e na oferta de atividades que contribuem para o desenvolvimento social, cultural e educativo de crianças e adolescentes de 6 a 14 anos.</p>
               </div>
             </li>
           </ul>
@@ -116,36 +164,36 @@
         <div class="divider container mx-auto max-w-7xl px-4"></div>
 
         <!-- Missão, Visão, Valores -->
-        <section class="container mx-auto px-4 py-8 pb-16 max-w-7xl">
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <section class="container mx-auto px-4 py-8 md:py-12 pb-12 md:pb-16 max-w-7xl">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             <!-- Missão -->
             <div class="card bg-base-100 shadow-xl">
-              <div class="card-body">
+              <div class="card-body p-4 md:p-6">
                 <div class="flex items-center gap-3 mb-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-                  <h3 class="card-title">Missão</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:h-8 md:w-8 text-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                  <h3 class="card-title text-lg md:text-xl">Missão</h3>
                 </div>
-                <p>Promover o desenvolvimento social e humano de crianças, adolescentes, famílias e da comunidade por meio de ações socioeducativas, fortalecimento de vínculos familiares e comunitários e iniciativas que contribuam para a inclusão social, cidadania, dignidade e participação comunitária.</p>
+                <p class="text-sm md:text-base">Promover o desenvolvimento social e humano de crianças, adolescentes, famílias e da comunidade por meio de ações socioeducativas, fortalecimento de vínculos familiares e comunitários e iniciativas que contribuam para a inclusão social, cidadania, dignidade e participação comunitária.</p>
               </div>
             </div>
             <!-- Visão -->
             <div class="card bg-base-100 shadow-xl">
-              <div class="card-body">
+              <div class="card-body p-4 md:p-6">
                 <div class="flex items-center gap-3 mb-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
-                  <h3 class="card-title">Visão</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:h-8 md:w-8 text-secondary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                  <h3 class="card-title text-lg md:text-xl">Visão</h3>
                 </div>
-                <p>Ser uma organização reconhecida pela atuação social responsável e pelo impacto positivo na vida de crianças, adolescentes, famílias e na comunidade, contribuindo para a construção de um território mais justo, solidário e com oportunidades para todos.</p>
+                <p class="text-sm md:text-base">Ser uma organização reconhecida pela atuação social responsável e pelo impacto positivo na vida de crianças, adolescentes, famílias e na comunidade, contribuindo para a construção de um território mais justo, solidário e com oportunidades para todos.</p>
               </div>
             </div>
             <!-- Valores -->
-            <div class="card bg-base-100 shadow-xl">
-              <div class="card-body">
+            <div class="card bg-base-100 shadow-xl md:col-span-2 lg:col-span-1">
+              <div class="card-body p-4 md:p-6">
                 <div class="flex items-center gap-3 mb-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-                  <h3 class="card-title">Valores</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:h-8 md:w-8 text-accent shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                  <h3 class="card-title text-lg md:text-xl">Valores</h3>
                 </div>
-                <ul class="flex flex-col gap-2 mt-1">
+                <ul class="flex flex-col gap-2 mt-1 text-sm md:text-base">
                   <li class="flex items-center gap-2"><span class="badge badge-primary badge-xs"></span> Respeito à dignidade humana</li>
                   <li class="flex items-center gap-2"><span class="badge badge-primary badge-xs"></span> Compromisso social</li>
                   <li class="flex items-center gap-2"><span class="badge badge-primary badge-xs"></span> Solidariedade e empatia</li>
@@ -160,7 +208,7 @@
         </section>
       </main>
 
-      <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+      <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-6 md:p-10 text-sm">
         <aside>
           <svg
             width="50"

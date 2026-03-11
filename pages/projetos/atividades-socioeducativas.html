@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Associação Habacuque do Brasil — Atividades Socioeducativas</title>
+    <link href="../../css/reset.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="../../css/theme-wireframe.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="drawer drawer-end">
+      <input id="nav-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col min-h-screen w-full min-w-0">
+        <!-- Navbar -->
+        <div class="navbar bg-base-100 shadow-lg w-full max-w-none sticky top-0 z-50">
+          <div class="navbar-start">
+            <a href="../../index.html" class="btn btn-ghost text-xl gap-2">
+              <img
+                src="../../imagens/Logo-PRETO.svg"
+                alt="Logo da Associação Habacuque do Brasil"
+                class="h-8 w-auto"
+              />
+              Habacuque
+            </a>
+          </div>
+          <div class="navbar-end flex gap-2">
+            <ul class="menu menu-horizontal gap-2 px-1 hidden lg:flex text-lg">
+              <li><a href="../../index.html">Início</a></li>
+              <li><a href="../sobre.html">Sobre</a></li>
+              <li class="dropdown dropdown-click">
+                <div tabindex="0" role="button">Projetos</div>
+                <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box shadow mt-2">
+                  <li><a href="../projetos.html">Todos os Projetos</a></li>
+                  <li><a href="convivencia-e-fortalecimento.html">Convivência e Fortalecimento</a></li>
+                  <li><a href="atividades-socioeducativas.html" class="active">Atividades Socioeducativas</a></li>
+                  <li><a href="acoes-comunitarias.html">Ações Comunitárias</a></li>
+                </ul>
+              </li>
+              <li><a href="../equipe.html">Equipe</a></li>
+              <li><a href="../voluntarios.html">Voluntários</a></li>
+              <li><a href="../contato.html">Contato</a></li>
+            </ul>
+            <label for="nav-drawer" aria-label="abrir menu" class="btn btn-square btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-6 w-6 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
+        </div>
+
+        <main class="flex-1 w-full">
+          <!-- Breadcrumbs -->
+          <div class="container mx-auto px-4 pt-4 max-w-7xl">
+            <div class="breadcrumbs text-sm">
+              <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../projetos.html">Projetos</a></li>
+                <li>Atividades Socioeducativas</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Hero da página -->
+          <section
+            class="hero min-h-[50vh]"
+            style="background-image: url('../../imagens/atividades-socioeducativas.png');">
+            <div class="hero-overlay bg-neutral/70"></div>
+            <div class="hero-content text-center text-neutral-content px-4">
+              <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+                  Atividades Socioeducativas
+                </h1>
+                <p class="mt-6 opacity-90 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+                  O projeto desenvolve oficinas, atividades recreativas, esportivas e educativas voltadas ao desenvolvimento social, emocional, cultural e educacional das crianças e adolescentes atendidos. O aprendizado não acontece apenas em sala de aula — ele surge na convivência, no jogo, na arte e na reflexão.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Propósito das atividades -->
+          <section class="container mx-auto px-4 py-12 max-w-5xl">
+            <h2 class="text-2xl font-bold text-primary mb-6">Por que essas atividades importam</h2>
+            <div class="prose prose-lg max-w-none text-base-content/90">
+              <p class="mb-4">
+                As atividades são pensadas para estimular habilidades importantes para a vida, como cooperação, expressão, criatividade e consciência social. Em vez de serem apenas momentos de ocupação do tempo, elas funcionam como espaços de desenvolvimento humano e construção de identidade.
+              </p>
+            </div>
+            <div class="divider"></div>
+          </section>
+
+          <!-- Quais atividades realizamos -->
+          <section class="bg-base-200 py-16">
+            <div class="container mx-auto px-4 max-w-7xl">
+              <h2 class="text-2xl font-bold text-primary text-center mb-10">Quais atividades realizamos</h2>
+              <p class="text-center max-w-3xl mx-auto mb-12 text-base-content/90">
+                O programa promove diversas experiências educativas e culturais. Essas atividades trabalham diferentes dimensões do desenvolvimento infantil e juvenil — da recreação ao diálogo sobre temas do cotidiano e da sociedade.
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
+                  <div class="card-body">
+                    <h3 class="card-title text-primary">Recreação e práticas esportivas</h3>
+                    <p class="text-base-content/90">Jogos, esportes e brincadeiras que estimulam a saúde, o trabalho em equipe e o respeito às regras.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                      <span class="badge badge-outline">cooperação</span>
+                      <span class="badge badge-outline">movimento</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
+                  <div class="card-body">
+                    <h3 class="card-title text-primary">Oficinas de artesanato e meio ambiente</h3>
+                    <p class="text-base-content/90">Produção manual, arte e atividades ligadas ao cuidado com o território e o meio ambiente.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                      <span class="badge badge-outline">criatividade</span>
+                      <span class="badge badge-outline">paciência</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
+                  <div class="card-body">
+                    <h3 class="card-title text-primary">Teatro, expressão e rodas de conversa</h3>
+                    <p class="text-base-content/90">Teatro, expressão artística e reflexões sobre temas do cotidiano e da sociedade em rodas de conversa.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                      <span class="badge badge-outline">expressão</span>
+                      <span class="badge badge-outline">escuta</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Impactos no desenvolvimento -->
+          <section class="container mx-auto px-4 py-16 max-w-5xl">
+            <div class="divider"></div>
+            <h2 class="text-2xl font-bold text-primary mb-10">Que impacto essas atividades geram?</h2>
+            <p class="text-base-content/90 mb-8">
+              Essas experiências ajudam a fortalecer a autoestima, incentivam a convivência em grupo e estimulam a autonomia. Ao mesmo tempo, contribuem para ampliar o aprendizado e desenvolver habilidades sociais importantes para a vida em comunidade.
+            </p>
+            <div class="stats stats-vertical md:stats-horizontal shadow bg-base-100 w-full rounded-box">
+              <div class="stat place-items-center md:place-items-start">
+                <div class="stat-title text-base">Autoestima</div>
+                <div class="stat-desc text-base-content/80">Valorização pessoal e confiança</div>
+              </div>
+              <div class="stat place-items-center md:place-items-start">
+                <div class="stat-title text-base">Convivência em grupo</div>
+                <div class="stat-desc text-base-content/80">Respeito à diversidade</div>
+              </div>
+              <div class="stat place-items-center md:place-items-start">
+                <div class="stat-title text-base">Autonomia</div>
+                <div class="stat-desc text-base-content/80">Aprendizado ampliado</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+          </section>
+
+          <!-- Acompanhamento profissional -->
+          <section class="container mx-auto px-4 py-12 max-w-4xl">
+            <h2 class="text-2xl font-bold text-primary mb-6">Acompanhamento profissional</h2>
+            <div class="alert border-primary bg-primary/5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-primary shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+              <div>
+                <h3 class="font-bold text-lg">Equipe multidisciplinar</h3>
+                <p class="text-base-content/90 mt-2">
+                  Todas as atividades são conduzidas com o apoio de uma equipe multidisciplinar, garantindo orientação pedagógica, cuidado e acompanhamento contínuo no processo de desenvolvimento dos participantes. Nosso compromisso é com a segurança, a responsabilidade e o crescimento integral das crianças e adolescentes.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Ideia filosófica da aprendizagem pela experiência -->
+          <section class="container mx-auto px-4 py-12 max-w-4xl">
+            <div class="card bg-base-100 shadow-lg border border-primary/20">
+              <div class="card-body">
+                <p class="text-base-content/90 italic text-lg">
+                  Crianças aprendem muito mais quando participam de experiências significativas. Um jogo coletivo ensina cooperação; o teatro ensina expressão; o artesanato ensina paciência; e uma roda de conversa ensina algo raro — a arte de ouvir o outro.
+                </p>
+                <p class="text-base-content/80 mt-4 font-medium">
+                  Quando essas experiências se combinam, surge algo maior do que atividades isoladas: um ambiente de formação humana.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 mt-8 justify-center">
+              <a href="convivencia-e-fortalecimento.html" class="btn btn-primary">Conheça o SCFV</a>
+              <a href="../contato.html" class="btn btn-outline btn-primary">Fale com a equipe</a>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 text-sm">
+          <aside>
+            <img
+              src="../../imagens/Logo-PRETO.svg"
+              alt="Logo da Associação Habacuque do Brasil"
+              class="w-20 h-20"
+            />
+            <p>
+              Associação Habacuque do Brasil
+              <br />
+              Promovendo o desenvolvimento social de crianças, adolescentes e famílias.
+            </p>
+          </aside>
+          <nav>
+            <h6 class="footer-title">Navegação</h6>
+            <a href="../../index.html" class="link link-hover">Início</a>
+            <a href="../sobre.html" class="link link-hover">Sobre</a>
+            <a href="../projetos.html" class="link link-hover">Projetos</a>
+            <a href="../equipe.html" class="link link-hover">Equipe</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title">Participe</h6>
+            <a href="../voluntarios.html" class="link link-hover">Voluntários</a>
+            <a href="../contato.html" class="link link-hover">Contato</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title">Contatos</h6>
+            <a href="tel:+5511999990001" class="link link-hover">(11) 99999-0001</a>
+            <a href="tel:+5511999990002" class="link link-hover">(11) 99999-0002</a>
+            <a href="tel:+5511999990003" class="link link-hover">(11) 99999-0003</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title">Redes sociais</h6>
+            <div class="grid grid-flow-col gap-2">
+              <a href="#" aria-label="Instagram" class="link link-hover">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook" class="link link-hover">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current"
+                >
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </footer>
+      </div>
+
+      <!-- Sidebar (drawer) -->
+      <div class="drawer-side">
+        <label for="nav-drawer" aria-label="fechar menu" class="drawer-overlay"></label>
+        <ul class="menu bg-base-200 min-h-full w-80 p-4 text-lg">
+          <li class="menu-title">Menu</li>
+          <li><a href="../../index.html">Início</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li>
+            <details open>
+              <summary>Projetos</summary>
+              <ul>
+                <li><a href="../projetos.html">Todos os Projetos</a></li>
+                <li><a href="convivencia-e-fortalecimento.html">Convivência e Fortalecimento</a></li>
+                <li><a href="atividades-socioeducativas.html" class="active">Atividades Socioeducativas</a></li>
+                <li><a href="acoes-comunitarias.html">Ações Comunitárias</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="../equipe.html">Equipe</a></li>
+          <li><a href="../voluntarios.html">Voluntários</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

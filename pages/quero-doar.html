@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Associação Habacuque do Brasil — Quero Doar</title>
+  <link href="../css/reset.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="../css/theme-wireframe.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="overflow-x-hidden">
+  <div class="drawer drawer-end">
+    <input id="nav-drawer" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col min-h-screen w-full min-w-0">
+      <!-- Navbar -->
+      <div class="navbar bg-base-100 shadow-lg w-full max-w-none sticky top-0 z-50">
+        <div class="navbar-start">
+          <a href="../index.html" class="btn btn-ghost text-xl gap-2">
+            <img
+              src="../imagens/Logo-PRETO.svg"
+              alt="Logo da Associação Habacuque do Brasil"
+              class="h-8 w-auto"
+            />
+            Habacuque
+          </a>
+        </div>
+        <div class="navbar-end flex gap-2">
+          <ul class="menu menu-horizontal gap-2 px-1 hidden lg:flex text-lg">
+            <li><a href="../index.html">Início</a></li>
+            <li class="dropdown dropdown-click">
+              <div tabindex="0" role="button">Quem Somos</div>
+              <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box shadow mt-2">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="nossa-equipe.html">Nossa Equipe</a></li>
+              </ul>
+            </li>
+            <li class="dropdown dropdown-click">
+              <div tabindex="0" role="button">Projetos</div>
+              <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box shadow mt-2">
+                <li><a href="projetos.html">Todos os Projetos</a></li>
+                <li><a href="projetos/convivencia-e-fortalecimento.html">Convivência e Fortalecimento</a></li>
+                <li><a href="projetos/atividades-socioeducativas.html">Atividades Socioeducativas</a></li>
+                <li><a href="projetos/acoes-comunitarias.html">Ações Comunitárias</a></li>
+              </ul>
+            </li>
+            <li><a href="quero-apoiar.html">Quero Apoiar</a></li>
+            <li><a href="quero-doar.html" class="active">Quero Doar</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+          <label for="nav-drawer" aria-label="abrir menu" class="btn btn-square btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </label>
+        </div>
+      </div>
+
+      <main class="container mx-auto px-4 py-12 flex-1 w-full max-w-7xl">
+        <!-- Hero -->
+        <section class="mb-16">
+          <h1 class="text-4xl font-bold text-primary mb-4">Quero Doar</h1>
+          <p class="text-xl text-body-lg opacity-80 mb-8 max-w-3xl">
+            Sua doação financeira transforma vidas. Com ela, garantimos atividades socioeducativas, materiais e apoio às famílias atendidas no território de Maria Dirce e Pimentas, em Guarulhos.
+          </p>
+          <!-- Espaço preparado para PIX/plataforma futura -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="contato.html" class="btn btn-primary btn-lg transition-all duration-150 hover:shadow-lg">
+              Quero doar agora
+            </a>
+            <p class="text-sm opacity-70 self-center">Entre em contato para receber os dados de PIX ou outras formas de pagamento.</p>
+          </div>
+        </section>
+
+        <!-- Formas de doação -->
+        <section class="py-12">
+          <h2 class="text-3xl font-bold text-primary mb-8">Formas de doação</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="card bg-base-100 shadow-md border border-base-300 px-4 py-5 md:p-8 md:min-h-[420px] h-full transition-all duration-200 hover:shadow-2xl hover:-translate-y-1 hover:border-primary">
+              <div class="card-body flex flex-col items-center text-center gap-3 md:gap-6 h-full">
+                <!-- topo -->
+                <div class="flex flex-col items-center gap-3">
+                  <!-- título -->
+                  <h3 class="text-primary text-sm md:text-lg font-semibold">
+                    Doar 1 real por dia
+                  </h3>
+                  <!-- valor agrupado -->
+                  <div class="flex items-end justify-center text-primary leading-none">
+                    <span class="text-base md:text-xl mr-1">R$</span>
+                    <span class="text-4xl md:text-7xl font-extrabold tracking-tight">
+                      30
+                    </span>
+                  </div>
+                </div>
+
+                <!-- meio (empurra conteúdo) -->
+                <div class="flex-1 flex items-center">
+                  <p class="text-xs md:text-sm opacity-80 max-w-[240px]">
+                    Com 1 real por dia você pode salvar uma vida.
+                  </p>
+                </div>
+
+                <!-- bottom fixo -->
+                <div class="w-full flex justify-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary w-full text-sm md:text-base mt-2 md:mt-auto transition-all duration-150 hover:shadow-lg"
+                    onclick="document.getElementById('modal-doar-1real').showModal()"
+                  >
+                    Doar R$30
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-md border border-base-300 px-4 py-5 md:p-8 md:min-h-[420px] h-full transition-all duration-200 hover:shadow-2xl hover:-translate-y-1 hover:border-primary">
+              <div class="card-body flex flex-col items-center text-center gap-3 md:gap-6 h-full">
+                <!-- topo -->
+                <div class="flex flex-col items-center gap-3">
+                  <!-- título -->
+                  <h3 class="text-primary text-sm md:text-lg font-semibold">
+                    Quero doar mais
+                  </h3>
+                  <!-- valor agrupado -->
+                  <div class="flex items-end justify-center text-primary leading-none">
+                    <span class="text-base md:text-xl mr-1">R$</span>
+                    <span class="text-4xl md:text-7xl font-extrabold tracking-tight">
+                      50
+                    </span>
+                  </div>
+                </div>
+
+                <!-- meio (empurra conteúdo) -->
+                <div class="flex-1 flex items-center">
+                  <p class="text-xs md:text-sm opacity-80 max-w-[240px]">
+                    Fortaleça famílias.
+                  </p>
+                </div>
+
+                <!-- bottom fixo -->
+                <div class="w-full flex justify-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary w-full text-sm md:text-base mt-2 md:mt-auto transition-all duration-150 hover:shadow-lg"
+                    onclick="document.getElementById('modal-doar-50').showModal()"
+                  >
+                    Doar R$50
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-md border border-base-300 px-4 py-5 md:p-8 md:min-h-[420px] h-full transition-all duration-200 hover:shadow-2xl hover:-translate-y-1 hover:border-primary">
+              <div class="card-body flex flex-col items-center text-center gap-3 md:gap-6 h-full">
+                <!-- topo -->
+                <div class="flex flex-col items-center gap-3">
+                  <!-- título -->
+                  <h3 class="text-primary text-sm md:text-lg font-semibold">
+                    Doação Abundante
+                  </h3>
+                  <!-- valor agrupado -->
+                  <div class="flex items-end justify-center text-primary leading-none">
+                    <span class="text-base md:text-xl mr-1">R$</span>
+                    <span class="text-4xl md:text-7xl font-extrabold tracking-tight">
+                      100
+                    </span>
+                  </div>
+                </div>
+
+                <!-- meio (empurra conteúdo) -->
+                <div class="flex-1 flex items-center">
+                  <p class="text-xs md:text-sm opacity-80 max-w-[240px]">
+                    Todo mês. Se você pode, ajude quem precisa!
+                  </p>
+                </div>
+
+                <!-- bottom fixo -->
+                <div class="w-full flex justify-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary w-full text-sm md:text-base mt-2 md:mt-auto transition-all duration-150 hover:shadow-lg"
+                    onclick="document.getElementById('modal-doar-100').showModal()"
+                  >
+                    Doar R$100
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Modais de doação -->
+        <dialog id="modal-doar-1real" class="modal">
+          <div class="modal-box max-w-lg">
+            <h3 class="font-bold text-xl text-primary">Doar 1 real por dia — R$30</h3>
+            <p class="text-body-lg opacity-80 mt-2 mb-4">Valor sugerido: R$30 (1 real por dia). Siga os passos abaixo para realizar sua doação.</p>
+            <ol class="list-decimal list-inside space-y-2 text-body-lg opacity-80 mb-6">
+              <li>Escolha a chave PIX ou os dados bancários abaixo.</li>
+              <li>Realize a transferência ou o PIX pelo valor desejado.</li>
+              <li>Se desejar, envie o comprovante via nossa página de contato.</li>
+            </ol>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-primary mb-1">Chave(s) PIX</h4>
+                <p class="text-body-lg opacity-70 bg-base-200 rounded-box p-3">em atualização</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary mb-1">Dados bancários</h4>
+                <p class="text-body-lg opacity-70 bg-base-200 rounded-box p-3">Banco: em atualização | Agência: em atualização | Conta: em atualização</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary mb-1">QR Code PIX</h4>
+                <div class="bg-base-200 rounded-box p-8 flex items-center justify-center text-sm opacity-70 border-2 border-dashed border-base-300">
+                  QR code em atualização (substituir imagem futuramente)
+                </div>
+              </div>
+            </div>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">Fechar</button>
+              </form>
+            </div>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button type="submit" aria-label="Fechar"></button>
+          </form>
+        </dialog>
+
+        <dialog id="modal-doar-50" class="modal">
+          <div class="modal-box max-w-lg">
+            <h3 class="font-bold text-xl text-primary">Quero doar mais — R$50</h3>
+            <p class="text-body-lg opacity-80 mt-2 mb-4">Valor sugerido: R$50. Siga os passos abaixo para realizar sua doação.</p>
+            <ol class="list-decimal list-inside space-y-2 text-body-lg opacity-80 mb-6">
+              <li>Escolha a chave PIX ou os dados bancários abaixo.</li>
+              <li>Realize a transferência ou o PIX pelo valor desejado.</li>
+              <li>Se desejar, envie o comprovante via nossa página de contato.</li>
+            </ol>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-primary mb-1">Chave(s) PIX</h4>
+                <p class="text-body-lg opacity-70 bg-base-200 rounded-box p-3">em atualização</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary mb-1">Dados bancários</h4>
+                <p class="text-body-lg opacity-70 bg-base-200 rounded-box p-3">Banco: em atualização | Agência: em atualização | Conta: em atualização</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary mb-1">QR Code PIX</h4>
+                <div class="bg-base-200 rounded-box p-8 flex items-center justify-center text-sm opacity-70 border-2 border-dashed border-base-300">
+                  QR code em atualização (substituir imagem futuramente)
+                </div>
+              </div>
+            </div>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">Fechar</button>
+              </form>
+            </div>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button type="submit" aria-label="Fechar"></button>
+          </form>
+        </dialog>
+
+        <dialog id="modal-doar-100" class="modal">
+          <div class="modal-box max-w-lg">
+            <h3 class="font-bold text-xl text-primary">Doação Abundante — R$100/mês</h3>
+            <p class="text-body-lg opacity-80 mt-2 mb-4">Valor sugerido: R$100 por mês. Siga os passos abaixo para realizar sua doação.</p>
+            <ol class="list-decimal list-inside space-y-2 text-body-lg opacity-80 mb-6">
+              <li>Escolha a chave PIX ou os dados bancários abaixo.</li>
+              <li>Realize a transferência ou o PIX pelo valor desejado.</li>
+              <li>Se desejar, envie o comprovante via nossa página de contato.</li>
+            </ol>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-primary mb-1">Chave(s) PIX</h4>
+                <p class="text-body-lg opacity-70 bg-base-200 rounded-box p-3">em atualização</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary mb-1">Dados bancários</h4>
+                <p class="text-body-lg opacity-70 bg-base-200 rounded-box p-3">Banco: em atualização | Agência: em atualização | Conta: em atualização</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary mb-1">QR Code PIX</h4>
+                <div class="bg-base-200 rounded-box p-8 flex items-center justify-center text-sm opacity-70 border-2 border-dashed border-base-300">
+                  QR code em atualização (substituir imagem futuramente)
+                </div>
+              </div>
+            </div>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">Fechar</button>
+              </form>
+            </div>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button type="submit" aria-label="Fechar"></button>
+          </form>
+        </dialog>
+
+        <!-- Para onde vai sua doação -->
+        <section class="py-12 bg-base-200 rounded-box p-8 md:p-12">
+          <h2 class="text-3xl font-bold text-primary mb-8">Para onde vai sua doação</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-base-100 rounded-box p-6 shadow">
+              <h3 class="text-xl font-bold text-primary mb-3">Atividades</h3>
+              <p class="text-body-lg opacity-80">Oficinas socioeducativas, recreação, esporte, cultura e lazer para crianças e adolescentes de 6 a 14 anos.</p>
+            </div>
+            <div class="bg-base-100 rounded-box p-6 shadow">
+              <h3 class="text-xl font-bold text-primary mb-3">Materiais</h3>
+              <p class="text-body-lg opacity-80">Materiais para oficinas, equipamentos e recursos que garantem a qualidade das atividades desenvolvidas.</p>
+            </div>
+            <div class="bg-base-100 rounded-box p-6 shadow">
+              <h3 class="text-xl font-bold text-primary mb-3">Apoio às famílias</h3>
+              <p class="text-body-lg opacity-80">Ações comunitárias, campanhas de arrecadação e fortalecimento da rede de solidariedade no território.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-12">
+          <h2 class="text-3xl font-bold text-primary mb-8">Perguntas rápidas</h2>
+          <div class="space-y-4 max-w-3xl">
+            <details class="group bg-base-100 rounded-box shadow p-4">
+              <summary class="font-bold cursor-pointer list-none flex justify-between items-center">
+                <span>Minha doação é segura?</span>
+                <span class="group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p class="mt-3 text-body-lg opacity-80">A Associação Habacuque do Brasil é uma organização formal e utiliza canais seguros para receber doações. Entre em contato para receber os dados oficiais de PIX ou transferência.</p>
+            </details>
+            <details class="group bg-base-100 rounded-box shadow p-4">
+              <summary class="font-bold cursor-pointer list-none flex justify-between items-center">
+                <span>Recebo confirmação da doação?</span>
+                <span class="group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p class="mt-3 text-body-lg opacity-80">Sim. Ao realizar uma doação, nossa equipe confirma o recebimento e emite um comprovante quando solicitado.</p>
+            </details>
+            <details class="group bg-base-100 rounded-box shadow p-4">
+              <summary class="font-bold cursor-pointer list-none flex justify-between items-center">
+                <span>Como entro em contato para doar?</span>
+                <span class="group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p class="mt-3 text-body-lg opacity-80">Use nossa página de contato ou os telefones e e-mail institucionais. Nossa equipe responderá com os dados para doação e tirará suas dúvidas.</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- CTA final -->
+        <section class="py-16 text-center">
+          <h2 class="text-2xl font-bold text-primary mb-4">Pronto para doar?</h2>
+          <p class="text-body-lg opacity-80 mb-8 max-w-2xl mx-auto">
+            Entre em contato para receber os dados de PIX ou outras formas de pagamento. Sua contribuição faz a diferença.
+          </p>
+          <a href="contato.html" class="btn btn-primary btn-lg transition-all duration-150 hover:shadow-lg">
+            Quero doar agora
+          </a>
+        </section>
+      </main>
+
+      <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 text-sm">
+        <aside>
+          <img src="../imagens/Logo-PRETO.svg" alt="Logo da Associação Habacuque do Brasil" class="w-20 h-20">
+          <p>
+            Associação Habacuque do Brasil
+            <br />
+            Promovendo o desenvolvimento social de crianças, adolescentes e famílias.
+          </p>
+        </aside>
+        <nav>
+          <h6 class="footer-title">Navegação</h6>
+          <a href="../index.html" class="link link-hover">Início</a>
+          <a href="sobre.html" class="link link-hover">Quem Somos</a>
+          <a href="projetos.html" class="link link-hover">Projetos</a>
+          <a href="nossa-equipe.html" class="link link-hover">Nossa Equipe</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Participe</h6>
+          <a href="quero-apoiar.html" class="link link-hover">Quero Apoiar</a>
+          <a href="quero-doar.html" class="link link-hover">Quero Doar</a>
+          <a href="contato.html" class="link link-hover">Contato</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Contatos</h6>
+          <a href="tel:+5511999990001" class="link link-hover">(11) 99999-0001</a>
+          <a href="tel:+5511999990002" class="link link-hover">(11) 99999-0002</a>
+          <a href="tel:+5511999990003" class="link link-hover">(11) 99999-0003</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Redes sociais</h6>
+          <div class="grid grid-flow-col gap-2">
+            <a href="#" aria-label="Instagram" class="link link-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="link link-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+
+    <!-- Sidebar (drawer) -->
+    <div class="drawer-side">
+      <label for="nav-drawer" aria-label="fechar menu" class="drawer-overlay"></label>
+      <ul class="menu bg-base-200 min-h-full w-80 p-4 text-lg">
+        <li class="menu-title">Menu</li>
+        <li><a href="../index.html">Início</a></li>
+        <li>
+          <details>
+            <summary>Quem Somos</summary>
+            <ul>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="nossa-equipe.html">Nossa Equipe</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Projetos</summary>
+            <ul>
+              <li><a href="projetos.html">Todos os Projetos</a></li>
+              <li><a href="projetos/convivencia-e-fortalecimento.html">Convivência e Fortalecimento</a></li>
+              <li><a href="projetos/atividades-socioeducativas.html">Atividades Socioeducativas</a></li>
+              <li><a href="projetos/acoes-comunitarias.html">Ações Comunitárias</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="quero-apoiar.html">Quero Apoiar</a></li>
+        <li><a href="quero-doar.html" class="active">Quero Doar</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

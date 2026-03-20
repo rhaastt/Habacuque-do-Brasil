@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Associação Habacuque do Brasil — Voluntários</title>
+  <title>Associação Habacuque do Brasil — Quem Somos</title>
   <link href="../css/reset.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <link href="../css/theme-wireframe.css" rel="stylesheet" />
@@ -28,7 +28,13 @@
         <div class="navbar-end flex gap-2">
           <ul class="menu menu-horizontal gap-2 px-1 hidden lg:flex text-lg">
             <li><a href="../index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+            <li class="dropdown dropdown-click">
+              <div tabindex="0" role="button">Quem Somos</div>
+              <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box shadow mt-2">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="nossa-equipe.html" class="active">Nossa Equipe</a></li>
+              </ul>
+            </li>
             <li class="dropdown dropdown-click">
               <div tabindex="0" role="button">Projetos</div>
               <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box shadow mt-2">
@@ -38,8 +44,8 @@
                 <li><a href="projetos/acoes-comunitarias.html">Ações Comunitárias</a></li>
               </ul>
             </li>
-            <li><a href="equipe.html">Equipe</a></li>
-            <li><a href="voluntarios.html" class="active">Voluntários</a></li>
+            <li><a href="quero-apoiar.html">Quero Apoiar</a></li>
+            <li><a href="quero-doar.html">Quero Doar</a></li>
             <li><a href="contato.html">Contato</a></li>
           </ul>
           <label for="nav-drawer" aria-label="abrir menu" class="btn btn-square btn-ghost lg:hidden">
@@ -51,9 +57,115 @@
       </div>
 
       <main class="container mx-auto px-4 py-12 flex-1 w-full max-w-7xl">
-        <h1 class="text-4xl font-bold text-primary mb-2">Voluntários</h1>
-        <p class="text-lg text-body-lg opacity-70 mb-8">A atuação da Associação também conta com a colaboração de voluntários que contribuem com seu tempo, dedicação e conhecimento para fortalecer as ações da instituição.</p>
+        <h1 class="text-4xl font-bold text-primary mb-2">Quem Somos</h1>
+        <p class="text-lg text-body-lg opacity-70 mb-8">Conheça as pessoas que fazem o trabalho da Associação Habacuque do Brasil acontecer — diretores, equipe técnica e voluntários que contribuem com seu tempo, dedicação e conhecimento para fortalecer nossas ações.</p>
 
+        <!-- Diretoria -->
+        <h2 class="text-2xl font-bold text-primary">Diretoria</h2>
+        <div class="divider"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+            <div class="card-body flex-row items-center gap-4">
+              <div class="avatar">
+                <div class="w-16 rounded-full">
+                  <img src="../imagens/equipe/lilian-regina-dos-santos.jpg" alt="Lilian Regina dos Santos" />
+                </div>
+              </div>
+              <div>
+                <h3 class="card-title">Lilian Regina dos Santos</h3>
+                <p class="text-sm opacity-70">Presidente e fundadora da Associação Habacuque do Brasil.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+            <div class="card-body flex-row items-center gap-4">
+              <div class="avatar placeholder">
+                <div class="bg-primary text-primary-content w-16 rounded-full">
+                  <span class="text-xl">AS</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="card-title">Antonio Brandino dos Santos</h3>
+                <p class="text-sm opacity-70">Coordenador e fundador da instituição.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Corpo Técnico -->
+        <h2 class="text-2xl font-bold text-primary">Corpo Técnico</h2>
+        <div class="divider"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
+            <div class="card-body flex-row items-center gap-4">
+              <div class="avatar placeholder">
+                <div class="bg-secondary text-secondary-content w-14 rounded-full">
+                  <span class="text-lg">EM</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="font-bold">Elisangela Maria Mota Machado</h3>
+                <p class="text-sm opacity-70">Assistente Social</p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
+            <div class="card-body flex-row items-center gap-4">
+              <div class="avatar placeholder">
+                <div class="bg-secondary text-secondary-content w-14 rounded-full">
+                  <span class="text-lg">TO</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="font-bold">Talita Malta Oliveira</h3>
+                <p class="text-sm opacity-70">Psicóloga Social</p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
+            <div class="card-body flex-row items-center gap-4">
+              <div class="avatar placeholder">
+                <div class="bg-secondary text-secondary-content w-14 rounded-full">
+                  <span class="text-lg">KS</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="font-bold">Karen de Jesus Santos</h3>
+                <p class="text-sm opacity-70">Educadora Social</p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
+            <div class="card-body flex-row items-center gap-4">
+              <div class="avatar placeholder">
+                <div class="bg-secondary text-secondary-content w-14 rounded-full">
+                  <span class="text-lg">CS</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="font-bold">Cleusa Santos Sant'ana</h3>
+                <p class="text-sm opacity-70">Equipe técnica</p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
+            <div class="card-body flex-row items-center gap-4">
+              <div class="avatar placeholder">
+                <div class="bg-secondary text-secondary-content w-14 rounded-full">
+                  <span class="text-lg">AO</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="font-bold">Aline Oliveira Santos</h3>
+                <p class="text-sm opacity-70">Assistente Administrativa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Voluntários -->
+        <h2 class="text-2xl font-bold text-primary">Voluntários</h2>
+        <div class="divider"></div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 bg-base-200 rounded-box p-6">
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
@@ -159,13 +271,14 @@
         <nav>
           <h6 class="footer-title">Navegação</h6>
           <a href="../index.html" class="link link-hover">Início</a>
-          <a href="sobre.html" class="link link-hover">Sobre</a>
+          <a href="sobre.html" class="link link-hover">Quem Somos</a>
           <a href="projetos.html" class="link link-hover">Projetos</a>
-          <a href="equipe.html" class="link link-hover">Equipe</a>
+          <a href="nossa-equipe.html" class="link link-hover">Nossa Equipe</a>
         </nav>
         <nav>
           <h6 class="footer-title">Participe</h6>
-          <a href="voluntarios.html" class="link link-hover">Voluntários</a>
+          <a href="quero-apoiar.html" class="link link-hover">Quero Apoiar</a>
+          <a href="quero-doar.html" class="link link-hover">Quero Doar</a>
           <a href="contato.html" class="link link-hover">Contato</a>
         </nav>
         <nav>
@@ -198,7 +311,15 @@
       <ul class="menu bg-base-200 min-h-full w-80 p-4 text-lg">
         <li class="menu-title">Menu</li>
         <li><a href="../index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
+        <li>
+          <details open>
+            <summary>Quem Somos</summary>
+            <ul>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="nossa-equipe.html" class="active">Nossa Equipe</a></li>
+            </ul>
+          </details>
+        </li>
         <li>
           <details>
             <summary>Projetos</summary>
@@ -210,8 +331,8 @@
             </ul>
           </details>
         </li>
-        <li><a href="equipe.html">Equipe</a></li>
-        <li><a href="voluntarios.html" class="active">Voluntários</a></li>
+        <li><a href="quero-apoiar.html">Quero Apoiar</a></li>
+        <li><a href="quero-doar.html">Quero Doar</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </div>

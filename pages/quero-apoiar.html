@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Associação Habacuque do Brasil — Quero Apoiar</title>
+  <link href="../css/reset.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="../css/theme-wireframe.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="overflow-x-hidden">
+  <div class="drawer drawer-end">
+    <input id="nav-drawer" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col min-h-screen w-full min-w-0">
+      <!-- Navbar -->
+      <div class="navbar bg-base-100 shadow-lg w-full max-w-none sticky top-0 z-50">
+        <div class="navbar-start">
+          <a href="../index.html" class="btn btn-ghost text-xl gap-2">
+            <img
+              src="../imagens/Logo-PRETO.svg"
+              alt="Logo da Associação Habacuque do Brasil"
+              class="h-8 w-auto"
+            />
+            Habacuque
+          </a>
+        </div>
+        <div class="navbar-end flex gap-2">
+          <ul class="menu menu-horizontal gap-2 px-1 hidden lg:flex text-lg">
+            <li><a href="../index.html">Início</a></li>
+            <li class="dropdown dropdown-click">
+              <div tabindex="0" role="button">Quem Somos</div>
+              <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box shadow mt-2">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="nossa-equipe.html">Nossa Equipe</a></li>
+              </ul>
+            </li>
+            <li class="dropdown dropdown-click">
+              <div tabindex="0" role="button">Projetos</div>
+              <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box shadow mt-2">
+                <li><a href="projetos.html">Todos os Projetos</a></li>
+                <li><a href="projetos/convivencia-e-fortalecimento.html">Convivência e Fortalecimento</a></li>
+                <li><a href="projetos/atividades-socioeducativas.html">Atividades Socioeducativas</a></li>
+                <li><a href="projetos/acoes-comunitarias.html">Ações Comunitárias</a></li>
+              </ul>
+            </li>
+            <li><a href="quero-apoiar.html" class="active">Quero Apoiar</a></li>
+            <li><a href="quero-doar.html">Quero Doar</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+          <label for="nav-drawer" aria-label="abrir menu" class="btn btn-square btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </label>
+        </div>
+      </div>
+
+      <main class="container mx-auto px-4 py-12 flex-1 w-full max-w-7xl">
+        <!-- Hero -->
+        <section class="mb-16">
+          <h1 class="text-4xl font-bold text-primary mb-4">Quero Apoiar</h1>
+          <p class="text-xl text-body-lg opacity-80 mb-8 max-w-3xl">
+            Sua contribuição vai além da doação financeira. Com tempo, parcerias, serviços ou divulgação, você fortalece o trabalho que realizamos com crianças, adolescentes e famílias em Guarulhos.
+          </p>
+          <a href="contato.html" class="btn btn-primary btn-lg transition-all duration-150 hover:shadow-lg">
+            Falar com a equipe
+          </a>
+        </section>
+
+        <!-- Como você pode apoiar -->
+        <section class="py-12">
+          <h2 class="text-3xl font-bold text-primary mb-8">Como você pode apoiar</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+              <div class="card-body">
+                <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                </div>
+                <h3 class="card-title text-primary">Voluntariado</h3>
+                <p>Doe seu tempo e habilidades. Participe de oficinas, atividades recreativas e ações comunitárias ao lado das crianças e adolescentes.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+              <div class="card-body">
+                <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                </div>
+                <h3 class="card-title text-primary">Parceria institucional</h3>
+                <p>Empresas e instituições podem firmar parcerias para apoiar projetos, eventos e campanhas de forma estruturada.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+              <div class="card-body">
+                <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+                </div>
+                <h3 class="card-title text-primary">Serviços e produtos</h3>
+                <p>Ofereça serviços profissionais ou doe materiais, equipamentos e itens que fortaleçam nossas atividades e oficinas.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+              <div class="card-body">
+                <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg>
+                </div>
+                <h3 class="card-title text-primary">Divulgação</h3>
+                <p>Compartilhe nossas ações nas redes sociais, indique a ONG para amigos e ajude a ampliar o alcance do nosso trabalho.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- O que podemos receber (zig-zag) -->
+        <section class="py-12 bg-base-200 rounded-box p-8 md:p-12">
+          <h2 class="text-3xl font-bold text-primary mb-12 text-center">O que podemos receber</h2>
+          <div class="space-y-12 md:space-y-16">
+            <!-- 1. Alimentos - ícone à esquerda -->
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+              <div class="shrink-0 w-20 h-20 rounded-full bg-primary flex items-center justify-center text-primary-content">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+              </div>
+              <div class="flex-1 text-center md:text-left">
+                <h3 class="text-xl font-bold text-primary uppercase tracking-wide mb-2">Alimentos</h3>
+                <p class="text-body-lg opacity-80">Complementam a alimentação diária dos atendidos e são encaminhados às famílias em situação de insegurança alimentar.</p>
+              </div>
+            </div>
+            <!-- 2. Roupas, calçados, etc. - ícone à direita -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+              <div class="shrink-0 w-20 h-20 rounded-full bg-primary flex items-center justify-center text-primary-content">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4m0 0h12a4 4 0 004-4V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4m0 0H7" /></svg>
+              </div>
+              <div class="flex-1 text-center md:text-right">
+                <h3 class="text-xl font-bold text-primary uppercase tracking-wide mb-2">Roupas, calçados, utensílios e móveis</h3>
+                <p class="text-body-lg opacity-80">Entre outros (em bom estado): parte é encaminhada às famílias que necessitam, e outra parte é utilizada em nossas atividades e campanhas comunitárias.</p>
+              </div>
+            </div>
+            <!-- 3. Brinquedos - ícone à esquerda -->
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+              <div class="shrink-0 w-20 h-20 rounded-full bg-primary flex items-center justify-center text-primary-content">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <div class="flex-1 text-center md:text-left">
+                <h3 class="text-xl font-bold text-primary uppercase tracking-wide mb-2">Brinquedos</h3>
+                <p class="text-body-lg opacity-80">São direcionados para as atividades e espaços de convivência, enriquecendo o dia a dia das crianças e adolescentes atendidos.</p>
+              </div>
+            </div>
+            <!-- 4. Depósitos - ícone à direita -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+              <div class="shrink-0 w-20 h-20 rounded-full bg-primary flex items-center justify-center text-primary-content">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <div class="flex-1 text-center md:text-right">
+                <h3 class="text-xl font-bold text-primary uppercase tracking-wide mb-2">Depósitos</h3>
+                <p class="text-body-lg opacity-80">Em conta corrente: colaboram nas despesas mensais da Associação Habacuque do Brasil e na manutenção dos projetos.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Como funciona -->
+        <section class="py-12 bg-base-200 rounded-box p-8 md:p-12">
+          <h2 class="text-3xl font-bold text-primary mb-8">Como funciona</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center text-center">
+              <span class="badge badge-primary badge-lg mb-4">1</span>
+              <h3 class="text-xl font-bold text-primary mb-2">Contato</h3>
+              <p class="text-body-lg opacity-80">Entre em contato pela página de contato ou redes sociais e conte como deseja contribuir.</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <span class="badge badge-primary badge-lg mb-4">2</span>
+              <h3 class="text-xl font-bold text-primary mb-2">Alinhamento</h3>
+              <p class="text-body-lg opacity-80">Nossa equipe entra em contato para entender sua disponibilidade e alinhar expectativas.</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <span class="badge badge-primary badge-lg mb-4">3</span>
+              <h3 class="text-xl font-bold text-primary mb-2">Início da colaboração</h3>
+              <p class="text-body-lg opacity-80">Definimos juntos a melhor forma de atuação e damos início à sua participação.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Impacto esperado -->
+        <section class="py-12">
+          <h2 class="text-3xl font-bold text-primary mb-8">Impacto esperado</h2>
+          <div class="bg-base-100 rounded-box p-8 shadow-lg max-w-3xl">
+            <ul class="space-y-4 text-body-lg">
+              <li class="flex gap-3 items-start">
+                <span class="text-primary shrink-0">✓</span>
+                <span>Fortalecimento dos vínculos familiares e comunitários no território de Maria Dirce e Pimentas.</span>
+              </li>
+              <li class="flex gap-3 items-start">
+                <span class="text-primary shrink-0">✓</span>
+                <span>Ampliação do acesso a cultura, esporte, lazer e direitos para crianças e adolescentes.</span>
+              </li>
+              <li class="flex gap-3 items-start">
+                <span class="text-primary shrink-0">✓</span>
+                <span>Rede de solidariedade mais forte, com mais pessoas engajadas na transformação social.</span>
+              </li>
+              <li class="flex gap-3 items-start">
+                <span class="text-primary shrink-0">✓</span>
+                <span>Atividades socioeducativas enriquecidas com diferentes saberes e experiências.</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- CTA final -->
+        <section class="py-16 text-center">
+          <h2 class="text-2xl font-bold text-primary mb-4">Pronto para começar?</h2>
+          <p class="text-body-lg opacity-80 mb-8 max-w-2xl mx-auto">
+            Entre em contato e conte como você pode contribuir. Nossa equipe está pronta para receber você.
+          </p>
+          <a href="contato.html" class="btn btn-primary btn-lg transition-all duration-150 hover:shadow-lg">
+            Falar com a equipe
+          </a>
+        </section>
+      </main>
+
+      <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 text-sm">
+        <aside>
+          <img src="../imagens/Logo-PRETO.svg" alt="Logo da Associação Habacuque do Brasil" class="w-20 h-20">
+          <p>
+            Associação Habacuque do Brasil
+            <br />
+            Promovendo o desenvolvimento social de crianças, adolescentes e famílias.
+          </p>
+        </aside>
+        <nav>
+          <h6 class="footer-title">Navegação</h6>
+          <a href="../index.html" class="link link-hover">Início</a>
+          <a href="sobre.html" class="link link-hover">Quem Somos</a>
+          <a href="projetos.html" class="link link-hover">Projetos</a>
+          <a href="nossa-equipe.html" class="link link-hover">Nossa Equipe</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Participe</h6>
+          <a href="quero-apoiar.html" class="link link-hover">Quero Apoiar</a>
+          <a href="quero-doar.html" class="link link-hover">Quero Doar</a>
+          <a href="contato.html" class="link link-hover">Contato</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Contatos</h6>
+          <a href="tel:+5511999990001" class="link link-hover">(11) 99999-0001</a>
+          <a href="tel:+5511999990002" class="link link-hover">(11) 99999-0002</a>
+          <a href="tel:+5511999990003" class="link link-hover">(11) 99999-0003</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Redes sociais</h6>
+          <div class="grid grid-flow-col gap-2">
+            <a href="#" aria-label="Instagram" class="link link-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="link link-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+
+    <!-- Sidebar (drawer) -->
+    <div class="drawer-side">
+      <label for="nav-drawer" aria-label="fechar menu" class="drawer-overlay"></label>
+      <ul class="menu bg-base-200 min-h-full w-80 p-4 text-lg">
+        <li class="menu-title">Menu</li>
+        <li><a href="../index.html">Início</a></li>
+        <li>
+          <details>
+            <summary>Quem Somos</summary>
+            <ul>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="nossa-equipe.html">Nossa Equipe</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Projetos</summary>
+            <ul>
+              <li><a href="projetos.html">Todos os Projetos</a></li>
+              <li><a href="projetos/convivencia-e-fortalecimento.html">Convivência e Fortalecimento</a></li>
+              <li><a href="projetos/atividades-socioeducativas.html">Atividades Socioeducativas</a></li>
+              <li><a href="projetos/acoes-comunitarias.html">Ações Comunitárias</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="quero-apoiar.html" class="active">Quero Apoiar</a></li>
+        <li><a href="quero-doar.html">Quero Doar</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

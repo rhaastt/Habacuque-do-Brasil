@@ -28,7 +28,13 @@
         <div class="navbar-end flex gap-2">
           <ul class="menu menu-horizontal gap-2 px-1 hidden lg:flex text-lg">
             <li><a href="../index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+            <li class="dropdown dropdown-click">
+              <div tabindex="0" role="button">Quem Somos</div>
+              <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box shadow mt-2">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="nossa-equipe.html">Nossa Equipe</a></li>
+              </ul>
+            </li>
             <li class="dropdown dropdown-click">
               <div tabindex="0" role="button">Projetos</div>
               <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box shadow mt-2">
@@ -38,8 +44,8 @@
                 <li><a href="projetos/acoes-comunitarias.html">Ações Comunitárias</a></li>
               </ul>
             </li>
-            <li><a href="equipe.html">Equipe</a></li>
-            <li><a href="voluntarios.html">Voluntários</a></li>
+            <li><a href="quero-apoiar.html">Quero Apoiar</a></li>
+            <li><a href="quero-doar.html">Quero Doar</a></li>
             <li><a href="contato.html">Contato</a></li>
           </ul>
           <label for="nav-drawer" aria-label="abrir menu" class="btn btn-square btn-ghost lg:hidden">
@@ -125,13 +131,14 @@
         <nav>
           <h6 class="footer-title">Navegação</h6>
           <a href="../index.html" class="link link-hover">Início</a>
-          <a href="sobre.html" class="link link-hover">Sobre</a>
+          <a href="sobre.html" class="link link-hover">Quem Somos</a>
           <a href="projetos.html" class="link link-hover">Projetos</a>
-          <a href="equipe.html" class="link link-hover">Equipe</a>
+          <a href="nossa-equipe.html" class="link link-hover">Nossa Equipe</a>
         </nav>
         <nav>
           <h6 class="footer-title">Participe</h6>
-          <a href="voluntarios.html" class="link link-hover">Voluntários</a>
+          <a href="quero-apoiar.html" class="link link-hover">Quero Apoiar</a>
+          <a href="quero-doar.html" class="link link-hover">Quero Doar</a>
           <a href="contato.html" class="link link-hover">Contato</a>
         </nav>
         <nav>
@@ -164,7 +171,15 @@
       <ul class="menu bg-base-200 min-h-full w-80 p-4 text-lg">
         <li class="menu-title">Menu</li>
         <li><a href="../index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
+        <li>
+          <details>
+            <summary>Quem Somos</summary>
+            <ul>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="nossa-equipe.html">Nossa Equipe</a></li>
+            </ul>
+          </details>
+        </li>
         <li>
           <details open>
             <summary>Projetos</summary>
@@ -176,8 +191,8 @@
             </ul>
           </details>
         </li>
-        <li><a href="equipe.html">Equipe</a></li>
-        <li><a href="voluntarios.html">Voluntários</a></li>
+        <li><a href="quero-apoiar.html">Quero Apoiar</a></li>
+        <li><a href="quero-doar.html">Quero Doar</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </div>

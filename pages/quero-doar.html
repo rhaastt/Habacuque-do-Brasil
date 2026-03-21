@@ -16,6 +16,7 @@
     <script src="../components/site-header.js" defer></script>
     <script src="../components/site-sidebar.js" defer></script>
     <script src="../components/site-footer.js" defer></script>
+    <script src="../components/donation-model.js" defer></script>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         if (window.lucide && typeof window.lucide.createIcons === 'function') {
@@ -216,237 +217,30 @@
             </div>
           </section>
 
-          <!-- Modais de doação -->
-          <dialog id="modal-doar-1real" class="modal">
-            <div class="modal-box max-w-lg">
-              
-              <!-- Título -->
-              <h3 class="font-bold text-2xl text-primary leading-tight">
-                Doar 1 real por dia — R$30
-              </h3>
-          
-              <!-- Descrição -->
-              <p class="text-base text-base-content/80 mt-3 mb-5 leading-relaxed">
-                Valor mensal de <strong>R$30</strong> (equivalente a 1 real por dia).
-                Siga os passos abaixo para realizar sua doação.
-              </p>
-          
-              <!-- Passos -->
-              <ol class="list-decimal list-inside space-y-3 text-base text-base-content/80 mb-6 leading-relaxed">
-                <li>
-                  Escolha uma das opções: <strong>PIX</strong> ou <strong>dados bancários</strong>.
-                </li>
-                <li>
-                  Realize a transferência com o valor desejado.
-                </li>
-                <li>
-                  Se quiser, envie o comprovante via <strong>WhatsApp</strong> pela página de contato.
-                </li>
-              </ol>
-          
-              <div class="space-y-5">
-                
-                <!-- PIX -->
-                <div>
-                  <h4 class="font-semibold text-primary mb-2 text-sm uppercase tracking-wide">
-                    Chave(s) PIX
-                  </h4>
-                  <p class="text-base text-base-content/70 bg-base-200 rounded-box p-3 leading-relaxed">
-                    em atualização
-                  </p>
-                </div>
-          
-                <!-- Banco -->
-                <div>
-                  <h4 class="font-semibold text-primary mb-2 text-sm uppercase tracking-wide">
-                    Dados bancários
-                  </h4>
-                  <p class="text-base text-base-content/70 bg-base-200 rounded-box p-3 leading-relaxed">
-                    Banco: em atualização<br />
-                    Agência: em atualização<br />
-                    Conta: em atualização
-                  </p>
-                </div>
-          
-                <!-- QR Code -->
-                <div>
-                  <h4 class="font-semibold text-primary mb-2 text-sm uppercase tracking-wide">
-                    QR Code PIX
-                  </h4>
-                  <div class="bg-base-200 rounded-box p-8 flex items-center justify-center text-sm text-base-content/60 border border-dashed border-base-300 text-center leading-relaxed">
-                    QR code em atualização<br />
-                    (imagem será adicionada em breve)
-                  </div>
-                </div>
-          
-              </div>
-          
-              <!-- Ação -->
-              <div class="modal-action mt-6">
-                <form method="dialog">
-                  <button class="btn">Fechar</button>
-                </form>
-              </div>
-            </div>
-          
-            <form method="dialog" class="modal-backdrop">
-              <button type="submit" aria-label="Fechar"></button>
-            </form>
-          </dialog>
+          <!-- Modais de doação (Web Component: components/donation-model.js) -->
+          <donation-modal
+            modal-id="modal-doar-1real"
+            title="Doar 1 real por dia"
+            amount="R$30"
+            description="Valor mensal de &lt;strong&gt;R$30&lt;/strong&gt; (equivalente a 1 real por dia). Siga os passos abaixo para realizar sua doação."
+          ></donation-modal>
 
-          <dialog id="modal-doar-50" class="modal">
-            <div class="modal-box max-w-lg">
-          
-              <!-- Título -->
-              <h3 class="font-bold text-2xl text-primary leading-tight">
-                Quero doar mais — R$50
-              </h3>
-          
-              <!-- Descrição -->
-              <p class="text-base text-base-content/80 mt-3 mb-5 leading-relaxed">
-                Valor de <strong>R$50</strong>. Siga os passos abaixo para realizar sua doação.
-              </p>
-          
-              <!-- Passos -->
-              <ol class="list-decimal list-inside space-y-3 text-base text-base-content/80 mb-6 leading-relaxed">
-                <li>
-                  Escolha uma das opções: <strong>PIX</strong> ou <strong>dados bancários</strong>.
-                </li>
-                <li>
-                  Realize a transferência com o valor desejado.
-                </li>
-                <li>
-                  Se quiser, envie o comprovante via <strong>WhatsApp</strong> pela página de contato.
-                </li>
-              </ol>
-          
-              <div class="space-y-5">
-          
-                <!-- PIX -->
-                <div>
-                  <h4 class="font-semibold text-primary mb-2 text-sm uppercase tracking-wide">
-                    Chave(s) PIX
-                  </h4>
-                  <p class="text-base text-base-content/70 bg-base-200 rounded-box p-3 leading-relaxed">
-                    em atualização
-                  </p>
-                </div>
-          
-                <!-- Banco -->
-                <div>
-                  <h4 class="font-semibold text-primary mb-2 text-sm uppercase tracking-wide">
-                    Dados bancários
-                  </h4>
-                  <p class="text-base text-base-content/70 bg-base-200 rounded-box p-3 leading-relaxed">
-                    Banco: em atualização<br />
-                    Agência: em atualização<br />
-                    Conta: em atualização
-                  </p>
-                </div>
-          
-                <!-- QR Code -->
-                <div>
-                  <h4 class="font-semibold text-primary mb-2 text-sm uppercase tracking-wide">
-                    QR Code PIX
-                  </h4>
-                  <div class="bg-base-200 rounded-box p-8 flex items-center justify-center text-sm text-base-content/60 border border-dashed border-base-300 text-center leading-relaxed">
-                    QR code em atualização<br />
-                    (imagem será adicionada em breve)
-                  </div>
-                </div>
-          
-              </div>
-          
-              <!-- Ação -->
-              <div class="modal-action mt-6">
-                <form method="dialog">
-                  <button class="btn">Fechar</button>
-                </form>
-              </div>
-          
-            </div>
-          
-            <form method="dialog" class="modal-backdrop">
-              <button type="submit" aria-label="Fechar"></button>
-            </form>
-          </dialog>
+          <donation-modal
+            modal-id="modal-doar-50"
+            title="Quero doar mais"
+            amount="R$50"
+            description="Valor de &lt;strong&gt;R$50&lt;/strong&gt;. Siga os passos abaixo para realizar sua doação."
+            close-class="btn btn-primary btn-lg transition-all duration-150 hover:shadow-lg"
+          ></donation-modal>
 
-          <dialog id="modal-doar-100" class="modal">
-            <div class="modal-box max-w-lg">
-          
-              <!-- Título -->
-              <h3 class="font-bold text-2xl text-primary leading-tight">
-                Doação Abundante — R$100
-              </h3>
-          
-              <!-- Descrição -->
-              <p class="text-base text-base-content/80 mt-3 mb-5 leading-relaxed">
-                Valor de <strong>R$100</strong>. Siga os passos abaixo para realizar sua doação.
-              </p>
-          
-              <!-- Passos -->
-              <ol class="list-decimal list-inside space-y-3 text-base text-base-content/80 mb-6 leading-relaxed">
-                <li>
-                  Escolha uma das opções: <strong>PIX</strong> ou <strong>dados bancários</strong>.
-                </li>
-                <li>
-                  Realize a transferência com o valor desejado.
-                </li>
-                <li>
-                  Se quiser, envie o comprovante via <strong>WhatsApp</strong> pela página de contato.
-                </li>
-              </ol>
-          
-              <div class="space-y-5">
-          
-                <!-- PIX -->
-                <div>
-                  <h4 class="font-semibold text-primary mb-2 text-sm uppercase tracking-wide">
-                    Chave(s) PIX
-                  </h4>
-                  <p class="text-base text-base-content/70 bg-base-200 rounded-box p-3 leading-relaxed">
-                    em atualização
-                  </p>
-                </div>
-          
-                <!-- Banco -->
-                <div>
-                  <h4 class="font-semibold text-primary mb-2 text-sm uppercase tracking-wide">
-                    Dados bancários
-                  </h4>
-                  <p class="text-base text-base-content/70 bg-base-200 rounded-box p-3 leading-relaxed">
-                    Banco: em atualização<br />
-                    Agência: em atualização<br />
-                    Conta: em atualização
-                  </p>
-                </div>
-          
-                <!-- QR Code -->
-                <div>
-                  <h4 class="font-semibold text-primary mb-2 text-sm uppercase tracking-wide">
-                    QR Code PIX
-                  </h4>
-                  <div class="bg-base-200 rounded-box p-8 flex items-center justify-center text-sm text-base-content/60 border border-dashed border-base-300 text-center leading-relaxed">
-                    QR code em atualização<br />
-                    (imagem será adicionada em breve)
-                  </div>
-                </div>
-          
-              </div>
-          
-              <!-- Ação -->
-              <div class="modal-action mt-6">
-                <form method="dialog">
-                  <button class="btn">Fechar</button>
-                </form>
-              </div>
-          
-            </div>
-          
-            <form method="dialog" class="modal-backdrop">
-              <button type="submit" aria-label="Fechar"></button>
-            </form>
-          </dialog>
+          <donation-modal
+            modal-id="modal-doar-100"
+            title="Doação Abundante"
+            amount="R$100"
+            description="Valor de &lt;strong&gt;R$100&lt;/strong&gt;. Siga os passos abaixo para realizar sua doação."
+            close-class="btn btn-primary transition-all duration-150 hover:shadow-lg"
+          ></donation-modal>
+
 
           <!-- Para onde vai sua doação -->
           <section class="py-12 bg-base-200 rounded-box p-8 md:p-12">

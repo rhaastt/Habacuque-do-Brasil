@@ -12,6 +12,7 @@
   <script src="../components/site-header.js" defer></script>
   <script src="../components/site-sidebar.js" defer></script>
   <script src="../components/site-footer.js" defer></script>
+  <script src="../components/scroll-carousel.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       if (window.lucide && typeof window.lucide.createIcons === 'function') {
@@ -46,49 +47,137 @@
 
         <!-- Como você pode apoiar -->
         <section class="py-12">
-          <h2 class="text-3xl font-bold text-primary mb-8">Como você pode apoiar</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
-              <div class="card-body">
-                <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
-                  <i data-lucide="users" class="h-8 w-8 text-primary" aria-hidden="true"></i>
+          <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">
+              Como você pode apoiar
+            </h2>
+
+            <scroll-carousel aria-label="Formas de apoiar a associação">
+              <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+                <div class="card-body p-4">
+                  <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
+                    <i data-lucide="users" class="h-7 w-7 text-primary"></i>
+                  </div>
+                  <h3 class="text-lg font-semibold text-primary">Voluntariado</h3>
+                  <p class="text-sm leading-relaxed text-base-content/70">
+                    Participar de oficinas, atividades recreativas e ações comunitárias.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-outline w-full sm:w-auto border-primary text-primary bg-primary/10 transition-colors duration-150 hover:shadow-lg"
+                    onclick="document.getElementById('modal-voluntariado').showModal()"
+                    aria-haspopup="dialog"
+                    aria-controls="modal-voluntariado"
+                  >
+                    Seja Voluntário
+                  </button>
                 </div>
-                <h3 class="card-title text-primary">Voluntariado</h3>
-                <p>Doe seu tempo e habilidades. Participe de oficinas, atividades recreativas e ações comunitárias ao lado das crianças e adolescentes.</p>
               </div>
-            </div>
-            <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
-              <div class="card-body">
-                <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
-                  <i data-lucide="building-2" class="h-8 w-8 text-primary" aria-hidden="true"></i>
+
+              <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+                <div class="card-body p-4">
+                  <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
+                    <i data-lucide="clipboard-list" class="h-7 w-7 text-primary"></i>
+                  </div>
+                  <h3 class="text-lg font-semibold text-primary">Serviços e produtos</h3>
+                  <p class="text-sm leading-relaxed text-base-content/70">
+                    Doe materiais, equipamentos ou serviços que fortaleçam nossas atividades.
+                  </p>
+                  <a href="#oque-podemos-receber" class="btn btn-outline w-full sm:w-auto 
+                  border-primary text-primary 
+                  bg-primary/10  
+                  transition-colors duration-150 hover:shadow-lg">
+                    Doe Materiais
+                  </a>
                 </div>
-                <h3 class="card-title text-primary">Parceria institucional</h3>
-                <p>Empresas e instituições podem firmar parcerias para apoiar projetos, eventos e campanhas de forma estruturada.</p>
               </div>
-            </div>
-            <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
-              <div class="card-body">
-                <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
-                  <i data-lucide="clipboard-list" class="h-8 w-8 text-primary" aria-hidden="true"></i>
+
+              <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+                <div class="card-body p-4">
+                  <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
+                    <i data-lucide="building-2" class="h-7 w-7 text-primary"></i>
+                  </div>
+                  <h3 class="text-lg font-semibold text-primary">Parceria institucional</h3>
+                  <p class="text-sm leading-relaxed text-base-content/70">
+                    Empresas e instituições podem apoiar projetos e campanhas.
+                  </p>
+                  <a href="contato.html" class="btn btn-outline w-full sm:w-auto 
+                  border-primary text-primary 
+                  bg-primary/10  
+                  transition-colors duration-150 hover:shadow-lg">
+                    Entre em Contato
+                  </a>
                 </div>
-                <h3 class="card-title text-primary">Serviços e produtos</h3>
-                <p>Ofereça serviços profissionais ou doe materiais, equipamentos e itens que fortaleçam nossas atividades e oficinas.</p>
               </div>
-            </div>
-            <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
-              <div class="card-body">
-                <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
-                  <i data-lucide="share-2" class="h-8 w-8 text-primary" aria-hidden="true"></i>
+
+              <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+                <div class="card-body p-4">
+                  <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
+                    <i data-lucide="share-2" class="h-7 w-7 text-primary"></i>
+                  </div>
+                  <h3 class="text-lg font-semibold text-primary">Divulgação</h3>
+                  <p class="text-sm leading-relaxed text-base-content/70">
+                    Compartilhe nossas ações e ajude a ampliar nosso alcance.
+                  </p>
+                  <a href="contato.html" class="btn btn-outline w-full sm:w-auto 
+                  border-primary text-primary 
+                  bg-primary/10  
+                  transition-colors duration-150 hover:shadow-lg">
+                    Entre em Contato
+                  </a>
                 </div>
-                <h3 class="card-title text-primary">Divulgação</h3>
-                <p>Compartilhe nossas ações nas redes sociais, indique a ONG para amigos e ajude a ampliar o alcance do nosso trabalho.</p>
               </div>
-            </div>
+            </scroll-carousel>
           </div>
         </section>
 
+        <dialog id="modal-voluntariado" class="modal">
+          <div class="modal-box max-w-2xl max-h-[90vh] overflow-y-auto">
+            <h3 class="font-bold text-2xl text-primary">
+              Faça a Diferença. Seja Voluntário!
+              <i data-lucide="hand-heart" class="h-8 w-8 text-primary shrink-0 inline-block" aria-hidden="true"></i>
+            </h3>
+            <div class="mt-6 space-y-6">
+              <h4 class="text-xl font-bold text-primary">Funciona assim:</h4>
+              <ol class="relative border-l border-primary/30 pl-4 space-y-6 text-body-lg leading-relaxed opacity-90">
+                <li>
+                  <span class="badge badge-primary badge-lg mb-2 mr-2">1º</span>
+                  Preencher o formulário de cadastro no
+                  <a href="https://forms.gle/dUKEp7ntVRnywYse6" class="link link-primary">link: https://forms.gle/dUKEp7ntVRnywYse6</a>
+                </li>
+                <li>
+                  <span class="badge badge-primary badge-lg mb-2 mr-2">2º</span>
+                  Assistir à <strong>PALESTRA</strong> oferecida pela
+                  <strong>Central do Voluntariado de Guarulhos</strong>:<br />
+                  <a href="http://voluntariado.guarulhos.sp.gov.br/" class="link link-primary break-all">http://voluntariado.guarulhos.sp.gov.br/</a>
+                </li>
+                <li>
+                  <span class="badge badge-primary badge-lg mb-2 mr-2">3º</span>
+                  Agendar uma <strong>CONVERSA</strong> com a Direção / Coordenação;
+                </li>
+                <li>
+                  <span class="badge badge-primary badge-lg mb-2 mr-2">4º</span>
+                  Assinar o <strong>TERMO</strong> de Voluntariado na Habacuque do Brasil.
+                </li>
+                <li>
+                  <span class="badge badge-primary badge-lg mb-2 mr-2">5º</span>
+                  Desenvolver o <strong>CRONOGRAMA</strong> proposto juntamente com a Ação Vida.
+                </li>
+              </ol>
+            </div>
+            <div class="modal-action mt-6">
+              <form method="dialog">
+                <button type="submit" class="btn btn-primary transition-all duration-150 hover:shadow-lg">Fechar</button>
+              </form>
+            </div>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button  type="submit" aria-label="Fechar"></button>
+          </form>
+        </dialog>
+
         <!-- O que podemos receber (zig-zag) -->
-        <section class="py-12 bg-base-200 rounded-box p-8 md:p-12">
+        <section class="py-12  max-w-5xl mx-auto w-full bg-base-200 rounded-box p-8 md:p-12" id="oque-podemos-receber">
           <h2 class="text-3xl font-bold text-primary mb-12 text-center">O que podemos receber</h2>
           <div class="space-y-12 md:space-y-16">
             <!-- 1. Alimentos - ícone à esquerda -->
@@ -96,9 +185,9 @@
               <div class="shrink-0 w-20 h-20 rounded-full bg-primary flex items-center justify-center text-primary-content">
                 <i data-lucide="shopping-bag" class="h-10 w-10" aria-hidden="true"></i>
               </div>
-              <div class="flex-1 text-center md:text-left">
+              <div class="flex-1 flex flex-col text-center md:text-left md:items-start">
                 <h3 class="text-xl font-bold text-primary uppercase tracking-wide mb-2">Alimentos</h3>
-                <p class="text-body-lg opacity-80">Complementam a alimentação diária dos atendidos e são encaminhados às famílias em situação de insegurança alimentar.</p>
+                <p class="text-body-lg leading-relaxed md:max-w-prose opacity-80">Eles complementam a alimentação dos atendidos, sendo também destinados às famílias que se encontram em situação de insegurança alimentar, contribuindo para a garantia de uma nutrição mais adequada e digna.</p>
               </div>
             </div>
             <!-- 2. Roupas, calçados, etc. - ícone à direita -->
@@ -106,19 +195,19 @@
               <div class="shrink-0 w-20 h-20 rounded-full bg-primary flex items-center justify-center text-primary-content">
                 <i data-lucide="shirt" class="h-10 w-10" aria-hidden="true"></i>
               </div>
-              <div class="flex-1 text-center md:text-right">
+              <div class="flex-1 flex flex-col text-center md:text-right md:items-end">
                 <h3 class="text-xl font-bold text-primary uppercase tracking-wide mb-2">Roupas, calçados, utensílios e móveis</h3>
-                <p class="text-body-lg opacity-80">Entre outros (em bom estado): parte é encaminhada às famílias que necessitam, e outra parte é utilizada em nossas atividades e campanhas comunitárias.</p>
+                <p class="text-body-lg leading-relaxed md:max-w-prose opacity-80">Entre outros itens, desde que estejam em bom estado, parte é destinada às famílias que necessitam, enquanto outra parte é utilizada no desenvolvimento de nossas atividades e campanhas comunitárias, contribuindo diretamente para o impacto social das ações realizadas.</p>
               </div>
             </div>
             <!-- 3. Brinquedos - ícone à esquerda -->
             <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div class="shrink-0 w-20 h-20 rounded-full bg-primary flex items-center justify-center text-primary-content">
-                <i data-lucide="smile" class="h-10 w-10" aria-hidden="true"></i>
+                <i data-lucide="blocks" class="h-10 w-10" aria-hidden="true"></i>
               </div>
-              <div class="flex-1 text-center md:text-left">
+              <div class="flex-1 flex flex-col text-center md:text-left md:items-start">
                 <h3 class="text-xl font-bold text-primary uppercase tracking-wide mb-2">Brinquedos</h3>
-                <p class="text-body-lg opacity-80">São direcionados para as atividades e espaços de convivência, enriquecendo o dia a dia das crianças e adolescentes atendidos.</p>
+                <p class="text-body-lg leading-relaxed md:max-w-prose opacity-80">Essenciais para as atividades e espaços de convivência, os brinquedos doados enriquecem o cotidiano e potencializam o desenvolvimento integral das crianças e adolescentes atendidos pela ong.</p>
               </div>
             </div>
             <!-- 4. Depósitos - ícone à direita -->
@@ -126,41 +215,44 @@
               <div class="shrink-0 w-20 h-20 rounded-full bg-primary flex items-center justify-center text-primary-content">
                 <i data-lucide="dollar-sign" class="h-10 w-10" aria-hidden="true"></i>
               </div>
-              <div class="flex-1 text-center md:text-right">
+              <div class="flex-1 flex flex-col text-center md:text-right md:items-end">
                 <h3 class="text-xl font-bold text-primary uppercase tracking-wide mb-2">Depósitos</h3>
-                <p class="text-body-lg opacity-80">Em conta corrente: colaboram nas despesas mensais da Associação Habacuque do Brasil e na manutenção dos projetos.</p>
+                <p class="text-body-lg leading-relaxed md:max-w-prose opacity-80">Sua contribuição ajuda a manter viva a missão da Associação Habacuque do Brasil. Os recursos doados via conta corrente sustentam nossas operações diárias e asseguram que nossos projetos continuem transformando vidas. Doe agora via Pix ou utilize nossos dados bancários.</p>
               </div>
             </div>
           </div>
         </section>
 
         <!-- Como funciona -->
-        <section class="py-12 bg-base-200 rounded-box p-8 md:p-12">
-          <h2 class="text-3xl font-bold text-primary mb-8">Como funciona</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="flex flex-col items-center text-center">
-              <span class="badge badge-primary badge-lg mb-4">1</span>
-              <h3 class="text-xl font-bold text-primary mb-2">Contato</h3>
-              <p class="text-body-lg opacity-80">Entre em contato pela página de contato ou redes sociais e conte como deseja contribuir.</p>
+        <section class="py-12 max-w-5xl mx-auto w-full p-8 md:p-12 bg-base-200 rounded-box">
+          <h2 class="text-3xl  font-bold text-primary mb-8">Como funciona</h2>
+          <scroll-carousel
+            aria-label="Como funciona"
+            track-class="flex md:grid md:grid-cols-3 gap-4 overflow-x-auto md:overflow-visible scroll-smooth"
+          >
+            <div class="flex flex-col items-start text-left">
+              
+              <h3 class="text-xl font-bold text-primary mb-2"><span class="badge badge-primary badge-lg mb-2 mr-2">1</span>Contato</h3>
+              <p class="text-body-lg leading-relaxed max-w-prose opacity-80">Entre em contato pela página contato ou redes sociais e conte como deseja contribuir.</p>
             </div>
-            <div class="flex flex-col items-center text-center">
-              <span class="badge badge-primary badge-lg mb-4">2</span>
-              <h3 class="text-xl font-bold text-primary mb-2">Alinhamento</h3>
-              <p class="text-body-lg opacity-80">Nossa equipe entra em contato para entender sua disponibilidade e alinhar expectativas.</p>
+            <div class="flex flex-col items-start text-left">
+              
+              <h3 class="text-xl font-bold text-primary mb-2"><span class="badge badge-primary badge-lg mb-2 mr-2">2</span>Alinhamento</h3>
+              <p class="text-body-lg leading-relaxed max-w-prose opacity-80">Nossa equipe entra em contato para entender sua disponibilidade e alinhar expectativas.</p>
             </div>
-            <div class="flex flex-col items-center text-center">
-              <span class="badge badge-primary badge-lg mb-4">3</span>
-              <h3 class="text-xl font-bold text-primary mb-2">Início da colaboração</h3>
-              <p class="text-body-lg opacity-80">Definimos juntos a melhor forma de atuação e damos início à sua participação.</p>
+            <div class="flex flex-col items-start text-left">
+              
+              <h3 class="text-xl font-bold text-primary mb-2"><span class="badge badge-primary badge-lg mb-2 mr-2">3</span>Início da colaboração</h3>
+              <p class="text-body-lg leading-relaxed max-w-prose opacity-80">Definimos juntos a melhor forma de atuação e damos início à sua participação.</p>
             </div>
-          </div>
+          </scroll-carousel>
         </section>
 
         <!-- Impacto esperado -->
-        <section class="py-12">
-          <h2 class="text-3xl font-bold text-primary mb-8">Impacto esperado</h2>
-          <div class="bg-base-100 rounded-box p-8 shadow-lg max-w-3xl">
-            <ul class="space-y-4 text-body-lg">
+        <section class="py-12 max-w-5xl mx-auto w-full p-8 md:p-12">
+          <h2 class="text-3xl font-bold text-primary mb-8 text-center">Impacto esperado</h2>
+          <div class="bg-base-100 rounded-box p-8 shadow-lg max-w-3xl mx-auto w-full">
+            <ul class="space-y-4 text-body-lg leading-relaxed">
               <li class="flex gap-3 items-start">
                 <span class="text-primary shrink-0">✓</span>
                 <span>Fortalecimento dos vínculos familiares e comunitários no território de Maria Dirce e Pimentas.</span>

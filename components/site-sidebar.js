@@ -6,6 +6,7 @@ class SiteSidebar extends HTMLElement {
       const isActive = (key) => (current === key ? "active" : "");
       const isOpenQuemSomos = current === "sobre" || current === "nossa-equipe";
       const isOpenProjetos = current === "projetos";
+      const isOpenQueroApoiar = current === "quero-apoiar" || current === "quero-doar";
   
     this.className = "drawer-side z-[60]";
     this.innerHTML = `
@@ -24,17 +25,22 @@ class SiteSidebar extends HTMLElement {
         </li>
         <li>
           <details ${isOpenProjetos ? "open" : ""}>
-            <summary>Projetos</summary>
+            <summary>Projeto</summary>
             <ul>
-              <li><a href="${base}pages/projetos.html" class="${isActive("projetos")}">Todos os Projetos</a></li>
-              <li><a href="${base}pages/projetos/convivencia-e-fortalecimento.html">Convivência e Fortalecimento</a></li>
-              <li><a href="${base}pages/projetos/atividades-socioeducativas.html">Atividades Socioeducativas</a></li>
+              <li><a href="${base}pages/projetos/olhar-brilhante.html">Projeto Olhar Brilhante</a></li>
               <li><a href="${base}pages/projetos/acoes-comunitarias.html">Ações Comunitárias</a></li>
             </ul>
           </details>
         </li>
-        <li><a href="${base}pages/quero-apoiar.html" class="${isActive("quero-apoiar")}">Quero Apoiar</a></li>
-        <li><a href="${base}pages/quero-doar.html" class="${isActive("quero-doar")}">Quero Doar</a></li>
+        <li>
+          <details ${isOpenQueroApoiar ? "open" : ""}>
+            <summary>Quero Apoiar</summary>
+            <ul>
+              <li><a href="${base}pages/quero-apoiar.html">Quero Apoiar</a></li>
+              <li><a href="${base}pages/quero-doar.html">Quero Doar</a></li>
+            </ul>
+          </details>
+        </li>
         <li><a href="${base}pages/contato.html" class="${isActive("contato")}">Contato</a></li>
       </ul>
     `;

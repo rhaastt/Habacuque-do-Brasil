@@ -24,18 +24,28 @@
   <div class="drawer drawer-end">
     <input id="nav-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col min-h-screen w-full min-w-0">
-      <site-header base="../" current="nossa-equipe"></site-header>
+      <site-header base="../" current="nossa-equipe" hero-overlay></site-header>
 
-      <main class="container mx-auto px-4 py-12 flex-1 w-full max-w-7xl">
-        <h1 class="text-4xl font-bold text-primary mb-2">Nossa Equipe
-          <i
-                      data-lucide="users-round"
-                      class="h-8 w-8 text-primary inline-block"
-                      aria-hidden="true"
-                    ></i>
-        </h1>
-        <p class="text-lg text-body-lg opacity-70 mb-8">Conheça as pessoas que fazem o trabalho da Associação Habacuque do Brasil acontecer — diretores, equipe técnica e voluntários que contribuem com seu tempo, dedicação e conhecimento para fortalecer nossas ações.</p>
+      <main class="flex-1 w-full">
+        <section
+          class="bg-primary text-primary-content px-4 pt-28 pb-12 min-h-[min(42vh,380px)] flex flex-col justify-center"
+        >
+          <div class="container mx-auto max-w-7xl">
+            <h1 class="text-4xl font-bold mb-2 text-primary-content flex flex-wrap items-center gap-2">
+              Nossa Equipe
+              <i
+                data-lucide="users-round"
+                class="h-8 w-8 text-primary-content inline-block shrink-0"
+                aria-hidden="true"
+              ></i>
+            </h1>
+            <p class="text-lg opacity-90 mb-0 max-w-3xl">
+              Conheça as pessoas que fazem o trabalho da Associação Habacuque do Brasil acontecer — diretores, equipe técnica e voluntários que contribuem com seu tempo, dedicação e conhecimento para fortalecer nossas ações.
+            </p>
+          </div>
+        </section>
 
+        <div class="container mx-auto px-4 py-12 flex-1 w-full max-w-7xl">
         <!-- Diretoria -->
         <h2 class="text-2xl font-bold text-primary">Diretoria</h2>
         <div class="divider"></div>
@@ -232,6 +242,7 @@
               <a href="contato.html" class="btn btn-accent transition-all duration-150 hover:shadow-lg">Entre em Contato</a>
             </div>
           </div>
+        </div>
         </div>
       </main>
 

@@ -16,7 +16,7 @@ class SiteFooter extends HTMLElement {
           <h6 class="footer-title">Navegação</h6>
           <a href="${base}index.html" class="link link-hover">Início</a>
           <a href="${base}pages/sobre.html" class="link link-hover">Quem Somos</a>
-          <a href="${base}pages/projetos.html" class="link link-hover">Projetos</a>
+          <a href="${base}pages/projetos/olhar-brilhante.html" class="link link-hover">Projeto</a>
           <a href="${base}pages/nossa-equipe.html" class="link link-hover">Nossa Equipe</a>
         </nav>
         <nav>

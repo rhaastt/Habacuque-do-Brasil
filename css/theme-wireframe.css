@@ -98,6 +98,152 @@
   margin-left: 0.25rem;
 }
 
+/* Header com hero-overlay: transparente no topo, sólido após rolar */
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) {
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+  border-bottom-color: transparent;
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled {
+  background-color: var(--color-base-100);
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  color: var(--color-base-content);
+  border-bottom-color: transparent;
+}
+
+/* Só links do primeiro nível (não os do dropdown) */
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .menu.menu-horizontal > li > a {
+  color: #fff;
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .menu.menu-horizontal > li > details > summary {
+  color: #fff;
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .menu.menu-horizontal > li > a:hover {
+  color: rgb(255 255 255 / 0.85);
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .menu.menu-horizontal > li > details > summary:hover {
+  color: rgb(255 255 255 / 0.85);
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .menu.menu-horizontal > li > a.active {
+  color: #fff !important;
+  border-bottom-color: #fff;
+}
+
+/* Dropdown: vidro no topo (mesma lógica do header transparente) */
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .site-header-dropdown {
+  background-color: rgb(255 255 255 / 0.12) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgb(255 255 255 / 0.25);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15);
+  color: #fff;
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .site-header-dropdown a {
+  color: #fff !important;
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .site-header-dropdown a:hover {
+  color: rgb(255 255 255 / 0.92) !important;
+  background-color: rgb(255 255 255 / 0.1);
+  border-radius: var(--radius-box, 0.5rem);
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .site-header-dropdown a.active {
+  color: #fff !important;
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+}
+
+/* Dropdown: fundo sólido após scroll (alinhado ao header) */
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .site-header-dropdown {
+  background-color: var(--color-base-100) !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: 1px solid color-mix(in oklch, var(--color-base-300) 55%, transparent);
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  color: var(--color-base-content);
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .site-header-dropdown a {
+  color: var(--color-base-content) !important;
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .site-header-dropdown a:hover {
+  color: var(--color-primary) !important;
+  background-color: color-mix(in oklch, var(--color-primary) 10%, var(--color-base-100));
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .site-header-dropdown a.active {
+  color: var(--color-primary) !important;
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 2px;
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .site-header-brand {
+  color: #fff;
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .site-header-logo {
+  filter: brightness(0) invert(1);
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .site-header-home {
+  color: #fff;
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .site-header-menu-btn {
+  color: #fff;
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .site-header-home:hover,
+site-header[data-hero-overlay] .site-header-bar--overlay:not(.site-header--scrolled) .site-header-menu-btn:hover {
+  background-color: rgb(255 255 255 / 0.1);
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .menu.menu-horizontal > li > a,
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .menu.menu-horizontal > li > details > summary {
+  color: var(--color-base-content);
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .menu.menu-horizontal > li > a:hover {
+  color: color-mix(in oklch, var(--color-base-content) 85%, transparent);
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .menu.menu-horizontal > li > details > summary:hover {
+  color: color-mix(in oklch, var(--color-base-content) 85%, transparent);
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .site-header-brand {
+  color: var(--color-base-content);
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .site-header-logo {
+  filter: none;
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .site-header-home,
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .site-header-menu-btn {
+  color: var(--color-base-content);
+}
+
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .site-header-home:hover,
+site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .site-header-menu-btn:hover {
+  background-color: color-mix(in oklch, var(--color-base-300) 50%, var(--color-base-100));
+}
+
 /* Fundos levemente coloridos (fallback se Tailwind opacity não aplicar) */
 .bg-primary-subtle {
   background-color: color-mix(in oklch, var(--color-primary) 8%, var(--color-base-100));

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Associação Habacuque do Brasil — Olhar Brilhante</title>
+    <link href="../../css/reset.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="../../css/theme-wireframe.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../../components/site-header.js" defer></script>
+    <script src="../../components/site-sidebar.js" defer></script>
+    <script src="../../components/site-footer.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide && typeof window.lucide.createIcons === "function") {
+          window.lucide.createIcons();
+        }
+      });
+    </script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="drawer drawer-end">
+      <input id="nav-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col min-h-screen w-full min-w-0">
+        <site-header base="../../" current="projetos" hero-overlay></site-header>
+
+        <main class="flex-1 w-full">
+          <!-- Hero (fundo escuro para o header transparente) — mesmo padrão de pages/sobre.html -->
+          <section
+            class="bg-primary text-primary-content px-4 pt-28 pb-12 min-h-[min(50vh,420px)] flex flex-col justify-end"
+          >
+            <div class="container mx-auto max-w-7xl">
+              <h1 class="text-4xl font-bold mb-0 text-primary-content">Olhar Brilhante</h1>
+            </div>
+          </section>
+
+          
+
+          <section class="bg-base-200 py-16">
+            <div class="container mx-auto px-4 max-w-5xl">
+              <div
+                class="min-h-40 rounded-box border border-dashed border-base-300 bg-base-100/80"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </section>
+
+          <section class="container mx-auto px-4 py-12 max-w-4xl">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="../projetos.html" class="btn btn-primary">Conheça outros projetos</a>
+              <a href="../contato.html" class="btn btn-outline btn-primary">Fale com a equipe</a>
+            </div>
+          </section>
+        </main>
+
+        <site-footer base="../../"></site-footer>
+      </div>
+
+      <site-sidebar base="../../" current="projetos"></site-sidebar>
+    </div>
+  </body>
+</html>

@@ -25,26 +25,35 @@
   <div class="drawer drawer-end">
     <input id="nav-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col min-h-screen w-full min-w-0">
-      <site-header base="../" current="quero-apoiar"></site-header>
+      <site-header base="../" current="quero-apoiar" hero-overlay></site-header>
 
-      <main class="container mx-auto px-4 py-12 flex-1 w-full max-w-7xl">
+      <main class="flex-1 w-full">
         <!-- Hero -->
-        <section class="mb-6">
-          <h1 class="text-4xl font-bold text-primary mb-4">Quero Apoiar
-            <i
-                      data-lucide="heart-handshake"
-                      class="h-8 w-8 text-primary inline-block"
-                      aria-hidden="true"
-                    ></i>
-          </h1>
-          <p class="text-xl text-body-lg opacity-80 mb-8 max-w-3xl">
-            Sua contribuição vai além da doação financeira. Com tempo, parcerias, serviços ou divulgação, você fortalece o trabalho que realizamos com crianças, adolescentes e famílias em Guarulhos.
-          </p>
-          <a href="contato.html" class="btn btn-primary btn-lg transition-all duration-150 hover:shadow-lg">
-            Falar com a equipe
-          </a>
+        <section
+          class="bg-primary text-primary-content px-4 pt-28 pb-12 min-h-[min(42vh,380px)] flex flex-col justify-center"
+        >
+          <div class="container mx-auto max-w-7xl">
+            <h1 class="text-4xl font-bold mb-4 text-primary-content flex flex-wrap items-center gap-2">
+              Quero Apoiar
+              <i
+                data-lucide="heart-handshake"
+                class="h-8 w-8 text-primary-content inline-block shrink-0"
+                aria-hidden="true"
+              ></i>
+            </h1>
+            <p class="text-xl opacity-90 mb-8 max-w-3xl">
+              Sua contribuição vai além da doação financeira. Com tempo, parcerias, serviços ou divulgação, você fortalece o trabalho que realizamos com crianças, adolescentes e famílias em Guarulhos.
+            </p>
+            <a
+              href="contato.html"
+              class="btn btn-lg bg-primary-content text-primary border-0 hover:bg-primary-content/90 transition-all duration-150 hover:shadow-lg"
+            >
+              Falar com a equipe
+            </a>
+          </div>
         </section>
 
+        <div class="container mx-auto px-4 py-12 flex-1 w-full max-w-7xl">
         <!-- Como você pode apoiar -->
         <section class="py-12">
           <div class="max-w-6xl mx-auto px-4">
@@ -283,6 +292,7 @@
             Falar com a equipe
           </a>
         </section>
+        </div>
       </main>
 
       <site-footer base="../"></site-footer>

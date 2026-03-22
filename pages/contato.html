@@ -19,6 +19,25 @@
       if (window.lucide && typeof window.lucide.createIcons === 'function') {
         window.lucide.createIcons();
       }
+
+      document.querySelectorAll('.js-copy-phone').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          const value = btn.getAttribute('data-copy');
+          if (!value) return;
+          try {
+            await navigator.clipboard.writeText(value);
+            const row = btn.closest('.phone-row');
+            const fb = row && row.querySelector('.js-copy-feedback');
+            if (fb) {
+              fb.textContent = 'Copiado';
+              clearTimeout(btn._copyFeedbackTimer);
+              btn._copyFeedbackTimer = setTimeout(() => {
+                fb.textContent = '';
+              }, 2500);
+            }
+          } catch (_) {}
+        });
+      });
     });
   </script>
 </head>
@@ -47,19 +66,71 @@
             <p class="mb-6 text-body-lg">Estamos abertos a parcerias, voluntariado e iniciativas que contribuam para fortalecer o trabalho social desenvolvido no território de Maria Dirce e Pimentas.</p>
 
             <div class="flex flex-col gap-4">
-              <div class="flex items-center gap-4">
-                <div class="bg-primary/10 p-3 rounded-full">
+              <div class="flex items-start gap-4">
+                <div class="bg-primary/10 p-3 rounded-full shrink-0">
                   <i data-lucide="phone" class="h-6 w-6 text-primary" aria-hidden="true"></i>
                 </div>
-                <div>
+                <div class="min-w-0 space-y-4">
                   <p class="font-bold">Telefones e WhatsApp</p>
-                  <p class="opacity-70"><strong>WhatsApp ONG:</strong> 11 93952-4950;</p>
-                  <p class="opacity-70"><strong></strong>WhatsApp Cordenação:</strong>11 94085-4187</p>
-                  <p class="opacity-70">Atendimento institucional sob consulta</p>
+
+                  <div class="phone-row space-y-2">
+                    <p class="opacity-70 mb-0"><strong>Habacuque ONG</strong></p>
+                    <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+                      <span class="opacity-90 tabular-nums">(11) 93952-4950</span>
+                      <button
+                        type="button"
+                        class="btn btn-ghost btn-xs btn-square h-7 w-7 min-h-0 p-0 opacity-70 hover:opacity-100 focus:opacity-100 transition-opacity js-copy-phone"
+                        data-copy="+5511939524950"
+                        title="Copiar número"
+                        aria-label="Copiar número da Habacuque ONG"
+                      >
+                        <i data-lucide="copy" class="h-3.5 w-3.5" aria-hidden="true"></i>
+                      </button>
+                      <span class="js-copy-feedback text-xs text-success min-w-[3.5rem]" aria-live="polite"></span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                      <a
+                        href="https://wa.me/5511939524950"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline btn-primary btn-sm gap-2 normal-case shadow-sm hover:shadow-md transition-shadow"
+                      >
+                        <i data-lucide="message-circle" class="h-4 w-4 shrink-0" aria-hidden="true"></i>
+                        WhatsApp
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="phone-row space-y-2">
+                    <p class="opacity-70 mb-0"><strong>Coordenação</strong></p>
+                    <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+                      <span class="opacity-90 tabular-nums">(11) 94085-4187</span>
+                      <button
+                        type="button"
+                        class="btn btn-ghost btn-xs btn-square h-7 w-7 min-h-0 p-0 opacity-70 hover:opacity-100 focus:opacity-100 transition-opacity js-copy-phone"
+                        data-copy="+5511940854187"
+                        title="Copiar número"
+                        aria-label="Copiar número da Coordenação"
+                      >
+                        <i data-lucide="copy" class="h-3.5 w-3.5" aria-hidden="true"></i>
+                      </button>
+                      <span class="js-copy-feedback text-xs text-success min-w-[3.5rem]" aria-live="polite"></span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                      <a
+                        href="https://wa.me/5511940854187"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline btn-primary btn-sm gap-2 normal-case shadow-sm hover:shadow-md transition-shadow"
+                      >
+                        <i data-lucide="message-circle" class="h-4 w-4 shrink-0" aria-hidden="true"></i>
+                        WhatsApp
+                      </a>
+                    </div>
+                  </div>
+                  <p class="opacity-60 text-sm">Atendimento institucional sob consulta</p>
                 </div>
               </div>
-
-              
 
               <div class="flex items-center gap-4">
                 <div class="bg-primary/10 p-3 rounded-full">
@@ -67,7 +138,7 @@
                 </div>
                 <div>
                   <p class="font-bold">E-mail</p>
-                  <p class="opacity-70">onghabacuque@gmail.com</p>
+                <p class="opacity-70"><strong>Habacuque ONG: </strong><a href="mailto:onghabacuque@gmail.com" class="link link-hover ">onghabacuque@gmail.com</a></p>
                 </div>
               </div>
 

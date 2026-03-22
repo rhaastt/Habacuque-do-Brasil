@@ -3,12 +3,12 @@ class SiteFooter extends HTMLElement {
     const base = this.getAttribute("base") || "./";
 
     this.innerHTML = `
-      <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 text-xs leading-relaxed">
+      <footer class="footer sm:footer-horizontal bg-black text-white p-10 text-xs leading-relaxed">
 
         <!-- Marca -->
         <aside class="max-w-xs">
           <img 
-            src="${base}imagens/Logo-PRETO.svg" 
+            src="${base}imagens/Logo-BRANCO.svg" 
             alt="Logo da Associação Habacuque do Brasil" 
             class="w-20 h-20"
             loading="lazy"

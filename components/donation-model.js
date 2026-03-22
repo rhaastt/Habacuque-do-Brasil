@@ -28,25 +28,28 @@ class DonationModal extends HTMLElement {
             </li>
           </ol>
 
-          <div class="space-y-5">
-            <div>
-              <h4 class="font-semibold text-primary mb-2 text-sm uppercase tracking-wide">
-                Chave(s) PIX
-              </h4>
-              <p class="text-base text-base-content/70 bg-base-200 rounded-box p-3 leading-relaxed">
-                em atualização
-              </p>
-            </div>
-
-            <div>
+          <div>
               <h4 class="font-semibold text-primary mb-2 text-sm uppercase tracking-wide">
                 Dados bancários
               </h4>
               <p class="text-base text-base-content/70 bg-base-200 rounded-box p-3 leading-relaxed">
-                Banco: em atualização<br />
-                Agência: em atualização<br />
-                Conta: em atualização
+               <strong>Nome da Empresa:</strong> ASSOCIACAO HABACUQUE DO BRASIL
+               <br> <strong>CNPJ:</strong> 27.083.432/0001-60<br>
+               <strong>Banco:</strong> 403 - Cora SCFI<br />
+               <strong>Agência:</strong> 0001<br />
+               <strong>Conta:</strong> 6558757-1
               </p>
+            </div>
+
+          <div class="space-y-5">
+            <div>
+              <h4 class="font-semibold text-primary mt-2 mb-2 text-sm uppercase tracking-wide">
+                Chave(s) PIX
+              </h4>
+              <p class="text-base text-base-content/70 bg-base-200 rounded-box p-3 leading-relaxed"><strong>CNPJ:</strong>
+               27.083.432/0001-60
+              </p>
+              <button class="btn btn-primary btn-xs mt-2" data-copy-pix="27.083.432/0001-60">Copiar chave PIX</button>
             </div>
 
             <div>
@@ -54,8 +57,7 @@ class DonationModal extends HTMLElement {
                 QR Code PIX
               </h4>
               <div class="bg-base-200 rounded-box p-8 flex items-center justify-center text-sm text-base-content/60 border border-dashed border-base-300 text-center leading-relaxed">
-                QR code em atualização<br />
-                (imagem será adicionada em breve)
+                <img src="../imagens/qr-code.jpg" alt="QR Code PIX" class="w-full h-auto">
               </div>
             </div>
           </div>
@@ -76,6 +78,21 @@ class DonationModal extends HTMLElement {
     this.querySelector("h3").textContent = heading;
     const descEl = this.querySelector("[data-donation-description]");
     descEl.innerHTML = description;
+
+    this.querySelectorAll("[data-copy-pix]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const value = btn.dataset.copyPix;
+    
+        navigator.clipboard.writeText(value);
+    
+        const original = btn.textContent;
+        btn.textContent = "Copiado!";
+    
+        setTimeout(() => {
+          btn.textContent = original;
+        }, 2000);
+      });
+    });
   }
 }
 

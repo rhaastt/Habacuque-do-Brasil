@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Associação Habacuque do Brasil — Ações Comunitárias</title>
+    <link rel="icon" href="../../imagens/Logo-PRETO.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="../../imagens/Logo-BRANCO.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
     <link href="../../css/reset.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <link href="../../css/theme-wireframe.css" rel="stylesheet" />
@@ -24,36 +26,26 @@
     <div class="drawer drawer-end">
       <input id="nav-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex flex-col min-h-screen w-full min-w-0">
-        <site-header base="../../" current="projetos"></site-header>
+        <site-header base="../../" current="projetos" hero-overlay></site-header>
 
         <main class="flex-1 w-full">
-          <!-- Breadcrumbs -->
-          <div class="container mx-auto px-4 pt-4 max-w-7xl">
-            <div class="breadcrumbs text-sm">
-              <ul>
-                <li><a href="../../index.html">Início</a></li>
-                <li><a href="../projetos.html">Projetos</a></li>
-                <li>Ações Comunitárias</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Hero da página -->
+          <!-- Hero -->
           <section
-            class="hero min-h-[50vh]"
-            style="background-image: url('../../imagens/acoes-comunitarias.png');">
-            <div class="hero-overlay bg-neutral/70"></div>
-            <div class="hero-content text-center text-neutral-content px-4">
-              <div class="max-w-4xl mx-auto">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
-                  Ações Comunitárias e Apoio às Famílias
-                </h1>
-                <p class="mt-6 opacity-90 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
-                  A organização promove iniciativas solidárias voltadas ao fortalecimento das famílias que vivem nos bairros Maria Dirce, Pimentas e regiões de abrangência em Guarulhos. O trabalho busca fortalecer laços comunitários e criar uma rede de apoio no território.
-                </p>
-              </div>
+            class="relative min-h-[min(65vh,620px)] px-4 pt-28 pb-12 flex flex-col justify-end bg-cover bg-center bg-no-repeat"
+            style="background-image: url('../../imagens/acoes-comunitarias.png');"
+          >
+            <div class="absolute inset-0 bg-neutral/60"></div>
+            <div class="container mx-auto max-w-5xl relative z-10 text-primary-content">
+              <h1 class="text-4xl font-bold mb-0 text-primary-content">
+                Ações Comunitárias e Apoio às Famílias
+              </h1>
+              <p class="mt-4 max-w-2xl text-base md:text-lg text-primary-content/90 leading-relaxed">
+                A organização promove iniciativas solidárias voltadas ao fortalecimento das famílias que vivem nos bairros
+                Maria Dirce, Pimentas e regiões de abrangência em Guarulhos.
+              </p>
             </div>
           </section>
+
 
           <!-- Propósito das ações comunitárias -->
           <section class="container mx-auto px-4 py-12 max-w-5xl">

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Associação Habacuque do Brasil — Olhar Brilhante</title>
+    <link rel="icon" href="../../imagens/Logo-PRETO.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="../../imagens/Logo-BRANCO.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
+    <link href="../../css/reset.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="../../css/theme-wireframe.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../../components/site-header.js" defer></script>
+    <script src="../../components/site-sidebar.js" defer></script>
+    <script src="../../components/site-footer.js" defer></script>
+    <script src="../../components/scroll-carousel.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide && typeof window.lucide.createIcons === "function") {
+          window.lucide.createIcons();
+        }
+      });
+    </script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="drawer drawer-end">
+      <input id="nav-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col min-h-screen w-full min-w-0">
+        <site-header base="../../" current="projetos" hero-overlay></site-header>
+
+        <main class="flex-1 w-full">
+          <!-- Hero -->
+          <section
+          class="relative min-h-[min(65vh,620px)] px-4 pt-28 pb-12 flex flex-col justify-end bg-cover bg-center bg-no-repeat" style="background-image: url('../../imagens/acoes/banner-olharbrilhante1.webp');"
+          >
+          <div class="absolute inset-0 bg-neutral/60"></div>
+            <div class="container mx-auto max-w-5xl relative z-10 text-primary-content">
+              <h1 class="text-4xl font-bold mb-2 text-primary-content">Galeria de Fotos</h1>
+              <p class="text-xl opacity-90 mb-4 max-w-4xl text-primary-content">
+                Veja as fotos das nossas ações comunitárias e projetos.
+              </p>
+            </div>
+            
+          </section>
+        </main>
+
+        <site-footer base="../../"></site-footer>
+      </div>
+
+      <site-sidebar base="../../" current="projetos"></site-sidebar>
+    </div>
+  </body>
+</html>

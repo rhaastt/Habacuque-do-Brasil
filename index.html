@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Associação Habacuque do Brasil — Início</title>
+  <link rel="icon" href="imagens/Logo-PRETO.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
+  <link rel="icon" href="imagens/Logo-BRANCO.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
   <link href="css/reset.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <link href="css/theme-wireframe.css" rel="stylesheet" />
@@ -41,7 +43,7 @@
                 Fortalecendo crianças e famílias em Guarulhos
               </h1>
               <p class="mt-4 opacity-80 max-w-xl mx-auto text-base md:text-lg xl:text-xl">
-                Nossos projetos oferecem espaços seguros de convivência, aprendizagem e apoio às famílias,
+                Nossas ações oferecem espaços seguros de convivência, aprendizagem e apoio às famílias,
                 em parceria com a comunidade e o poder público.
               </p>
 
@@ -75,75 +77,144 @@
               <div class="stat-title">anos de atuação</div>
             </div>
           </div>
+          <div class="mx-auto w-full max-w-6xl">
+            <div
+              class="rounded-2xl border border-base-300/40 bg-gradient-to-r from-primary/15 via-primary/8 to-base-100/80 p-6 shadow-sm sm:p-8 md:flex md:flex-row md:items-center md:gap-10 md:p-10"
+            >
+              <!-- Número com destaque -->
+              <div class="relative mx-auto mb-4 flex shrink-0 justify-center md:mb-0 md:mx-0">
+                <div class="radial-progress text-primary font-bold text-xl" style="--value: 100; --size: 6rem">
+                  10
+                </div>
+                <div class="pointer-events-none absolute inset-0 -z-10 blur-2xl bg-primary/25 rounded-full"></div>
+              </div>
+              <!-- Conteúdo -->
+              <div class="min-w-0 flex-1 text-center md:text-left">
+                <p class="text-sm uppercase tracking-wide text-primary font-semibold mb-2">
+                  Uma década de impacto
+                </p>
+                <h3 class="text-2xl font-bold text-base-content mb-2">
+                  10 anos transformando vidas
+                </h3>
+                <p class="text-base-content/70 max-w-lg mx-auto md:mx-0">
+                  Uma trajetória contínua de cuidado, desenvolvimento e fortalecimento de crianças, famílias e da
+                  comunidade.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
+
+        
+      
         <!-- Nossos Projetos -->
         <section class="bg-base-100">
           <div class="container mx-auto px-4 py-16 max-w-7xl">
             <h2 class="text-3xl font-bold text-primary text-center mb-12">Nossos Projetos</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- SCFV -->
-            <div class="card bg-base-100 shadow-xl border border-base-300 transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+            <a
+              href="pages/projetos/olhar-brilhante.html"
+              aria-label="Saiba mais sobre o projeto Olhar Brilhante"
+              class="card block bg-base-100 shadow-xl border border-base-300 transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            >
               <figure>
                 <img
-                  src="imagens/scfv.png"
+                  src="imagens/acoes/banner-olharbrilhante1.webp"
                   alt="Crianças e adolescentes em atividade do SCFV"
-                  class="h-48 w-full object-cover"
+                  class="h-64 w-full object-cover"
                 />
               </figure>
               <div class="card-body gap-2">
                 <div class="flex items-center gap-3 mb-2">
                   <i data-lucide="users" class="h-8 w-8 text-primary shrink-0" aria-hidden="true"></i>
-                  <h3 class="card-title text-primary">SCFV</h3>
+                  <h3 class="card-title text-primary">Olhar Brilhante</h3>
                 </div>
                 <span class="badge badge-primary badge-sm mb-2">Convênio com a Prefeitura</span>
                 <p>Serviço de Convivência e Fortalecimento de Vínculos: atendimento socioeducativo para crianças e adolescentes com oficinas e momentos de convivência.</p>
                 <div class="card-actions justify-end mt-6">
-                  <a href="pages/projetos.html" class="btn btn-outline btn-primary btn-sm transition-all duration-150">Saiba mais</a>
+                  <span class="btn btn-primary btn-lg transition-all duration-150">Saiba mais</span>
                 </div>
               </div>
-            </div>
-            <!-- Atividades Socioeducativas -->
-            <div class="card bg-base-100 shadow-xl border border-base-300 transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
+            </a>
+            <!-- Atividades Comunitárias -->
+            <a
+              href="pages/projetos/acoes-comunitarias.html"
+              aria-label="Saiba mais sobre as atividades comunitárias"
+              class="card block bg-base-100 shadow-xl border border-base-300 transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            >
               <figure>
                 <img
-                  src="imagens/atividades-socioeducativas.png"
+                  src="imagens/acoes/banner-olharbrilhante1.webp"
                   alt="Oficina socioeducativa com crianças e adolescentes"
-                  class="h-48 w-full object-cover"
+                  class="h-64 w-full object-cover"
                 />
               </figure>
               <div class="card-body gap-2">
                 <div class="flex items-center gap-3 mb-2">
                   <i data-lucide="book-open" class="h-8 w-8 text-primary shrink-0" aria-hidden="true"></i>
-                  <h3 class="card-title text-primary">Atividades Socioeducativas</h3>
+                  <h3 class="card-title text-primary">Atividades Comunitárias</h3>
                 </div>
-                <p>Oficinas recreativas, esportivas e educativas voltadas ao desenvolvimento social, emocional e cultural das crianças e adolescentes atendidos.</p>
+                <span class="badge badge-primary badge-sm mb-2">Parceria com a Comunidade</span>
+                <p>Oficinas recreativas, esportivas e educativas voltadas ao desenvolvimento social, emocional e cultural das crianças e adolescentes atendidos. Participação da comunidade na organização e execução das atividades.</p>
                 <div class="card-actions justify-end mt-6">
-                  <a href="pages/projetos.html" class="btn btn-outline btn-primary btn-sm transition-all duration-150">Saiba mais</a>
+                  <span class="btn btn-primary btn-lg transition-all duration-150">Saiba mais</span>
                 </div>
               </div>
-            </div>
-            <!-- Ações Comunitárias -->
-            <div class="card bg-base-100 shadow-xl border border-base-300 transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
-              <figure>
-                <img
-                  src="imagens/acoes-comunitarias.png"
-                  alt="Ação comunitária com apoio às famílias do território"
-                  class="h-48 w-full object-cover"
-                />
-              </figure>
-              <div class="card-body gap-2">
-                <div class="flex items-center gap-3 mb-2">
-                  <i data-lucide="heart" class="h-8 w-8 text-primary shrink-0" aria-hidden="true"></i>
-                  <h3 class="card-title text-primary">Ações Comunitárias</h3>
-                </div>
-                <p>Ações solidárias, eventos comunitários e campanhas de arrecadação voltadas ao apoio das famílias e ao fortalecimento da rede de solidariedade.</p>
-                <div class="card-actions justify-end mt-6">
-                  <a href="pages/projetos.html" class="btn btn-outline btn-primary btn-sm transition-all duration-150">Saiba mais</a>
-                </div>
-              </div>
-            </div>
+            </a>
+            
           </div>
         </div>
+        </section>
+
+        <section class="bg-base-200 py-16 relative overflow-hidden">
+          <div class="container mx-auto px-4 max-w-5xl relative z-10">     
+            <div class="max-w-2xl">
+              <p class="text-sm uppercase tracking-wide text-base-content/60 mb-2">
+                Atuação da ONG
+              </p>       
+              <h2 class="text-3xl font-bold text-primary leading-tight mb-4">
+                Prevenir riscos sociais e fortalecer trajetórias de vida
+              </h2>
+                <p class="text-base-content/90 mb-6">
+                  A ONG Habacuque do Brasil atual no fortalecimento de vínculos familiares e comunitários,
+                  promovendo autoestima, pertencimento e desenvolvimento social.
+                </p>
+              <div class="grid sm:grid-cols-3 gap-4">
+                <div class="flex items-start gap-3">
+                  <i data-lucide="users" class="h-5 w-5 text-primary mt-1 shrink-0"></i>
+                  <p class="text-sm text-base-content">
+                    Desenvolver habilidades pessoais e sociais
+                  </p>
+                </div>
+        
+                <div class="flex items-start gap-3">
+                  <i data-lucide="users" class="h-5 w-5 text-primary mt-1 shrink-0"></i>
+                  <p class="text-sm text-base-content">
+                    Fortalecer vínculos familiares e comunitários
+                  </p>
+                </div>
+        
+                <div class="flex items-start gap-3">
+                  <i data-lucide="users" class="h-5 w-5 text-primary mt-1 shrink-0"></i>
+                  <p class="text-sm text-base-content">
+                    Construir identidade e pertencimento
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        
+          <!-- IMAGEM + DEGRADÊ -->
+          <div class="hidden lg:block absolute inset-y-0 right-0 w-1/2">
+            <img
+              src="../../imagens/doodle-kids1.jpg"
+              alt=""
+              class="h-full w-full object-cover"
+            />
+            <div class="pointer-events-none gradiente-linear absolute inset-0 z-[1]" aria-hidden="true"></div>
+          </div>
         </section>
 
         <!-- CTA -->

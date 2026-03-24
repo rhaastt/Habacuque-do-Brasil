@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Associação Habacuque do Brasil — Olhar Brilhante</title>
+    <link rel="icon" href="../../imagens/Logo-PRETO.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="../../imagens/Logo-BRANCO.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
     <link href="../../css/reset.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <link href="../../css/theme-wireframe.css" rel="stylesheet" />
@@ -12,6 +14,7 @@
     <script src="../../components/site-header.js" defer></script>
     <script src="../../components/site-sidebar.js" defer></script>
     <script src="../../components/site-footer.js" defer></script>
+    <script src="../../components/scroll-carousel.js" defer></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         if (window.lucide && typeof window.lucide.createIcons === "function") {
@@ -27,30 +30,446 @@
         <site-header base="../../" current="projetos" hero-overlay></site-header>
 
         <main class="flex-1 w-full">
-          <!-- Hero (fundo escuro para o header transparente) — mesmo padrão de pages/sobre.html -->
+          <!-- Hero -->
           <section
-            class="bg-primary text-primary-content px-4 pt-28 pb-12 min-h-[min(50vh,420px)] flex flex-col justify-end"
+          class="relative min-h-[min(65vh,620px)] px-4 pt-28 pb-12 flex flex-col justify-end bg-cover bg-center bg-no-repeat" style="background-image: url('../../imagens/acoes/banner-olharbrilhante1.webp');"
           >
-            <div class="container mx-auto max-w-7xl">
-              <h1 class="text-4xl font-bold mb-0 text-primary-content">Olhar Brilhante</h1>
+          <div class="absolute inset-0 bg-neutral/60"></div>
+            <div class="container mx-auto max-w-5xl relative z-10 text-primary-content">
+              <h1 class="text-4xl font-bold mb-2 text-primary-content">Olhar Brilhante</h1>
+              <p class="text-xl opacity-90 mb-4 max-w-4xl text-primary-content">
+                O Projeto Olhar Brilhante é uma iniciativa da Associação Habacuque do Brasil voltada ao desenvolvimento integral de crianças e adolescentes em situação de vulnerabilidade social.
+              </p>
+            </div>
+            
+          </section>
+
+          <section class="container mx-auto px-4 py-14 max-w-5xl">
+            <!-- Título institucional -->
+            <div class="max-w-3xl">
+              <p class="text-sm uppercase tracking-wide text-base-content/60 mb-2">
+                Visão geral do projeto
+              </p>
+          
+              <h2 class="text-3xl font-bold text-primary leading-tight mb-4">
+                Transformando vidas por meio da cultura e da convivência
+              </h2>
+          
+              <!-- Texto principal -->
+              <div class="prose prose-lg max-w-none text-base-content/90">
+                <p class="mb-4">
+                  O <strong>Projeto Olhar Brilhante</strong> é uma iniciativa da Associação Habacuque do Brasil voltada ao desenvolvimento integral de crianças e adolescentes em situação de vulnerabilidade social.
+                </p>
+          
+                <p class="mb-4">
+                  Através de atividades culturais e educativas, o projeto fortalece vínculos comunitários, promove o pertencimento e estimula o crescimento pessoal.
+                </p>
+
+                <p class="mb-4">O projeto oferece um ambiente seguro e estruturado onde crianças e adolescentes podem se desenvolver de forma integral, fortalecendo vínculos e ampliando suas perspectivas de futuro.</p>
+
+                <p class="mb-4">As atividades são realizadas em grupo, promovendo integração social e convivência comunitária, fortalecimento dos vínculos familiares e desenvolvimento do senso de pertencimento.</p>
+
+                <p class="mb-4">O projeto utiliza a cultura como ferramenta educativa, promovendo valores e ética (respeito, disciplina e colaboração), desenvolvimento cognitivo e expressão corporal, além de consciência crítica e cidadania.</p>
+
+                <p class="mb-4">Esse eixo está alinhado ao <strong>Serviço de Convivência e Fortalecimento de Vínculos (SCFV)</strong>, dentro do SUAS.</p>
+
+                <span class="badge badge-primary badge-sm mb-2">Convênio com a Prefeitura</span>
+                 <!-- Destaque emocional -->
+            
+              </div>
+
+             
+            </div>
+          
+            <!-- Pontos-chave (mais destacados e organizados) -->
+            <div class="mt-4 grid sm:grid-cols-3 gap-4 max-w-4xl">
+              <div class="flex items-start gap-3">
+                <i data-lucide="users" class="h-5 w-5 text-primary shrink-0 mt-1"></i>
+                <p class="text-sm font-medium text-base-content">
+                  Desenvolvimento integral
+                </p>
+              </div>
+          
+              <div class="flex items-start gap-3">
+                <i data-lucide="users" class="h-5 w-5 text-primary shrink-0 mt-1"></i>
+                <p class="text-sm font-medium text-base-content">
+                  Fortalecimento de vínculos
+                </p>
+              </div>
+          
+              <div class="flex items-start gap-3">
+                <i data-lucide="users" class="h-5 w-5 text-primary shrink-0 mt-1"></i>
+                <p class="text-sm font-medium text-base-content">
+                  Promoção do pertencimento
+                </p>
+              </div>
+            </div>
+            <div class="mt-8 border-t border-base-300"></div>
+            <div class="alert bg-primary/10 border border-primary/20">
+              <span class="text-sm">
+                Mais de 200 crianças já tiveram acesso a atividades educativas,
+                apoio social e fortalecimento de vínculos através do projeto.
+              </span>
             </div>
           </section>
 
+          <!-- ODS: grid 4×2 com scroll-carousel (hide-dots: bloco inteiro) -->
+          <section class="container mx-auto px-4 py-16 max-w-7xl">
+            <h2 class="text-2xl font-bold text-primary text-center mb-4">Alinhamento com os Objetivos de Desenvolvimento Sustentável</h2>
+            <p class="text-center max-w-2xl mx-auto mb-10 text-base-content/90">
+              O projeto contribui diretamente para os seguintes ODS:
+            </p>
+
+            <div class="w-full min-w-0 max-w-4xl mx-auto">
+              <scroll-carousel
+                skip-item-min-width
+                aria-label="Objetivos de Desenvolvimento Sustentável"
+                track-class="grid grid-rows-2 grid-flow-col gap-2 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-1"
+              >
+                <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                  <img src="../../imagens/SDG-1.svg" alt="ODS 1 — Erradicação da pobreza" class="w-full h-auto object-contain" />
+                </figure>
+                <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                  <img src="../../imagens/SDG-2.svg" alt="ODS 2 — Fome zero e agricultura sustentável" class="w-full h-auto object-contain" />
+                </figure>
+                <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                  <img src="../../imagens/SDG-3.svg" alt="ODS 3 — Saúde e bem-estar" class="w-full h-auto object-contain" />
+                </figure>
+                <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                  <img src="../../imagens/SDG-4.svg" alt="ODS 4 — Educação de qualidade" class="w-full h-auto object-contain" />
+                </figure>
+                <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                  <img src="../../imagens/SDG-10.svg" alt="ODS 10 — Redução das desigualdades" class="w-full h-auto object-contain" />
+                </figure>
+                <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                  <img src="../../imagens/SDG-11.svg" alt="ODS 11 — Cidades e comunidades sustentáveis" class="w-full h-auto object-contain" />
+                </figure>
+                <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                  <img src="../../imagens/SDG-16.svg" alt="ODS 16 — Paz, justiça e instituições eficazes" class="w-full h-auto object-contain" />
+                </figure>
+                <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                  <img src="../../imagens/SDG-17.svg" alt="ODS 17 — Parcerias e meios de implementação" class="w-full h-auto object-contain" />
+                </figure>
+              </scroll-carousel>
+            </div>
+            <div class="divider"></div>
+          </section>
+
+          <section class="container mx-auto px-4 py-20 max-w-7xl">
+
+            <!-- Cabeçalho mais forte -->
+            <div class="max-w-2xl mb-4">
+              <h2 class="text-3xl font-bold text-primary mb-4">
+                Como o projeto funciona
+              </h2>
+              <p class="text-base-content/70">
+                O projeto atua por meio de atividades coletivas e práticas socioeducativas,
+                promovendo desenvolvimento humano e fortalecimento comunitário.
+              </p>
+            </div>
+          
+            <div class="flex flex-col gap-10">
+              <!-- BLOCO 1 -->
+              <article class="group card bg-base-100 shadow-xl overflow-hidden lg:grid lg:grid-cols-2">
+                <!-- Texto -->
+                <div class="card-body lg:p-10 flex flex-col justify-center">
+                  <h3 class="text-2xl font-bold text-primary leading-tight">
+                    Convivência e Fortalecimento de Vínculos
+                  </h3>
+                  <p class="text-base-content/90">
+                    As atividades são realizadas em grupo, promovendo integração social,
+                    convivência comunitária e fortalecimento dos vínculos familiares.
+                  </p>
+                  <p class="text-base-content/70 text-sm">
+                    Alinhado ao Serviço de Convivência e Fortalecimento de Vínculos (SCFV),
+                    dentro do SUAS.
+                  </p>       
+                </div>
+
+                <!-- Imagem (mesma proporção/altura que o bloco 2) -->
+                <figure class="relative w-full aspect-[4/3] overflow-hidden">
+                  <img
+                    src="../../imagens/doodle-kids2.jpg"
+                    alt="Crianças em atividade coletiva"
+                    class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                </figure>
+              </article>
+          
+              <!-- BLOCO 2 -->
+              <article class="group card bg-base-100 shadow-xl overflow-hidden lg:grid lg:grid-cols-2">
+                <figure class="relative w-full aspect-[4/3] overflow-hidden order-1 lg:order-1">
+                  <img
+                    src="../../imagens/doodle-kids3.jpg"
+                    alt="Atividade socioeducativa"
+                    class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                </figure>
+                <!-- Texto -->
+                <div class="card-body lg:p-10 flex flex-col justify-center order-2">         
+                  <h3 class="text-2xl font-bold text-primary leading-tight">
+                    Desenvolvimento Socioeducativo
+                  </h3>
+          
+                  <p class="text-base-content/90">
+                    A cultura é utilizada como ferramenta educativa, promovendo valores,
+                    desenvolvimento cognitivo e expressão corporal.
+                  </p>
+          
+                  <p class="text-base-content/70 text-sm">
+                    Contribui para a formação integral e o desenvolvimento da cidadania.
+                  </p>         
+                </div>         
+              </article>
+            </div>
+          </section>
+
+          <!-- Impacto do projeto -->
+          <section class="container mx-auto px-4 py-16 max-w-5xl">
+            <!-- Título -->
+            <div class="mb-12">
+              <h2 class="text-3xl font-bold text-primary mb-4">
+                Impacto do Projeto
+              </h2>
+              <p class="text-base-content/80 max-w-2xl">
+                Geramos transformações reais na vida de crianças, adolescentes e famílias,
+                fortalecendo vínculos, ampliando oportunidades e promovendo desenvolvimento social.
+              </p>
+            </div>
+          
+            <!-- Indicadores -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              
+              <div class="p-6 bg-base-200 rounded-xl">
+                <p class="text-3xl font-bold text-primary">+100</p>
+                <p class="text-sm text-base-content/70 mt-2">Crianças atendidas</p>
+              </div>
+          
+              <div class="p-6 bg-base-200 rounded-xl">
+                <p class="text-3xl font-bold text-primary">+20</p>
+                <p class="text-sm text-base-content/70 mt-2">Famílias envolvidas</p>
+              </div>
+          
+              <div class="p-6 bg-base-200 rounded-xl">
+                <p class="text-3xl font-bold text-primary">80%</p>
+                <p class="text-sm text-base-content/70 mt-2">Melhora no desempenho escolar</p>
+              </div>
+          
+              <div class="p-6 bg-base-200 rounded-xl">
+                <p class="text-3xl font-bold text-primary">+10</p>
+                <p class="text-sm text-base-content/70 mt-2">Ações comunitárias realizadas</p>
+              </div>
+          
+            </div>
+          
+            <!-- Destaque qualitativo -->
+            <div class="mt-12 max-w-3xl">
+              <p class="text-base-content/80">
+                Mais do que números, o projeto promove autoestima, pertencimento e novas perspectivas
+                de futuro, fortalecendo a comunidade de forma contínua e sustentável.
+              </p>
+            </div>
+          
+            <div class="divider mt-12"></div>
+          </section>
+
+          <!-- Depoimentos -->
+          <section class="bg-base-200 py-16">
+            <div class="container mx-auto px-4 max-w-7xl">
+              <!-- Título -->
+              <div class="text-center mb-10">
+                <h2 class="text-2xl font-bold text-primary mb-3">
+                  Quem participa conta
+                </h2>
+                <p class="text-sm text-base-content/80 max-w-xl mx-auto">
+                  Depoimentos reais de participantes e famílias.
+                </p>
+              </div>
+              <!-- Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Card -->
+                <div class="bg-base-100 rounded-lg p-4 shadow-sm">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="/images/user1.jpg" alt="Participante" />
+                        </div>
+                      </div>
+                      <p class="text-sm font-semibold">@participante</p>
+                    </div>
+                    <i data-lucide="heart" class="w-4 h-4 text-error"></i>
+                  </div>
+                  <p class="text-sm text-base-content/80 leading-snug line-clamp-3">
+                    “Momento incrível!!! Você fez a diferença. Obrigada!”
+                  </p>
+                </div>
+                <!-- Card -->
+                <div class="bg-base-100 rounded-lg p-4 shadow-sm">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="/images/user2.jpg" alt="Responsável" />
+                        </div>
+                      </div>
+                      <p class="text-sm font-semibold">@familia</p>
+                    </div>
+                    <i data-lucide="heart" class="w-4 h-4 text-error"></i>
+                  </div>
+                  <p class="text-sm text-base-content/80 leading-snug line-clamp-3">
+                    “Mudou a vida do meu filho. Hoje ele tem mais confiança.”
+                  </p>
+                </div>
+                <!-- Card -->
+                <div class="bg-base-100 rounded-lg p-4 shadow-sm">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="/images/user3.jpg" alt="Aluno" />
+                        </div>
+                      </div>
+                      <p class="text-sm font-semibold">@aluno</p>
+                    </div>
+                    <i data-lucide="heart" class="w-4 h-4 text-error"></i>
+                  </div>          
+                  <p class="text-sm text-base-content/80 leading-snug line-clamp-3">
+                    “Aprendi muito aqui e fiz novos amigos.”
+                  </p>
+                </div>          
+                <!-- Card -->
+                <div class="bg-base-100 rounded-lg p-4 shadow-sm">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="/images/user4.jpg" alt="Comunidade" />
+                        </div>
+                      </div>
+                      <p class="text-sm font-semibold">@comunidade</p>
+                    </div>
+                    <i data-lucide="heart" class="w-4 h-4 text-error"></i>
+                  </div>
+          
+                  <p class="text-sm text-base-content/80 leading-snug line-clamp-3">
+                    “Projeto essencial para o bairro. Impacto real.”
+                  </p>
+                </div>         
+              </div>          
+            </div>
+            
+            <div class="container mt-4 mx-auto px-4 max-w-7xl">          
+              <!-- Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">          
+                <!-- Card -->
+                <div class="bg-base-100 rounded-lg p-4 shadow-sm">
+                  <div class="flex items-center justify-between mb-2">
+                    
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="/images/user1.jpg" alt="Participante" />
+                        </div>
+                      </div>
+                      <p class="text-sm font-semibold">@participante</p>
+                    </div>         
+                    <i data-lucide="heart" class="w-4 h-4 text-error"></i>
+                  </div>          
+                  <p class="text-sm text-base-content/80 leading-snug line-clamp-3">
+                    “Momento incrível!!! Você fez a diferença. Obrigada!”
+                  </p>
+                </div>         
+                <!-- Card -->
+                <div class="bg-base-100 rounded-lg p-4 shadow-sm">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="/images/user2.jpg" alt="Responsável" />
+                        </div>
+                      </div>
+                      <p class="text-sm font-semibold">@familia</p>
+                    </div>
+                    <i data-lucide="heart" class="w-4 h-4 text-error"></i>
+                  </div>         
+                  <p class="text-sm text-base-content/80 leading-snug line-clamp-3">
+                    “Mudou a vida do meu filho. Hoje ele tem mais confiança.”
+                  </p>
+                </div>
+         
+                <!-- Card -->
+                <div class="bg-base-100 rounded-lg p-4 shadow-sm">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="/images/user3.jpg" alt="Aluno" />
+                        </div>
+                      </div>
+                      <p class="text-sm font-semibold">@aluno</p>
+                    </div>
+                    <i data-lucide="heart" class="w-4 h-4 text-error"></i>
+                  </div>         
+                  <p class="text-sm text-base-content/80 leading-snug line-clamp-3">
+                    “Aprendi muito aqui e fiz novos amigos.”
+                  </p>
+                </div>          
+                <!-- Card -->
+                <div class="bg-base-100 rounded-lg p-4 shadow-sm">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="/images/user4.jpg" alt="Comunidade" />
+                        </div>
+                      </div>
+                      <p class="text-sm font-semibold">@comunidade</p>
+                    </div>
+                    <i data-lucide="heart" class="w-4 h-4 text-error"></i>
+                  </div>         
+                  <p class="text-sm text-base-content/80 leading-snug line-clamp-3">
+                    “Projeto essencial para o bairro. Impacto real.”
+                  </p>
+                </div>          
+              </div>         
+            </div>
+          </section>
           
 
-          <section class="bg-base-200 py-16">
-            <div class="container mx-auto px-4 max-w-5xl">
-              <div
-                class="min-h-40 rounded-box border border-dashed border-base-300 bg-base-100/80"
-                aria-hidden="true"
-              ></div>
+          <!-- Galeria (placeholder) -->
+          <section class="container mx-auto px-4 py-16 max-w-7xl">
+            <h2 class="text-2xl font-bold text-primary text-center mb-10">O projeto em imagens</h2>
+            <p class="text-center max-w-2xl mx-auto mb-12 text-base-content/90">
+              Imagens placeholder — substituir com fotos reais do projeto.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div class="aspect-[4/3] bg-base-200 rounded-box border-2 border-dashed border-base-300 flex items-center justify-center">
+                <span class="text-base-content/50 text-sm">Imagem — substituir</span>
+              </div>
+              <div class="aspect-[4/3] bg-base-200 rounded-box border-2 border-dashed border-base-300 flex items-center justify-center">
+                <span class="text-base-content/50 text-sm">Imagem — substituir</span>
+              </div>
+              <div class="aspect-[4/3] bg-base-200 rounded-box border-2 border-dashed border-base-300 flex items-center justify-center">
+                <span class="text-base-content/50 text-sm">Imagem — substituir</span>
+              </div>
             </div>
+            <div class="divider"></div>
           </section>
 
-          <section class="container mx-auto px-4 py-12 max-w-4xl">
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="../projetos.html" class="btn btn-primary">Conheça outros projetos</a>
-              <a href="../contato.html" class="btn btn-outline btn-primary">Fale com a equipe</a>
+          <!-- CTA final -->
+          <section class="bg-primary/5 py-16">
+            <div class="container mx-auto px-4 max-w-3xl text-center">
+              <h2 class="text-2xl font-bold text-primary mb-6">Participe</h2>
+              <p class="text-base-content/90 mb-8">
+                Você pode contribuir para transformar vidas: seja um apoiador, faça uma doação ou entre em contato para saber mais. Juntos, podemos ampliar o impacto do Projeto Olhar Brilhante.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="../quero-doar.html" class="btn btn-primary transition-all duration-150 hover:shadow-lg">Quero Doar</a>
+                <a href="../quero-apoiar.html" class="btn btn-outline btn-primary transition-all duration-150">Quero Apoiar</a>
+              </div>
             </div>
           </section>
         </main>

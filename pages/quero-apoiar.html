@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Associação Habacuque do Brasil — Quero Apoiar</title>
+  <link rel="icon" href="../imagens/Logo-PRETO.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
+  <link rel="icon" href="../imagens/Logo-BRANCO.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
   <link href="../css/reset.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <link href="../css/theme-wireframe.css" rel="stylesheet" />
@@ -27,29 +29,54 @@
     <div class="drawer-content flex flex-col min-h-screen w-full min-w-0">
       <site-header base="../" current="quero-apoiar" hero-overlay></site-header>
 
-      <main class="flex-1 w-full">
+      <main class="flex-1 w-full relative overflow-hidden">
+        <div class="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
+          <img
+            src="../imagens/SDG-3.svg"
+            alt=""
+            class="absolute top-24 left-2 w-16 opacity-15 rotate-[-12deg] hidden md:block"
+          />
+          <img
+            src="../imagens/SDG-4.svg"
+            alt=""
+            class="absolute top-[28rem] right-3 w-20 opacity-10 rotate-[10deg]"
+          />
+          <img
+            src="../imagens/SDG-10.svg"
+            alt=""
+            class="absolute bottom-[22rem] left-4 w-16 opacity-10 rotate-[6deg] hidden lg:block"
+          />
+          <img
+            src="../imagens/SDG-16.svg"
+            alt=""
+            class="absolute bottom-24 right-6 w-20 opacity-10 rotate-[-8deg] hidden md:block"
+          />
+        </div>
+
+        <div class="relative z-10">
         <!-- Hero -->
         <section
-          class="bg-primary text-primary-content px-4 pt-28 pb-12 min-h-[min(42vh,380px)] flex flex-col justify-center"
+        class="relative min-h-[min(65vh,620px)] px-4 pt-28 pb-12 flex flex-col justify-end overflow-hidden"
         >
-          <div class="container mx-auto max-w-7xl">
-            <h1 class="text-4xl font-bold mb-4 text-primary-content flex flex-wrap items-center gap-2">
+          <div class="absolute inset-0 -z-10">
+            <div class="hero-bg hero-apoio-bg-1"></div>
+            <div class="hero-bg hero-apoio-bg-2"></div>
+            <div class="hero-bg hero-apoio-bg-3"></div>
+            <div class="hero-bg hero-apoio-bg-4"></div>
+            <div class="absolute inset-0 bg-neutral/60"></div>
+          </div>
+          <div class="container relative z-10 mx-auto max-w-7xl">
+            <h1 class="text-4xl font-bold mb-0 text-primary-content [text-shadow:0_2px_8px_rgb(0_0_0_/_0.80)]">
               Quero Apoiar
               <i
                 data-lucide="heart-handshake"
-                class="h-8 w-8 text-primary-content inline-block shrink-0"
+                class="h-8 w-8 text-primary-content inline-block shrink-0 [filter:drop-shadow(0_2px_6px_rgb(0_0_0_/_0.80))]"
                 aria-hidden="true"
               ></i>
             </h1>
-            <p class="text-xl opacity-90 mb-8 max-w-3xl">
+            <p class="text-xl opacity-90 mb-4 max-w-3xl text-primary-content [text-shadow:0_2px_8px_rgb(0_0_0_/_0.80)]">
               Sua contribuição vai além da doação financeira. Com tempo, parcerias, serviços ou divulgação, você fortalece o trabalho que realizamos com crianças, adolescentes e famílias em Guarulhos.
             </p>
-            <a
-              href="contato.html"
-              class="btn btn-lg bg-primary-content text-primary border-0 hover:bg-primary-content/90 transition-all duration-150 hover:shadow-lg"
-            >
-              Falar com a equipe
-            </a>
           </div>
         </section>
 
@@ -292,6 +319,7 @@
             Falar com a equipe
           </a>
         </section>
+        </div>
         </div>
       </main>
 

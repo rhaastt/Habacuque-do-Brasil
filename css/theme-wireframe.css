@@ -68,6 +68,16 @@
   --erc: 255 255 255;
 }
 
+/* scroll-carousel: custom element precisa de largura limitada para overflow-x funcionar */
+scroll-carousel {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+scroll-carousel [role="region"] {
+  min-width: 0;
+}
+
 /* Utilitários para botões e interações */
 .btn,
 .btn-primary,
@@ -250,6 +260,106 @@ site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .
 }
 .bg-primary-light {
   background-color: color-mix(in oklch, var(--color-primary) 12%, var(--color-base-100));
+}
+
+.gradiente-linear {
+  background: linear-gradient(
+      to left,
+      transparent 0%,
+      color-mix(in oklch, var(--color-base-200) 30%, transparent) 60%,
+      var(--color-base-200) 100%
+    );
+}
+
+/* Hero com rotação automática de fundo (Quero Doar) */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  opacity: 0;
+}
+
+.hero-donation-bg-1 {
+  background-image: url("../imagens/kids/banner-doacao1.webp");
+  opacity: 1;
+}
+
+.hero-donation-bg-2 {
+  background-image: url("../imagens/kids/banner-doacao2.webp");
+  animation: hero-donation-fade-2 18s infinite;
+}
+
+.hero-donation-bg-3 {
+  background-image: url("../imagens/kids/banner-doacao3.webp");
+  animation: hero-donation-fade-3 18s infinite;
+}
+.hero-donation-bg-4 {
+  background-image: url("../imagens/kids/banner-doacao4.webp");
+  animation: hero-donation-fade-3 18s infinite;
+}
+
+.hero-apoio-bg-1 {
+  background-image: url("../imagens/kids/banner-apoio1.webp");
+  opacity: 1;
+}
+
+.hero-apoio-bg-2 {
+  background-image: url("../imagens/kids/banner-apoio2.webp");
+  animation: hero-donation-fade-2 18s infinite;
+}
+
+.hero-apoio-bg-3 {
+  background-image: url("../imagens/kids/banner-apoio3.webp");
+  animation: hero-donation-fade-3 18s infinite;
+}
+
+.hero-apoio-bg-4 {
+  background-image: url("../imagens/kids/banner-apoio4.webp");
+  animation: hero-donation-fade-3 18s infinite;
+}
+
+
+@media (min-width: 768px) {
+  .hero-bg {
+    background-position: 50% 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-bg {
+    background-position: top;
+  }
+}
+
+@keyframes hero-donation-fade-2 {
+  0%,
+  27% {
+    opacity: 0;
+  }
+  33%,
+  60% {
+    opacity: 1;
+  }
+  66%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hero-donation-fade-3 {
+  0%,
+  60% {
+    opacity: 0;
+  }
+  66%,
+  93% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Tipografia: tamanho-base aumentado em desktops para melhorar legibilidade */

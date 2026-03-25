@@ -29,7 +29,23 @@
       <!-- Navbar -->
       <site-header base="./" current="inicio" hero-overlay></site-header>
 
-      <main class="flex-1 w-full">
+      <main class="isolate flex-1 w-full relative overflow-x-hidden">
+        <!-- Decoração: atrás de todo o conteúdo (irmão com z-10 abaixo) -->
+        <!-- Decoração: só na parte inferior da página (evita sobrepor Impacto / cartão 10 anos) -->
+        <div class="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
+          <img
+            src="imagens/doodles/stick-1.webp"
+            alt=""
+            class="absolute bottom-48 left-2 w-44 max-w-[40vw]  rotate-[6deg] hidden lg:block"
+          />
+          <img
+            src="imagens/doodles/stick-2.webp"
+            alt=""
+            class="absolute bottom-32 right-6 w-44 max-w-[40vw]  rotate-[-8deg] hidden md:block"
+          />
+        </div>
+
+        <div class="relative z-10">
         <!-- Hero -->
         <!-- HERO + BANNER -->
         <section
@@ -58,6 +74,7 @@
             </div>
           </div>
         </section>
+       
 
         <!-- IMPACTO SOCIAL -->
         <section class="px-4 -mt-6 md:-mt-10 relative z-10 max-w-6xl mx-auto">
@@ -77,9 +94,9 @@
               <div class="stat-title">anos de atuação</div>
             </div>
           </div>
-          <div class="mx-auto w-full max-w-6xl">
+          <div class="mx-auto w-full max-w-6xl ">
             <div
-              class="rounded-2xl border border-base-300/40 bg-gradient-to-r from-primary/15 via-primary/8 to-base-100/80 p-6 shadow-sm sm:p-8 md:flex md:flex-row md:items-center md:gap-10 md:p-10"
+              class="rounded-2xl bg-base-100 p-6 shadow-sm ring-primary/10 sm:p-8 md:flex md:flex-row md:items-center md:gap-10 md:p-10"
             >
               <!-- Número com destaque -->
               <div class="relative mx-auto mb-4 flex shrink-0 justify-center md:mb-0 md:mx-0">
@@ -209,7 +226,7 @@
           <!-- IMAGEM + DEGRADÊ -->
           <div class="hidden lg:block absolute inset-y-0 right-0 w-1/2">
             <img
-              src="../../imagens/doodle-kids1.jpg"
+              src="imagens/doodle-kids1.jpg"
               alt=""
               class="h-full w-full object-cover"
             />
@@ -256,6 +273,7 @@
             </a>
           </div>
         </section>
+        </div>
       </main>
 
       <site-footer base="./"></site-footer>

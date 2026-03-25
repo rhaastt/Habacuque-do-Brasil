@@ -28,7 +28,30 @@
     <div class="drawer-content flex flex-col min-h-screen w-full min-w-0">
       <site-header base="../" current="nossa-equipe" hero-overlay></site-header>
 
-      <main class="flex-1 w-full">
+      <main class=" flex-1 w-full relative overflow-hidden">
+        <div class="pointer-events-none absolute inset-0 z-10" aria-hidden="true">
+          <img
+            src="imagens/doodles/stick-3.webp"
+            alt=""
+            class="absolute top-[56rem] left-2 w-96 opacity-40 hidden md:block"
+          />
+          <img
+            src="imagens/doodles/stick-2.webp"
+            alt=""
+            class="absolute top-[48rem] right-3 w-96 opacity-40 rotate-[10deg]"
+          />
+          <img
+            src="imagens/doodles/stick-1.webp"
+            alt=""
+            class="absolute bottom-[34rem] left-1 w-96 opacity-40 rotate-[6deg] hidden lg:block"
+          />
+          <img
+            src="imagens/doodles/stick-2.webp"
+            alt=""
+            class="absolute bottom-[34rem] right-6 w-96 opacity-40 rotate-[-8deg] hidden md:block"
+          />
+        </div>
+
         <section
           class="bg-primary text-primary-content px-4 pt-28 pb-12 min-h-[min(42vh,380px)] flex flex-col justify-center"
         >
@@ -54,12 +77,16 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar">
-                <div class="w-16 rounded-full">
-                  <img src="../imagens/equipe/lilian-regina-dos-santos.jpg" alt="Lilian Regina dos Santos" />
+              <div class="avatar shrink-0">
+                <div class="h-16 w-16 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-famale1.webp"
+                    alt="Lilian Regina dos Santos"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="card-title">Lilian Regina dos Santos</h3>
                 <p class="text-sm opacity-70">Presidente e fundadora da Associação Habacuque do Brasil.</p>
               </div>
@@ -67,12 +94,16 @@
           </div>
           <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar placeholder">
-                <div class="bg-primary text-primary-content w-16 rounded-full">
-                  <span class="text-xl">AS</span>
+              <div class="avatar shrink-0">
+                <div class="h-16 w-16 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-male1.webp"
+                    alt="Antonio Brandino dos Santos"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="card-title">Antonio Brandino dos Santos</h3>
                 <p class="text-sm opacity-70">Coordenador e fundador da instituição.</p>
               </div>
@@ -86,12 +117,16 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar placeholder">
-                <div class="bg-secondary text-secondary-content w-14 rounded-full">
-                  <span class="text-lg">EM</span>
+              <div class="avatar shrink-0">
+                <div class="h-14 w-14 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-famale2.webp"
+                    alt="Nilsa, voluntária da Associação Habacuque"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="font-bold">Elisangela Maria Mota Machado</h3>
                 <p class="text-sm opacity-70">Assistente Social</p>
               </div>
@@ -99,12 +134,16 @@
           </div>
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar placeholder">
-                <div class="bg-secondary text-secondary-content w-14 rounded-full">
-                  <span class="text-lg">TO</span>
+              <div class="avatar shrink-0">
+                <div class="h-14 w-14 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-famale2.webp"
+                    alt="Nilsa, voluntária da Associação Habacuque"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="font-bold">Talita Malta Oliveira</h3>
                 <p class="text-sm opacity-70">Psicóloga Social</p>
               </div>
@@ -112,12 +151,16 @@
           </div>
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar placeholder">
-                <div class="bg-secondary text-secondary-content w-14 rounded-full">
-                  <span class="text-lg">KS</span>
+              <div class="avatar shrink-0">
+                <div class="h-14 w-14 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-famale1.webp"
+                    alt="Nilsa, voluntária da Associação Habacuque"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="font-bold">Karen de Jesus Santos</h3>
                 <p class="text-sm opacity-70">Educadora Social</p>
               </div>
@@ -125,12 +168,16 @@
           </div>
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar placeholder">
-                <div class="bg-secondary text-secondary-content w-14 rounded-full">
-                  <span class="text-lg">CS</span>
+              <div class="avatar shrink-0">
+                <div class="h-14 w-14 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-famale1.webp"
+                    alt="Nilsa, voluntária da Associação Habacuque"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="font-bold">Cleusa Santos Sant'ana</h3>
                 <p class="text-sm opacity-70">Equipe técnica</p>
               </div>
@@ -138,12 +185,16 @@
           </div>
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar placeholder">
-                <div class="bg-secondary text-secondary-content w-14 rounded-full">
-                  <span class="text-lg">AO</span>
+              <div class="avatar shrink-0">
+                <div class="h-14 w-14 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-famale2.webp"
+                    alt="Nilsa, voluntária da Associação Habacuque"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="font-bold">Aline Oliveira Santos</h3>
                 <p class="text-sm opacity-70">Assistente Administrativa</p>
               </div>
@@ -157,12 +208,16 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 bg-base-200 rounded-box p-6">
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar">
-                <div class="w-14 rounded-full">
-                  <img src="../imagens/voluntarios/nilsa.jpg" alt="Nilsa, voluntária da Associação Habacuque" />
+              <div class="avatar shrink-0">
+                <div class="h-14 w-14 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-famale2.webp"
+                    alt="Nilsa, voluntária da Associação Habacuque"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="font-bold">Nilsa</h3>
                 <p class="text-sm opacity-70">Apoio na cozinha e na organização dos ambientes</p>
               </div>
@@ -170,12 +225,16 @@
           </div>
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar placeholder">
-                <div class="bg-accent text-accent-content w-14 rounded-full">
-                  <span class="text-lg">NS</span>
+              <div class="avatar shrink-0">
+                <div class="h-14 w-14 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-male1.webp"
+                    alt="Nilsa, voluntária da Associação Habacuque"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="font-bold">Nilson Silva</h3>
                 <p class="text-sm opacity-70">Educador Social Voluntário</p>
               </div>
@@ -183,12 +242,16 @@
           </div>
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar placeholder">
-                <div class="bg-accent text-accent-content w-14 rounded-full">
-                  <span class="text-lg">JA</span>
+              <div class="avatar shrink-0">
+                <div class="h-14 w-14 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-male2.webp"
+                    alt="Nilsa, voluntária da Associação Habacuque"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="font-bold">Jackson</h3>
                 <p class="text-sm opacity-70">Oficineiro Voluntário</p>
               </div>
@@ -196,12 +259,16 @@
           </div>
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar placeholder">
-                <div class="bg-accent text-accent-content w-14 rounded-full">
-                  <span class="text-lg">PH</span>
+              <div class="avatar shrink-0">
+                <div class="h-14 w-14 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-male2.webp"
+                    alt="Nilsa, voluntária da Associação Habacuque"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="font-bold">Paulo Henrique de Souza Barroso</h3>
                 <p class="text-sm opacity-70">Psicólogo Voluntário</p>
               </div>
@@ -209,12 +276,16 @@
           </div>
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar placeholder">
-                <div class="bg-accent text-accent-content w-14 rounded-full">
-                  <span class="text-lg">RA</span>
+              <div class="avatar shrink-0">
+                <div class="h-14 w-14 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-famale2.webp"
+                    alt="Nilsa, voluntária da Associação Habacuque"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="font-bold">Railda</h3>
                 <p class="text-sm opacity-70">Educadora Social Voluntária</p>
               </div>
@@ -222,12 +293,16 @@
           </div>
           <div class="card bg-base-100 shadow-lg transition-all duration-150 hover:shadow-xl hover:-translate-y-0.5">
             <div class="card-body flex-row items-center gap-4">
-              <div class="avatar placeholder">
-                <div class="bg-accent text-accent-content w-14 rounded-full">
-                  <span class="text-lg">AD</span>
+              <div class="avatar shrink-0">
+                <div class="h-14 w-14 overflow-hidden rounded-full">
+                  <img
+                    src="../imagens/avatares-equipe/avatar-famale1.webp"
+                    alt="Nilsa, voluntária da Associação Habacuque"
+                    class="h-full w-full object-cover"
+                  />
                 </div>
               </div>
-              <div>
+              <div class="min-w-0 flex-1">
                 <h3 class="font-bold">Adenilda</h3>
                 <p class="text-sm opacity-70">Voluntária da cozinha</p>
               </div>

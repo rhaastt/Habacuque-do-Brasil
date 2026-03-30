@@ -18,7 +18,7 @@ class SiteSidebar extends HTMLElement {
           <details ${isOpenQuemSomos ? "open" : ""}>
             <summary>Quem Somos</summary>
             <ul>
-              <li><a href="${base}pages/sobre.html" class="${isActive("sobre")}">Sobre</a></li>
+              <li><a href="${base}pages/sobre.html" class="${isActive("sobre")}">Nossa História</a></li>
               <li><a href="${base}pages/nossa-equipe.html" class="${isActive("nossa-equipe")}">Nossa Equipe</a></li>
             </ul>
           </details>

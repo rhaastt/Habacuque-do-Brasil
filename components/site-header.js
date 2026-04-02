@@ -38,7 +38,7 @@ class SiteHeader extends HTMLElement {
           <details>
             <summary>Quem Somos</summary>
             <ul class="site-header-dropdown p-2 rounded-box w-56 z-[60] shadow-lg transition-all duration-300 ease-out bg-base-100 text-base-content">
-              <li><a href="${base}pages/sobre.html" class="${isActive("sobre")}">Sobre</a></li>
+              <li><a href="${base}pages/sobre.html" class="${isActive("sobre")}">Nossa História</a></li>
               <li><a href="${base}pages/nossa-equipe.html" class="${isActive("nossa-equipe")}">Nossa Equipe</a></li>
             </ul>
           </details>

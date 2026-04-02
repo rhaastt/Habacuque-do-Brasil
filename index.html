@@ -14,6 +14,7 @@
   <script src="components/site-header.js" defer></script>
   <script src="components/site-sidebar.js" defer></script>
   <script src="components/site-footer.js" defer></script>
+  <script src="components/scroll-carousel.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       if (window.lucide && typeof window.lucide.createIcons === 'function') {
@@ -29,19 +30,28 @@
       <!-- Navbar -->
       <site-header base="./" current="inicio" hero-overlay></site-header>
 
-      <main class="isolate flex-1 w-full relative overflow-x-hidden">
-        <!-- Decoração: atrás de todo o conteúdo (irmão com z-10 abaixo) -->
-        <!-- Decoração: só na parte inferior da página (evita sobrepor Impacto / cartão 10 anos) -->
-        <div class="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
+      <main class="flex-1 w-full">
+        <!-- Stickers -->
+        <div class="pointer-events-none absolute inset-0 z-10" aria-hidden="true">
           <img
             src="imagens/doodles/stick-1.webp"
             alt=""
-            class="absolute bottom-48 left-2 w-44 max-w-[40vw]  rotate-[6deg] hidden lg:block"
+            class="absolute top-[58rem] left-1 w-60 opacity-40 rotate-[6deg] hidden lg:block"
           />
           <img
             src="imagens/doodles/stick-2.webp"
             alt=""
-            class="absolute bottom-32 right-6 w-44 max-w-[40vw]  rotate-[-8deg] hidden md:block"
+            class="absolute top-[54rem] right-6 w-96 opacity-40 rotate-[-8deg] hidden md:block"
+          />
+          <img
+            src="imagens/doodles/stick-1.webp"
+            alt=""
+            class="absolute bottom-[44rem] left-1 w-96 opacity-40 rotate-[6deg] hidden lg:block"
+          />
+          <img
+            src="imagens/doodles/stick-2.webp"
+            alt=""
+            class="absolute bottom-[44rem] right-6 w-96 opacity-40 rotate-[-8deg] hidden md:block"
           />
         </div>
 
@@ -76,8 +86,11 @@
         </section>
        
 
+        
+        </section>
+        </div>
         <!-- IMPACTO SOCIAL -->
-        <section class="px-4 -mt-6 md:-mt-10 relative z-10 max-w-6xl mx-auto">
+        <section class="container mx-auto px-4 md:-mt-10 relative max-w-6xl">
           <div class="stats stats-vertical lg:stats-horizontal shadow mx-auto w-full bg-base-100 p-4 md:p-6 gap-4 lg:gap-0 lg:divide-x divide-base-300">
             <div class="stat text-center">
               <div class="stat-value text-primary">+200</div>
@@ -122,10 +135,8 @@
           </div>
         </section>
 
-        
-      
         <!-- Nossos Projetos -->
-        <section class="bg-base-100">
+        <section class="bg-base-100 z-12">
           <div class="container mx-auto px-4 py-16 max-w-7xl">
             <h2 class="text-3xl font-bold text-primary text-center mb-12">Nossos Projetos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -226,12 +237,54 @@
           <!-- IMAGEM + DEGRADÊ -->
           <div class="hidden lg:block absolute inset-y-0 right-0 w-1/2">
             <img
-              src="imagens/doodle-kids1.jpg"
+              src="imagens/kids/grafite.webp"
               alt=""
               class="h-full w-full object-cover"
             />
             <div class="pointer-events-none gradiente-linear absolute inset-0 z-[1]" aria-hidden="true"></div>
           </div>
+        </section>
+
+        <!-- ODS: grid 4×2 com scroll-carousel (hide-dots: bloco inteiro) -->
+        <section class="container mx-auto px-4 py-16 max-w-7xl">
+          <h2 class="text-2xl font-bold text-primary text-center mb-4">Alinhamento com os Objetivos de Desenvolvimento Sustentável</h2>
+          <p class="text-center max-w-2xl mx-auto mb-10 text-base-content/90">
+            O projeto contribui diretamente para os seguintes ODS:
+          </p>
+
+          <div class="w-full min-w-0 max-w-4xl mx-auto">
+            <scroll-carousel
+              skip-item-min-width
+              aria-label="Objetivos de Desenvolvimento Sustentável"
+              track-class="grid grid-rows-2 grid-flow-col gap-2 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-1"
+            >
+              <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                <img src="imagens/SDG-1.svg" alt="ODS 1 — Erradicação da pobreza" class="w-full h-auto object-contain" />
+              </figure>
+              <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                <img src="imagens/SDG-2.svg" alt="ODS 2 — Fome zero e agricultura sustentável" class="w-full h-auto object-contain" />
+              </figure>
+              <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                <img src="imagens/SDG-3.svg" alt="ODS 3 — Saúde e bem-estar" class="w-full h-auto object-contain" />
+              </figure>
+              <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                <img src="imagens/SDG-4.svg" alt="ODS 4 — Educação de qualidade" class="w-full h-auto object-contain" />
+              </figure>
+              <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                <img src="imagens/SDG-10.svg" alt="ODS 10 — Redução das desigualdades" class="w-full h-auto object-contain" />
+              </figure>
+              <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                <img src="imagens/SDG-11.svg" alt="ODS 11 — Cidades e comunidades sustentáveis" class="w-full h-auto object-contain" />
+              </figure>
+              <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                <img src="imagens/SDG-16.svg" alt="ODS 16 — Paz, justiça e instituições eficazes" class="w-full h-auto object-contain" />
+              </figure>
+              <figure class="flex shrink-0 w-[clamp(140px,20vw,240px)] snap-start items-center justify-center p-1">
+                <img src="imagens/SDG-17.svg" alt="ODS 17 — Parcerias e meios de implementação" class="w-full h-auto object-contain" />
+              </figure>
+            </scroll-carousel>
+          </div>
+          <div class="divider"></div>
         </section>
 
         <!-- CTA -->
@@ -272,8 +325,6 @@
               Abrir no Google Maps
             </a>
           </div>
-        </section>
-        </div>
       </main>
 
       <site-footer base="./"></site-footer>

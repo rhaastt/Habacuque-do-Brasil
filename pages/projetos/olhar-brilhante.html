@@ -30,48 +30,47 @@
         <site-header base="../../" current="projetos" hero-overlay></site-header>
 
         <main class="isolate flex-1 w-full relative overflow-hidden">
-          <div class="pointer-events-none absolute inset-0 z-10" aria-hidden="true">
+          <!-- Stickers -->
+          <div class="pointer-events-none absolute inset-0 z-11 mx-auto w-full max-w-[min(100%,90rem)]" aria-hidden="true">
             <img
-              src="../imagens/doodles/stick-1.webp"
+              src="../../imagens/doodles/stick-1.webp"
               alt=""
-              class="absolute top-[24rem] left-2 w-96 opacity-40 hidden md:block"
+              class="absolute top-[74rem] left-2 w-96 opacity-40 hidden md:block"
             />
             <img
-              src="../imagens/doodles/stick-2.webp"
+              src="../../imagens/doodles/stick-2.webp"
               alt=""
-              class="absolute top-[28rem] right-3 w-96 opacity-40 rotate-[10deg]"
+              class="absolute top-[34rem] right-3 w-96 opacity-40 rotate-[10deg]"
             />
             <img
-              src="../imagens/doodles/stick-3.webp"
+              src="../../imagens/doodles/stick-3.webp"
               alt=""
-              class="absolute bottom-[22rem] left-4 w-96 opacity-40 rotate-[6deg] hidden lg:block"
+              class="absolute bottom-24 left-4 w-96 opacity-40 rotate-[6deg] hidden lg:block"
             />
             <img
-              src="../imagens/doodles/stick-2.webp"
+              src="../../imagens/doodles/stick-2.webp"
               alt=""
               class="absolute bottom-24 right-6 w-96 opacity-40 rotate-[-8deg] hidden md:block"
             />
-            <img
-            src="../imagens/doodles/stick-1.webp"
-            alt=""
-            class="absolute bottom-22 left-2 w-96 opacity-40 hidden md:block"
-          />
           </div>
           <!-- Hero -->
           <section
-          class="relative min-h-[min(65vh,620px)] px-4 pt-28 pb-12 flex flex-col justify-end bg-cover bg-center bg-no-repeat" style="background-image: url('../../imagens/acoes/banner-olharbrilhante1.webp');"
+          class="relative min-h-[min(65vh,620px)] pt-28 pb-12 flex flex-col justify-end bg-cover bg-center bg-no-repeat" style="background-image: url('../../imagens/acoes/banner-olharbrilhante1.webp');"
           >
           <div class="absolute inset-0 bg-neutral/60"></div>
-            <div class="container mx-auto max-w-5xl relative z-10 text-primary-content">
+            <div class="section-wide relative z-10 text-primary-content">
+            <div class="max-w-5xl mx-auto w-full">
               <h1 class="text-4xl font-bold mb-2 text-primary-content">Olhar Brilhante</h1>
               <p class="text-xl opacity-90 mb-4 max-w-4xl text-primary-content">
                 O Projeto Olhar Brilhante é uma iniciativa da Associação Habacuque do Brasil voltada ao desenvolvimento integral de crianças e adolescentes em situação de vulnerabilidade social.
               </p>
             </div>
+            </div>
             
           </section>
 
-          <section class="container mx-auto px-4 py-14 max-w-5xl">
+          <section class="section-wide py-14">
+            <div class="max-w-5xl mx-auto w-full">
             <!-- Título institucional -->
             <div class="max-w-3xl">
               <p class="text-sm uppercase tracking-wide text-base-content/60 mb-2">
@@ -138,16 +137,17 @@
                 apoio social e fortalecimento de vínculos através do projeto.
               </span>
             </div>
+            </div>
           </section>
 
           <!-- ODS: grid 4×2 com scroll-carousel (hide-dots: bloco inteiro) -->
-          <section class="container mx-auto px-4 py-16 max-w-7xl">
+          <section class="section-wide py-16">
             <h2 class="text-2xl font-bold text-primary text-center mb-4">Alinhamento com os Objetivos de Desenvolvimento Sustentável</h2>
             <p class="text-center max-w-2xl mx-auto mb-10 text-base-content/90">
               O projeto contribui diretamente para os seguintes ODS:
             </p>
 
-            <div class="w-full min-w-0 max-w-4xl mx-auto">
+            <div class="w-full min-w-0 max-w-4xl 2xl:max-w-5xl mx-auto">
               <scroll-carousel
                 skip-item-min-width
                 aria-label="Objetivos de Desenvolvimento Sustentável"
@@ -182,9 +182,8 @@
             <div class="divider"></div>
           </section>
 
-          <section class="container mx-auto px-4 py-20 max-w-7xl">
-
-            <!-- Cabeçalho mais forte -->
+          <!-- Como o projeto funciona -->
+          <section class="section-wide py-20">
             <div class="max-w-2xl mb-4">
               <h2 class="text-3xl font-bold text-primary mb-4">
                 Como o projeto funciona
@@ -196,24 +195,34 @@
             </div>
           
             <div class="flex flex-col gap-8">
-              <!-- BLOCO 1 -->
               <article class="group card bg-base-100 shadow-xl overflow-hidden lg:grid lg:grid-cols-2">
-                <!-- Texto -->
                 <div class="card-body lg:p-10 flex flex-col justify-center">
-                  <h3 class="text-2xl font-bold text-primary leading-tight">
+                  <h3 class="text-2xl lg:text-3xl font-bold text-primary leading-tight">
                     Convivência e Fortalecimento de Vínculos
                   </h3>
-                  <p class="text-base-content/90">
-                    As atividades são realizadas em grupo, promovendo integração social,
-                    convivência comunitária e fortalecimento dos vínculos familiares.
+
+                  <p class="text-lg leading-relaxed text-base-content/90">
+                    As atividades são desenvolvidas em grupo, criando um ambiente seguro
+                    onde crianças e adolescentes podem interagir, compartilhar experiências
+                    e construir relações de confiança.
                   </p>
-                  <p class="text-base-content/70 text-sm">
+
+                  <p class="text-base leading-relaxed text-base-content/70">
+                    O foco está na convivência contínua, incentivando o respeito, a escuta
+                    ativa e o senso de pertencimento à comunidade.
+                  </p>
+
+                  <ul class="text-base-content/80 space-y-1 mt-2">
+                    <li>• Dinâmicas em grupo e rodas de conversa</li>
+                    <li>• Atividades colaborativas</li>
+                    <li>• Integração entre famílias e comunidade</li>
+                  </ul>
+
+                  <p class="text-base text-base-content/60 mt-2">
                     Alinhado ao Serviço de Convivência e Fortalecimento de Vínculos (SCFV),
                     dentro do SUAS.
-                  </p>       
+                  </p>
                 </div>
-
-                <!-- Imagem (mesma proporção/altura que o bloco 2) -->
                 <figure class="relative w-full aspect-[4/3] overflow-hidden">
                   <img
                     src="../../imagens/acoes/converted_image.webp"
@@ -223,8 +232,6 @@
                   <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </figure>
               </article>
-          
-              <!-- BLOCO 2 -->
               <article class="group card bg-base-100 shadow-xl overflow-hidden lg:grid lg:grid-cols-2">
                 <figure class="relative w-full aspect-[4/3] overflow-hidden order-1 lg:order-1">
                   <img
@@ -234,18 +241,29 @@
                   />
                   <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </figure>
-                <!-- Texto -->
                 <div class="card-body lg:p-10 flex flex-col justify-center order-2">         
-                  <h3 class="text-2xl font-bold text-primary leading-tight">
+                  <h3 class="text-2xl lg:text-3xl font-bold text-primary leading-tight">
                     Desenvolvimento Socioeducativo
                   </h3>
-          
-                  <p class="text-base-content/90">
-                    A cultura é utilizada como ferramenta educativa, promovendo valores,
-                    desenvolvimento cognitivo e expressão corporal.
+                  
+                  <p class="text-lg leading-relaxed text-base-content/90">
+                    A cultura é utilizada como ferramenta de aprendizagem, permitindo que os
+                    participantes desenvolvam habilidades cognitivas, emocionais e sociais
+                    de forma prática e significativa.
                   </p>
-          
-                  <p class="text-base-content/70 text-sm">
+                  
+                  <p class="text-base leading-relaxed text-base-content/70">
+                    As atividades estimulam a criatividade, a expressão corporal e o pensamento
+                    crítico, conectando educação e realidade social.
+                  </p>
+                  
+                  <ul class="text-base-content/80 space-y-1 mt-2">
+                    <li>• Oficinas culturais e artísticas</li>
+                    <li>• Expressão corporal e identidade</li>
+                    <li>• Estímulo à autonomia e protagonismo</li>
+                  </ul>
+                  
+                  <p class="text-base text-base-content/60 mt-2">
                     Contribui para a formação integral e o desenvolvimento da cidadania.
                   </p>         
                 </div>         
@@ -254,7 +272,8 @@
           </section>
 
           <!-- Impacto do projeto -->
-          <section class="container mx-auto px-4 py-16 max-w-5xl">
+          <section class="section-wide py-16">
+            <div class="max-w-5xl mx-auto w-full">
             <!-- Título -->
             <div class="mb-12">
               <h2 class="text-3xl font-bold text-primary mb-4">
@@ -300,11 +319,12 @@
             </div>
           
             <div class="divider mt-12"></div>
+            </div>
           </section>
 
           <!-- Depoimentos -->
           <section class="bg-base-200 py-16">
-            <div class="container mx-auto px-4 max-w-7xl">
+            <div class="section-wide">
               <!-- Título -->
               <div class="text-center mb-10">
                 <h2 class="text-2xl font-bold text-primary mb-3">
@@ -322,7 +342,7 @@
                     <div class="flex items-center gap-3">
                       <div class="avatar">
                         <div class="w-10 rounded-full">
-                          <img src="/images/user1.jpg" alt="Participante" />
+                          <img src="../../imagens/avatares/avatar-male3.webp" alt="Participante" />
                         </div>
                       </div>
                       <p class="text-sm font-semibold">@participante</p>
@@ -339,7 +359,7 @@
                     <div class="flex items-center gap-3">
                       <div class="avatar">
                         <div class="w-10 rounded-full">
-                          <img src="/images/user2.jpg" alt="Responsável" />
+                          <img src="../../imagens/avatares/avatar-famale4.webp" alt="Responsável" />
                         </div>
                       </div>
                       <p class="text-sm font-semibold">@familia</p>
@@ -356,7 +376,7 @@
                     <div class="flex items-center gap-3">
                       <div class="avatar">
                         <div class="w-10 rounded-full">
-                          <img src="/images/user3.jpg" alt="Aluno" />
+                          <img src="../../imagens/avatares/avatar-male2.webp" alt="Aluno" />
                         </div>
                       </div>
                       <p class="text-sm font-semibold">@aluno</p>
@@ -373,7 +393,7 @@
                     <div class="flex items-center gap-3">
                       <div class="avatar">
                         <div class="w-10 rounded-full">
-                          <img src="/images/user4.jpg" alt="Comunidade" />
+                          <img src="../../imagens/avatares/avatar-famale3.webp" alt="Comunidade" />
                         </div>
                       </div>
                       <p class="text-sm font-semibold">@comunidade</p>
@@ -388,7 +408,7 @@
               </div>          
             </div>
             
-            <div class="container mt-4 mx-auto px-4 max-w-7xl">          
+            <div class="section-wide mt-4">          
               <!-- Grid -->
               <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">          
                 <!-- Card -->
@@ -398,7 +418,7 @@
                     <div class="flex items-center gap-3">
                       <div class="avatar">
                         <div class="w-10 rounded-full">
-                          <img src="/images/user1.jpg" alt="Participante" />
+                          <img src="../../imagens/avatares/avatar-famale2.webp" alt="Participante" />
                         </div>
                       </div>
                       <p class="text-sm font-semibold">@participante</p>
@@ -415,7 +435,7 @@
                     <div class="flex items-center gap-3">
                       <div class="avatar">
                         <div class="w-10 rounded-full">
-                          <img src="/images/user2.jpg" alt="Responsável" />
+                          <img src="../../imagens/avatares/avatar-male4.webp" alt="Responsável" />
                         </div>
                       </div>
                       <p class="text-sm font-semibold">@familia</p>
@@ -433,7 +453,7 @@
                     <div class="flex items-center gap-3">
                       <div class="avatar">
                         <div class="w-10 rounded-full">
-                          <img src="/images/user3.jpg" alt="Aluno" />
+                          <img src="../../imagens/avatares/avatar-male1.webp" alt="Aluno" />
                         </div>
                       </div>
                       <p class="text-sm font-semibold">@aluno</p>
@@ -450,7 +470,7 @@
                     <div class="flex items-center gap-3">
                       <div class="avatar">
                         <div class="w-10 rounded-full">
-                          <img src="/images/user4.jpg" alt="Comunidade" />
+                          <img src="../../imagens/avatares/avatar-famale4.webp" alt="Comunidade" />
                         </div>
                       </div>
                       <p class="text-sm font-semibold">@comunidade</p>
@@ -467,7 +487,7 @@
           
 
           <!-- Galeria (placeholder) -->
-          <section class="container mx-auto px-4 py-16 max-w-7xl">
+          <section class="section-wide py-16">
             <h2 class="text-2xl font-bold text-primary text-center mb-10">O projeto em imagens</h2>
             <p class="text-center max-w-2xl mx-auto mb-12 text-base-content/90">
               Imagens placeholder — substituir com fotos reais do projeto.
@@ -488,7 +508,8 @@
 
           <!-- CTA final -->
           <section class="bg-primary/5 py-16">
-            <div class="container mx-auto px-4 max-w-3xl text-center">
+            <div class="section-wide">
+            <div class="max-w-3xl mx-auto text-center">
               <h2 class="text-2xl font-bold text-primary mb-6">Participe</h2>
               <p class="text-base-content/90 mb-8">
                 Você pode contribuir para transformar vidas: seja um apoiador, faça uma doação ou entre em contato para saber mais. Juntos, podemos ampliar o impacto do Projeto Olhar Brilhante.
@@ -497,6 +518,7 @@
                 <a href="../quero-doar.html" class="btn btn-primary transition-all duration-150 hover:shadow-lg">Quero Doar</a>
                 <a href="../quero-apoiar.html" class="btn btn-outline btn-primary transition-all duration-150">Quero Apoiar</a>
               </div>
+            </div>
             </div>
           </section>
         </main>

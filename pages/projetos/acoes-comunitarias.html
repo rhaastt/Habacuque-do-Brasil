@@ -29,13 +29,37 @@
         <site-header base="../../" current="projetos" hero-overlay></site-header>
 
         <main class="flex-1 w-full">
+          <!-- Stickers -->
+        <div class="pointer-events-none absolute inset-0 z-11 mx-auto w-full max-w-[min(100%,90rem)]" aria-hidden="true">
+          <img
+            src="imagens/doodles/stick-3.webp"
+            alt=""
+            class="absolute top-[56rem] left-2 w-96 opacity-40 hidden md:block"
+          />
+          <img
+            src="imagens/doodles/stick-2.webp"
+            alt=""
+            class="absolute top-[48rem] right-3 w-96 opacity-40 rotate-[10deg]"
+          />
+          <img
+            src="imagens/doodles/stick-1.webp"
+            alt=""
+            class="absolute bottom-[34rem] left-1 w-96 opacity-40 rotate-[6deg] hidden lg:block"
+          />
+          <img
+            src="imagens/doodles/stick-2.webp"
+            alt=""
+            class="absolute bottom-[34rem] right-6 w-96 opacity-40 rotate-[-8deg] hidden md:block"
+          />
+        </div>
           <!-- Hero -->
           <section
-            class="relative min-h-[min(65vh,620px)] px-4 pt-28 pb-12 flex flex-col justify-end bg-cover bg-center bg-no-repeat"
+            class="relative min-h-[min(65vh,620px)] pt-28 pb-12 flex flex-col justify-end bg-cover bg-center bg-no-repeat"
             style="background-image: url('../../imagens/acoes-comunitarias.png');"
           >
             <div class="absolute inset-0 bg-neutral/60"></div>
-            <div class="container mx-auto max-w-5xl relative z-10 text-primary-content">
+            <div class="section-wide relative z-10 text-primary-content">
+            <div class="max-w-5xl mx-auto w-full">
               <h1 class="text-4xl font-bold mb-0 text-primary-content">
                 Ações Comunitárias e Apoio às Famílias
               </h1>
@@ -44,11 +68,13 @@
                 Maria Dirce, Pimentas e regiões de abrangência em Guarulhos.
               </p>
             </div>
+            </div>
           </section>
 
 
           <!-- Propósito das ações comunitárias -->
-          <section class="container mx-auto px-4 py-12 max-w-5xl">
+          <section class="section-wide py-12">
+            <div class="max-w-5xl mx-auto w-full">
             <h2 class="text-2xl font-bold text-primary mb-6">Por que fortalecer a comunidade importa</h2>
             <div class="prose prose-lg max-w-none text-base-content/90">
               <p class="mb-4">
@@ -56,11 +82,12 @@
               </p>
             </div>
             <div class="divider"></div>
+            </div>
           </section>
 
           <!-- Quais iniciativas realizamos -->
           <section class="bg-base-200 py-16">
-            <div class="container mx-auto px-4 max-w-7xl">
+            <div class="section-wide">
               <h2 class="text-2xl font-bold text-primary text-center mb-10">Quais iniciativas realizamos</h2>
               <p class="text-center max-w-3xl mx-auto mb-12 text-base-content/90">
                 A instituição promove eventos comunitários, campanhas de arrecadação e mobilizações solidárias que envolvem moradores, voluntários e parceiros. Também realiza visitas domiciliares e outras ações de apoio social, que ajudam a compreender melhor as necessidades das famílias e fortalecer os vínculos entre a organização e o território.
@@ -101,7 +128,8 @@
           </section>
 
           <!-- Articulação com serviços públicos -->
-          <section class="container mx-auto px-4 py-16 max-w-5xl">
+          <section class="section-wide py-16">
+            <div class="max-w-5xl mx-auto w-full">
             <div class="divider"></div>
             <h2 class="text-2xl font-bold text-primary mb-6">Conexão com serviços e oportunidades do território</h2>
             <p class="text-base-content/90 mb-8">
@@ -114,10 +142,12 @@
               <span class="badge badge-primary badge-lg">Proteção social básica</span>
             </div>
             <div class="divider"></div>
+            </div>
           </section>
 
           <!-- Impacto coletivo -->
-          <section class="container mx-auto px-4 py-12 max-w-5xl">
+          <section class="section-wide py-12">
+            <div class="max-w-5xl mx-auto w-full">
             <h2 class="text-2xl font-bold text-primary mb-10">Impacto coletivo dessas ações</h2>
             <p class="text-base-content/90 mb-8">
               Cada atividade comunitária ajuda a fortalecer uma rede de solidariedade, onde moradores, famílias e organizações passam a colaborar uns com os outros. Quando isso acontece, o território deixa de ser apenas um espaço geográfico e passa a funcionar como uma comunidade ativa, capaz de cuidar das suas próprias relações e construir caminhos de desenvolvimento social.
@@ -137,10 +167,12 @@
               </div>
             </div>
             <div class="divider"></div>
+            </div>
           </section>
 
           <!-- Reflexão sobre redes de confiança -->
-          <section class="container mx-auto px-4 py-12 max-w-4xl">
+          <section class="section-wide py-12">
+            <div class="max-w-4xl mx-auto w-full">
             <div class="card bg-base-100 shadow-lg border border-primary/20">
               <div class="card-body">
                 <p class="text-base-content/90 italic text-lg">
@@ -154,6 +186,7 @@
             <div class="flex flex-col sm:flex-row gap-4 mt-8 justify-center">
               <a href="../projetos.html" class="btn btn-primary">Conheça outros projetos</a>
               <a href="../contato.html" class="btn btn-outline btn-primary">Fale com a equipe</a>
+            </div>
             </div>
           </section>
         </main>

@@ -18,7 +18,7 @@ class SiteHeader extends HTMLElement {
 
     this.innerHTML = `
   <div class="${barClasses}" data-site-header-bar>
-    <div class="max-w-7xl mx-auto px-4 w-full flex items-center justify-between">
+    <div class="section-wide w-full flex items-center justify-between">
 
       <div class="flex items-center">
         <a href="${base}index.html" class="site-header-home btn btn-ghost text-xl gap-2 px-0 border-transparent">

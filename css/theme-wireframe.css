@@ -363,7 +363,7 @@ site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .
 }
 
 /* Tipografia: tamanho-base aumentado em desktops para melhorar legibilidade */
-/* Abaixo de 1024px mantém ~16px. De 1024px a 1440px ~17.5px. Acima de 1440px ~18.5px. */
+/* Abaixo de 1024px ~16px; 1024–1439px ~17.5px; 1440–1535px ~18.5px; 1536px+ ~19px. */
 html {
   font-size: 16px;
 }
@@ -375,6 +375,41 @@ html {
 @media (min-width: 1440px) {
   html {
     font-size: 18.5px;
+  }
+}
+
+/* Último salto de tipografia em viewports 2xl (alinhado ao breakpoint Tailwind) */
+@media (min-width: 1536px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+/**
+ * Miolo ampliado em relação a max-w-7xl (~1280px): uma fonte de verdade para header e seções.
+ * max-width 90rem (~1440px); padding horizontal responsivo espelhado no site-header.
+ */
+.section-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: min(100%, 90rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 1280px) {
+  .section-wide {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .section-wide {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 

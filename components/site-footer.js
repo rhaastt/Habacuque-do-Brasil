@@ -3,7 +3,7 @@ class SiteFooter extends HTMLElement {
     const base = this.getAttribute("base") || "./";
 
     this.innerHTML = `
-      <footer class="footer sm:footer-horizontal bg-black text-white p-10 text-xs leading-relaxed">
+      <footer class="footer relative sm:footer-horizontal bg-black text-white p-10 text-xs leading-relaxed z-10">
 
         <!-- Marca -->
         <aside class="max-w-xs">

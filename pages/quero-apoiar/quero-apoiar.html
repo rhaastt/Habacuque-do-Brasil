@@ -30,34 +30,7 @@
       <site-header base="../../" current="quero-apoiar" hero-overlay></site-header>
 
       <main class="flex-1 w-full relative overflow-hidden">
-        <!-- Stickers -->
-        <div class="pointer-events-none absolute inset-0 z-10 mx-auto w-full max-w-[min(100%,90rem)]" aria-hidden="true">
-          <img
-            src="../../imagens/doodles/stick-1.webp"
-            alt=""
-            class="absolute top-[34rem] left-2 w-96 opacity-40 hidden md:block"
-          />
-          <img
-            src="../../imagens/doodles/stick-2.webp"
-            alt=""
-            class="absolute top-[28rem] right-3 w-96 opacity-40 rotate-[10deg]"
-          />
-          <img
-            src="../../imagens/doodles/stick-3.webp"
-            alt=""
-            class="absolute bottom-[22rem] left-4 w-96 opacity-40 rotate-[6deg] hidden lg:block"
-          />
-          <img
-            src="../../imagens/doodles/stick-2.webp"
-            alt=""
-            class="absolute bottom-24 right-6 w-96 opacity-40 rotate-[-8deg] hidden md:block"
-          />
-          <img
-          src="../../imagens/doodles/stick-1.webp"
-          alt=""
-          class="absolute bottom-22 left-2 w-96 opacity-40 hidden md:block"
-        />
-        </div>
+        
 
         <div class="relative z-10">
         <!-- Hero -->
@@ -95,15 +68,20 @@
             </h2>
 
             <scroll-carousel aria-label="Formas de apoiar a associação">
-              <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
-                <div class="card-body p-4">
-                  <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
-                    <i data-lucide="users" class="h-7 w-7 text-primary"></i>
+              <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5 z-12">
+                <div class="card-body p-4 ">
+
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="bg-primary/10 p-2 rounded-full">
+                      <i data-lucide="users" class="h-6 w-6 text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary">Voluntariado</h3>
                   </div>
-                  <h3 class="text-lg font-semibold text-primary">Voluntariado</h3>
+              
                   <p class="text-sm leading-relaxed text-base-content/70">
                     Participar de oficinas, atividades recreativas e ações comunitárias.
                   </p>
+              
                   <button
                     type="button"
                     class="btn btn-outline w-full sm:w-auto border-primary text-primary bg-primary/10 transition-colors duration-150 hover:shadow-lg"
@@ -113,60 +91,73 @@
                   >
                     Seja Voluntário
                   </button>
+              
                 </div>
               </div>
-
+              
+              
               <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
                 <div class="card-body p-4">
-                  <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
-                    <i data-lucide="clipboard-list" class="h-7 w-7 text-primary"></i>
+              
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="bg-primary/10 p-2 rounded-full">
+                      <i data-lucide="clipboard-list" class="h-6 w-6 text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary">Serviços e produtos</h3>
                   </div>
-                  <h3 class="text-lg font-semibold text-primary">Serviços e produtos</h3>
+              
                   <p class="text-sm leading-relaxed text-base-content/70">
                     Doe materiais, equipamentos ou serviços que fortaleçam nossas atividades.
                   </p>
-                  <a href="#oque-podemos-receber" class="btn btn-outline w-full sm:w-auto 
-                  border-primary text-primary 
-                  bg-primary/10  
-                  transition-colors duration-150 hover:shadow-lg">
+              
+                  <a href="#oque-podemos-receber" class="btn btn-outline w-full sm:w-auto border-primary text-primary bg-primary/10 transition-colors duration-150 hover:shadow-lg">
                     Doe Materiais
                   </a>
+              
                 </div>
               </div>
-
+              
+              
               <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
                 <div class="card-body p-4">
-                  <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
-                    <i data-lucide="building-2" class="h-7 w-7 text-primary"></i>
+              
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="bg-primary/10 p-2 rounded-full">
+                      <i data-lucide="building-2" class="h-6 w-6 text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary">Parceria institucional</h3>
                   </div>
-                  <h3 class="text-lg font-semibold text-primary">Parceria institucional</h3>
+              
                   <p class="text-sm leading-relaxed text-base-content/70">
                     Empresas e instituições podem apoiar projetos e campanhas.
                   </p>
-                  <a href="../contato.html" class="btn btn-outline w-full sm:w-auto 
-                  border-primary text-primary 
-                  bg-primary/10  
-                  transition-colors duration-150 hover:shadow-lg">
+              
+                  <a href="../contato.html" class="btn btn-outline w-full sm:w-auto border-primary text-primary bg-primary/10 transition-colors duration-150 hover:shadow-lg">
                     Entre em Contato
                   </a>
+              
                 </div>
               </div>
-
+              
+              
               <div class="card bg-base-100 shadow-xl transition-all duration-150 hover:shadow-2xl hover:-translate-y-0.5">
                 <div class="card-body p-4">
-                  <div class="bg-primary/10 p-3 rounded-full w-fit mb-4">
-                    <i data-lucide="share-2" class="h-7 w-7 text-primary"></i>
+              
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="bg-primary/10 p-2 rounded-full">
+                      <i data-lucide="share-2" class="h-6 w-6 text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary">Divulgação</h3>
                   </div>
-                  <h3 class="text-lg font-semibold text-primary">Divulgação</h3>
+              
                   <p class="text-sm leading-relaxed text-base-content/70">
                     Compartilhe nossas ações e ajude a ampliar nosso alcance.
                   </p>
-                  <a href="../contato.html" class="btn btn-outline w-full sm:w-auto 
-                  border-primary text-primary 
-                  bg-primary/10  
-                  transition-colors duration-150 hover:shadow-lg">
+              
+                  <a href="../contato.html" class="btn btn-outline w-full sm:w-auto border-primary text-primary bg-primary/10 transition-colors duration-150 hover:shadow-lg">
                     Entre em Contato
                   </a>
+              
                 </div>
               </div>
             </scroll-carousel>
@@ -307,6 +298,34 @@
           </a>
         </section>
         </div>
+        </div>
+        <!-- Stickers -->
+        <div class="pointer-events-none absolute inset-0 z-0 mx-auto w-full max-w-[min(100%,90rem)]" aria-hidden="true">
+          <img
+            src="../../imagens/doodles/stick-1.webp"
+            alt=""
+            class="absolute top-[34rem] left-2 w-96 opacity-40 hidden md:block"
+          />
+          <img
+            src="../../imagens/doodles/stick-2.webp"
+            alt=""
+            class="absolute top-[28rem] right-3 w-96 opacity-40 rotate-[10deg]"
+          />
+          <img
+            src="../../imagens/doodles/stick-3.webp"
+            alt=""
+            class="absolute bottom-[22rem] left-4 w-96 opacity-40 rotate-[6deg] hidden lg:block"
+          />
+          <img
+            src="../../imagens/doodles/stick-2.webp"
+            alt=""
+            class="absolute bottom-24 right-6 w-96 opacity-40 rotate-[-8deg] hidden md:block"
+          />
+          <img
+          src="../../imagens/doodles/stick-1.webp"
+          alt=""
+          class="absolute bottom-22 left-2 w-96 opacity-40 hidden md:block"
+        />
         </div>
       </main>
 

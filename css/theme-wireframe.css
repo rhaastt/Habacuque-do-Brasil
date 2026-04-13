@@ -282,41 +282,41 @@ site-header[data-hero-overlay] .site-header-bar--overlay.site-header--scrolled .
 }
 
 .hero-donation-bg-1 {
-  background-image: url("../imagens/kids/banner-doacao1.webp");
+  background-image: url("../imagens/banners/banner-doacao1.webp");
   opacity: 1;
 }
 
 .hero-donation-bg-2 {
-  background-image: url("../imagens/kids/banner-doacao2.webp");
+  background-image: url("../imagens/banners/banner-doacao2.webp");
   animation: hero-donation-fade-2 18s infinite;
 }
 
 .hero-donation-bg-3 {
-  background-image: url("../imagens/kids/banner-doacao3.webp");
+  background-image: url("../imagens/banners/banner-doacao3.webp");
   animation: hero-donation-fade-3 18s infinite;
 }
 .hero-donation-bg-4 {
-  background-image: url("../imagens/kids/banner-doacao4.webp");
+  background-image: url("../imagens/banners/banner-doacao4.webp");
   animation: hero-donation-fade-3 18s infinite;
 }
 
 .hero-apoio-bg-1 {
-  background-image: url("../imagens/kids/banner-apoio1.webp");
+  background-image: url("../imagens/banners/banner-apoio1.webp");
   opacity: 1;
 }
 
 .hero-apoio-bg-2 {
-  background-image: url("../imagens/kids/banner-apoio2.webp");
+  background-image: url("../imagens/banners/banner-apoio2.webp");
   animation: hero-donation-fade-2 18s infinite;
 }
 
 .hero-apoio-bg-3 {
-  background-image: url("../imagens/kids/banner-apoio3.webp");
+  background-image: url("../imagens/banners/banner-apoio3.webp");
   animation: hero-donation-fade-3 18s infinite;
 }
 
 .hero-apoio-bg-4 {
-  background-image: url("../imagens/kids/banner-apoio4.webp");
+  background-image: url("../imagens/banners/banner-apoio4.webp");
   animation: hero-donation-fade-3 18s infinite;
 }
 

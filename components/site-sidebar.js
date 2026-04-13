@@ -18,8 +18,9 @@ class SiteSidebar extends HTMLElement {
           <details ${isOpenQuemSomos ? "open" : ""}>
             <summary>Quem Somos</summary>
             <ul>
-              <li><a href="${base}pages/sobre.html" class="${isActive("sobre")}">Nossa História</a></li>
-              <li><a href="${base}pages/nossa-equipe.html" class="${isActive("nossa-equipe")}">Nossa Equipe</a></li>
+              <li><a href="${base}pages/quem-somos/nossa-historia.html" class="${isActive("nossa-historia")}">Nossa História</a></li>
+              <li><a href="${base}pages/quem-somos/nossa-equipe.html" class="${isActive("nossa-equipe")}">Nossa Equipe</a></li>
+              <li><a href="${base}pages/quem-somos/transparencia.html" class="${isActive("transparencia")}">Transparência</a></li>
             </ul>
           </details>
         </li>
@@ -36,12 +37,14 @@ class SiteSidebar extends HTMLElement {
           <details ${isOpenQueroApoiar ? "open" : ""}>
             <summary>Quero Apoiar</summary>
             <ul>
-              <li><a href="${base}pages/quero-apoiar.html">Quero Apoiar</a></li>
-              <li><a href="${base}pages/quero-doar.html">Quero Doar</a></li>
+              <li><a href="${base}pages/quero-apoiar/quero-apoiar.html">Quero Apoiar</a></li>
+              <li><a href="${base}pages/quero-apoiar/quero-doar.html">Quero Doar</a></li>
             </ul>
           </details>
         </li>
         <li><a href="${base}pages/contato.html" class="${isActive("contato")}">Contato</a></li>
+        
+        <li><a href="${base}pages/galeria.html" class="${isActive("galeria")}">Galeria</a></li>
       </ul>
     `;
     }

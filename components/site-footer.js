@@ -8,7 +8,7 @@ class SiteFooter extends HTMLElement {
         <!-- Marca -->
         <aside class="max-w-xs">
           <img 
-            src="${base}imagens/Logo-BRANCO.svg" 
+            src="${base}imagens/logos/logo-branco.svg" 
             alt="Logo da Associação Habacuque do Brasil" 
             class="w-20 h-20"
             loading="lazy"
@@ -25,16 +25,19 @@ class SiteFooter extends HTMLElement {
         <nav aria-label="Navegação principal">
           <h6 class="footer-title text-xs">Navegação</h6>
           <a href="${base}index.html" class="link link-hover">Início</a>
-          <a href="${base}pages/sobre.html" class="link link-hover">Quem Somos</a>
-          <a href="${base}pages/projetos/olhar-brilhante.html" class="link link-hover">Projeto</a>
-          <a href="${base}pages/nossa-equipe.html" class="link link-hover">Nossa Equipe</a>
+          <a href="${base}pages/quem-somos/nossa-historia.html" class="link link-hover">Nossa História</a>
+          <a href="${base}pages/quem-somos/nossa-equipe.html" class="link link-hover">Nossa Equipe</a>
+          <a href="${base}pages/quem-somos/transparencia.html" class="link link-hover">Transparência</a>
+          <a href="${base}pages/projetos/olhar-brilhante.html" class="link link-hover">Projeto Olhar Brilhante</a>
+          <a href="${base}pages/projetos/acoes-comunitarias.html" class="link link-hover">Ações Comunitárias</a>
+          <a href="${base}pages/galeria.html" class="link link-hover">Galeria</a>
         </nav>
 
         <!-- Ações -->
         <nav aria-label="Ações do usuário">
           <h6 class="footer-title text-xs">Participe</h6>
-          <a href="${base}pages/quero-apoiar.html" class="link link-hover">Quero Apoiar</a>
-          <a href="${base}pages/quero-doar.html" class="link link-hover">Quero Doar</a>
+          <a href="${base}pages/quero-apoiar/quero-apoiar.html" class="link link-hover">Quero Apoiar</a>
+          <a href="${base}pages/quero-apoiar/quero-doar.html" class="link link-hover">Quero Doar</a>
           <a href="${base}pages/contato.html" class="link link-hover">Contato</a>
         </nav>
 
@@ -66,9 +69,9 @@ class SiteFooter extends HTMLElement {
               rel="noopener noreferrer"
               aria-label="Instagram — abre em nova aba"
               title="Instagram"
-              class="btn btn-ghost btn-sm btn-circle transition-transform duration-150 hover:scale-110"
+              class="btn btn-ghost btn-circle btn-sm  shadow-none transition-all duration-150 hover:scale-110 hover:bg-transparent"
             >
-              <i data-lucide="instagram" class="h-5 w-5" aria-hidden="true"></i>
+              <img src="${base}imagens/logos/instagram-branco.svg" alt="Instagram" class="h-6 w-auto object-contain" />
             </a>
 
             <a 
@@ -77,9 +80,9 @@ class SiteFooter extends HTMLElement {
               rel="noopener noreferrer"
               aria-label="Facebook — abre em nova aba"
               title="Facebook"
-              class="btn btn-ghost btn-sm btn-circle transition-transform duration-150 hover:scale-110"
+              class="btn btn-ghost btn-circle btn-sm shadow-none transition-all duration-150 hover:scale-110 hover:bg-transparent"
             >
-              <i data-lucide="facebook" class="h-5 w-5" aria-hidden="true"></i>
+              <img src="${base}imagens/logos/facebook-branco.svg" alt="Facebook" class="h-6 w-auto object-contain"/>
             </a>
           </div>
         </nav>

@@ -38,5 +38,5 @@ Ser uma organização reconhecida pela atuação social responsável e pelo impa
 
 ## Como conhecer e participar
 
-Você pode conhecer nossos projetos em `pages/projetos.html`, além de encontrar a equipe em `pages/nossa-equipe.html` e formas de contribuir em `pages/quero-apoiar.html` / `pages/quero-doar.html` e pelo contato (`pages/contato.html`).
+Você pode conhecer nossos projetos em `pages/projetos.html`, além de encontrar a equipe em `pages/nossa-equipe.html` e formas de contribuir em `pages/quero-apoiar/quero-apoiar.html` / `pages/quero-apoiar/quero-doar.html` e pelo contato (`pages/contato.html`).
 

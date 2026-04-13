@@ -23,7 +23,7 @@ class SiteHeader extends HTMLElement {
       <div class="flex items-center">
         <a href="${base}index.html" class="site-header-home btn btn-ghost text-xl gap-2 px-0 border-transparent">
           <img
-            src="${base}imagens/Logo-PRETO.svg"
+            src="${base}imagens/logos/logo-preto.svg"
             alt="Logo da Associação Habacuque do Brasil"
             class="site-header-logo h-8 w-auto transition-all duration-300"
           />
@@ -38,8 +38,9 @@ class SiteHeader extends HTMLElement {
           <details>
             <summary>Quem Somos</summary>
             <ul class="site-header-dropdown p-2 rounded-box w-56 z-[60] shadow-lg transition-all duration-300 ease-out bg-base-100 text-base-content">
-              <li><a href="${base}pages/sobre.html" class="${isActive("sobre")}">Nossa História</a></li>
-              <li><a href="${base}pages/nossa-equipe.html" class="${isActive("nossa-equipe")}">Nossa Equipe</a></li>
+              <li><a href="${base}pages/quem-somos/nossa-historia.html" class="${isActive("nossa-historia")}">Nossa História</a></li>
+              <li><a href="${base}pages/quem-somos/nossa-equipe.html" class="${isActive("nossa-equipe")}">Nossa Equipe</a></li>
+              <li><a href="${base}pages/quem-somos/transparencia.html" class="${isActive("transparencia")}">Transparência</a></li>
             </ul>
           </details>
         </li>
@@ -58,12 +59,13 @@ class SiteHeader extends HTMLElement {
           <details>
             <summary>Quero Apoiar</summary>
             <ul class="site-header-dropdown p-2 rounded-box w-72 z-[60] shadow-lg transition-all duration-300 ease-out bg-base-100 text-base-content">
-              <li><a href="${base}pages/quero-apoiar.html">Quero Apoiar</a></li>
-              <li><a href="${base}pages/quero-doar.html">Quero Doar</a></li>
+              <li><a href="${base}pages/quero-apoiar/quero-apoiar.html">Quero Apoiar</a></li>
+              <li><a href="${base}pages/quero-apoiar/quero-doar.html">Quero Doar</a></li>
             </ul>
           </details>
         </li>
         <li><a href="${base}pages/contato.html">Contato</a></li>
+        <li><a href="${base}pages/galeria.html">Galeria</a></li>
       </ul>
 
       <div class="lg:hidden">

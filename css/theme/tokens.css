@@ -1,0 +1,69 @@
+/**
+ * Tema institucional: verde principal e azul secundário.
+ * Cores de marca para site institucional com toque acolhedor.
+ * Deve ser carregado após o DaisyUI.
+ */
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Base: branco e cinzas claros */
+  --color-base-100: oklch(99% 0 0);
+  --color-base-200: oklch(96% 0 0);
+  --color-base-300: oklch(90% 0 0);
+  --color-base-content: oklch(18% 0 0);
+
+  /* Primary: verde institucional (#008A1F) - cor principal da marca */
+  --color-primary: oklch(55% 0.16 152);
+  --color-primary-content: oklch(99% 0 0);
+
+  /* Secondary: azul sóbrio para elementos secundários */
+  --color-secondary: oklch(55% 0.12 250);
+  --color-secondary-content: oklch(99% 0 0);
+
+  /* Accent: verde mais quente para CTAs e destaques */
+  --color-accent: oklch(58% 0.14 145);
+  --color-accent-content: oklch(99% 0 0);
+
+  /* Neutral */
+  --color-neutral: oklch(35% 0 0);
+  --color-neutral-content: oklch(98% 0 0);
+
+  /* Estados semânticos em grayscale */
+  --color-info: oklch(50% 0 0);
+  --color-info-content: oklch(98% 0 0);
+  --color-success: oklch(40% 0 0);
+  --color-success-content: oklch(98% 0 0);
+  --color-warning: oklch(60% 0 0);
+  --color-warning-content: oklch(15% 0 0);
+  --color-error: oklch(30% 0 0);
+  --color-error-content: oklch(98% 0 0);
+
+  /* Fallback: formato DaisyUI (RGB) para compatibilidade com CDN */
+  --p: 0 120 45;
+  --pc: 255 255 255;
+  --pf: 0 95 35;
+  --s: 25 80 180;
+  --sc: 255 255 255;
+  --sf: 20 65 160;
+  --a: 30 140 75;
+  --ac: 255 255 255;
+  --af: 25 115 65;
+
+  --b1: 252 252 252;
+  --b2: 245 245 245;
+  --b3: 230 230 230;
+  --bc: 46 46 46;
+
+  --n: 89 89 89;
+  --nc: 255 255 255;
+
+  --in: 128 128 128;
+  --inc: 255 255 255;
+  --su: 102 102 102;
+  --suc: 255 255 255;
+  --wa: 153 153 153;
+  --wac: 38 38 38;
+  --er: 77 77 77;
+  --erc: 255 255 255;
+}

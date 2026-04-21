@@ -1,0 +1,14 @@
+/* Utilitários para botões e interações */
+.btn,
+.btn-primary,
+.btn-accent {
+  transition: all 0.15s ease;
+}
+.btn-primary:hover,
+.btn-accent:hover {
+  filter: brightness(1.08);
+}
+.btn-outline.btn-primary:hover {
+  background-color: color-mix(in oklch, var(--color-primary) 10%, var(--color-base-100));
+  color: var(--color-primary); /* ou color: rgb(var(--p)); */
+}

@@ -1,0 +1,90 @@
+/* Hero com rotação automática de fundo (Quero Doar) */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  opacity: 0;
+}
+
+.hero-donation-bg-1 {
+  background-image: url("../../imagens/banners/banner-doacao1.webp");
+  opacity: 1;
+}
+
+.hero-donation-bg-2 {
+  background-image: url("../../imagens/banners/banner-doacao2.webp");
+  animation: hero-donation-fade-2 18s infinite;
+}
+
+.hero-donation-bg-3 {
+  background-image: url("../../imagens/banners/banner-doacao3.webp");
+  animation: hero-donation-fade-3 18s infinite;
+}
+.hero-donation-bg-4 {
+  background-image: url("../../imagens/banners/banner-doacao4.webp");
+  animation: hero-donation-fade-3 18s infinite;
+}
+
+.hero-apoio-bg-1 {
+  background-image: url("../../imagens/banners/banner-apoio1.webp");
+  opacity: 1;
+}
+
+.hero-apoio-bg-2 {
+  background-image: url("../../imagens/banners/banner-apoio2.webp");
+  animation: hero-donation-fade-2 18s infinite;
+}
+
+.hero-apoio-bg-3 {
+  background-image: url("../../imagens/banners/banner-apoio3.webp");
+  animation: hero-donation-fade-3 18s infinite;
+}
+
+.hero-apoio-bg-4 {
+  background-image: url("../../imagens/banners/banner-apoio4.webp");
+  animation: hero-donation-fade-3 18s infinite;
+}
+
+
+@media (min-width: 768px) {
+  .hero-bg {
+    background-position: 50% 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-bg {
+    background-position: top;
+  }
+}
+
+@keyframes hero-donation-fade-2 {
+  0%,
+  27% {
+    opacity: 0;
+  }
+  33%,
+  60% {
+    opacity: 1;
+  }
+  66%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hero-donation-fade-3 {
+  0%,
+  60% {
+    opacity: 0;
+  }
+  66%,
+  93% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,12 @@
+/**
+ * Tema institucional da Associação Habacuque do Brasil.
+ * Ponto de entrada: importa os módulos de tema.
+ * Deve ser carregado após o DaisyUI.
+ */
+@import url("./theme/tokens.css");
+@import url("./theme/base.css");
+@import url("./theme/layout.css");
+@import url("./theme/utilitarios.css");
+@import url("./theme/botoes.css");
+@import url("./theme/cabecalho.css");
+@import url("./theme/hero.css");

@@ -1,0 +1,46 @@
+/* Tipografia: tamanho-base aumentado em desktops para melhorar legibilidade */
+/* Abaixo de 1024px ~16px; 1024–1439px ~17.5px; 1440–1535px ~18.5px; 1536px+ ~19px. */
+html {
+  font-size: 16px;
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 17.5px;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 18.5px;
+  }
+}
+
+/* Último salto de tipografia em viewports 2xl (alinhado ao breakpoint Tailwind) */
+@media (min-width: 1536px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+/* Navegação e rodapé: fonte um pouco maior em desktop */
+@media (min-width: 1024px) {
+  .navbar .menu.menu-horizontal {
+    font-size: 1.0625em;
+  }
+  .footer {
+    font-size: 1rem;
+  }
+
+  /* Parágrafos de destaque: fonte um pouco maior em desktop */
+  .text-body-lg {
+    font-size: 1.0625rem;
+  }
+  .text-lg.text-body-lg {
+    font-size: 1.1875rem;
+  }
+  .card-body p {
+    font-size: 1.0625rem;
+  }
+  .stat .stat-title {
+    font-size: 1rem;
+  }
+}

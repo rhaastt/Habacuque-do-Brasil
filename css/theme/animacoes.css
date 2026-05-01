@@ -1,0 +1,224 @@
+/* Movimento institucional: transições suaves, curtas e acessíveis. */
+:root {
+  --motion-fast: 150ms;
+  --motion-medium: 240ms;
+  --motion-slow: 320ms;
+  --motion-slower: 420ms;
+  --motion-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-ease-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-distance-sm: 0.25rem;
+  --motion-distance-md: 0.75rem;
+  --motion-distance-lg: 1rem;
+}
+
+.hero h1,
+.hero-content h1,
+section[class*="bg-cover"] h1 {
+  animation: motion-fade-up var(--motion-slow) var(--motion-ease-out) both;
+}
+
+.hero h1 + p,
+.hero-content h1 + p,
+section[class*="bg-cover"] h1 + p {
+  animation: motion-fade-up var(--motion-slow) var(--motion-ease-out) 80ms both;
+}
+
+.hero .btn,
+.hero-content .btn,
+section[class*="bg-cover"] .btn {
+  animation: motion-fade-up var(--motion-slow) var(--motion-ease-out) 140ms both;
+}
+
+.motion-reveal {
+  --motion-delay: 0ms;
+  opacity: 0;
+  transform: translateY(var(--motion-distance-md));
+  transition:
+    opacity var(--motion-slower) var(--motion-ease-emphasized),
+    transform var(--motion-slower) var(--motion-ease-emphasized);
+  transition-delay: var(--motion-delay);
+  will-change: opacity, transform;
+}
+
+.motion-reveal[data-motion="fade-in"] {
+  transform: none;
+}
+
+.motion-reveal[data-motion="scale-in"] {
+  transform: scale(0.96);
+}
+
+.motion-reveal[data-motion="slide-left"] {
+  transform: translateX(var(--motion-distance-md));
+}
+
+.motion-reveal[data-motion="slide-right"] {
+  transform: translateX(calc(var(--motion-distance-md) * -1));
+}
+
+.motion-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+.motion-reveal[data-motion="fade-in"].is-visible,
+.motion-reveal[data-motion="scale-in"].is-visible,
+.motion-reveal[data-motion="slide-left"].is-visible,
+.motion-reveal[data-motion="slide-right"].is-visible {
+  transform: none;
+}
+
+.card {
+  transition:
+    transform var(--motion-medium) var(--motion-ease-out),
+    box-shadow var(--motion-medium) ease,
+    border-color var(--motion-medium) ease,
+    background-color var(--motion-medium) ease;
+}
+
+.card.motion-reveal:not(.is-visible) {
+  transition:
+    opacity var(--motion-slower) var(--motion-ease-emphasized),
+    transform var(--motion-slower) var(--motion-ease-emphasized);
+  transition-delay: var(--motion-delay);
+}
+
+.card:hover {
+  transform: translateY(calc(var(--motion-distance-sm) * -1));
+  border-color: color-mix(in oklch, var(--color-primary) 28%, var(--color-base-300));
+  box-shadow: 0 18px 36px rgb(0 0 0 / 0.12);
+}
+
+.card figure {
+  overflow: hidden;
+}
+
+.card figure img,
+.motion-gallery-item img {
+  transition:
+    transform 300ms var(--motion-ease-out),
+    box-shadow var(--motion-fast) ease;
+}
+
+.card:hover figure img {
+  transform: scale(1.035);
+}
+
+.motion-gallery-item:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgb(0 0 0 / 0.14);
+}
+
+.card [data-lucide],
+.card svg {
+  transition:
+    transform var(--motion-medium) var(--motion-ease-out),
+    color var(--motion-fast) ease;
+}
+
+.card:hover [data-lucide],
+.card:hover svg {
+  transform: translateY(-0.125rem) scale(1.04);
+}
+
+.motion-button-lift {
+  position: relative;
+  overflow: hidden;
+}
+
+.motion-button-lift:hover {
+  transform: translateY(-1px);
+}
+
+.motion-button-lift::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(120deg, transparent 15%, rgb(255 255 255 / 0.28), transparent 85%);
+  opacity: 0;
+  transform: translateX(-120%);
+  transition:
+    opacity var(--motion-fast) ease,
+    transform 520ms var(--motion-ease-emphasized);
+}
+
+.motion-button-lift:hover::after {
+  opacity: 1;
+  transform: translateX(120%);
+}
+
+.site-header-dropdown {
+  transform-origin: top;
+  transition:
+    opacity var(--motion-fast) ease,
+    transform var(--motion-fast) ease,
+    background-color var(--motion-medium) ease,
+    box-shadow var(--motion-medium) ease;
+}
+
+scroll-carousel button[aria-current="true"] {
+  transform: scale(1.15);
+}
+
+scroll-carousel button {
+  transition:
+    transform var(--motion-fast) ease,
+    background-color var(--motion-fast) ease,
+    opacity var(--motion-fast) ease;
+}
+
+.stat-value,
+.radial-progress {
+  transition:
+    transform var(--motion-medium) var(--motion-ease-out),
+    color var(--motion-fast) ease;
+}
+
+@keyframes motion-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(var(--motion-distance-md));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+
+  .hero-bg {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+
+  .hero-bg:first-of-type,
+  .hero-donation-bg-1,
+  .hero-apoio-bg-1 {
+    opacity: 1 !important;
+  }
+
+  .motion-reveal,
+  .hero h1,
+  .hero-content h1,
+  .hero h1 + p,
+  .hero-content h1 + p,
+  .hero .btn,
+  .hero-content .btn,
+  section[class*="bg-cover"] h1,
+  section[class*="bg-cover"] h1 + p,
+  section[class*="bg-cover"] .btn {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

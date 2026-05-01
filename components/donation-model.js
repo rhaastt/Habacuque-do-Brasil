@@ -57,7 +57,7 @@ class DonationModal extends HTMLElement {
                 QR Code PIX
               </h4>
               <div class="bg-base-200 rounded-box p-8 flex items-center justify-center text-sm text-base-content/60 border border-dashed border-base-300 text-center leading-relaxed">
-                <img src="../imagens/qr-code.jpg" alt="QR Code PIX" class="w-full h-auto">
+                <img src="../../imagens/qr-code.jpg" alt="QR Code PIX" class="w-full h-auto">
               </div>
             </div>
           </div>

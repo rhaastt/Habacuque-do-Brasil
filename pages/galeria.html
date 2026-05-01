@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Associação Habacuque do Brasil — Olhar Brilhante</title>
+    <title>Associação Habacuque do Brasil — Galeria</title>
     <link rel="icon" href="../imagens//logos/logo-preto.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
     <link rel="icon" href="../imagens//logos/logo-branco.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
-    <link href="../../css/reset.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <link href="../../css/theme-institucional.css" rel="stylesheet" />
+    <link href="../css/theme-institucional.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <script src="../../components/site-header.js" defer></script>
-    <script src="../../components/site-sidebar.js" defer></script>
-    <script src="../../components/site-footer.js" defer></script>
-    <script src="../../components/scroll-carousel.js" defer></script>
+    <script src="../components/site-header.js" defer></script>
+    <script src="../components/site-sidebar.js" defer></script>
+    <script src="../components/site-footer.js" defer></script>
+    <script src="../components/scroll-carousel.js" defer></script>
+    <script src="../components/motion-reveal.js" defer></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         if (window.lucide && typeof window.lucide.createIcons === "function") {
@@ -27,13 +28,13 @@
     <div class="drawer drawer-end">
       <input id="nav-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex flex-col min-h-screen w-full min-w-0">
-        <site-header base="../../" current="projetos" hero-overlay></site-header>
+        <site-header base="../" current="galeria" hero-overlay></site-header>
 
         <main class="flex-1 w-full">
           
           <!-- Hero -->
           <section
-          class="relative min-h-[min(65vh,620px)] pt-28 pb-12 flex flex-col justify-end bg-cover bg-center bg-no-repeat" style="background-image: url('../../imagens/banners/banner-galeria.webp');"
+          class="relative min-h-[min(65vh,620px)] pt-28 pb-12 flex flex-col justify-end bg-cover bg-center bg-no-repeat" style="background-image: url('../imagens/banners/banner-galeria.webp');"
           >
           <div class="absolute inset-0 bg-neutral/60"></div>
             <div class="section-wide relative z-10 text-primary-content">
@@ -174,32 +175,32 @@
           <!-- Stickers -->
         <div class="pointer-events-none absolute inset-0 z-0 mx-auto w-full max-w-[min(100%,90rem)]" aria-hidden="true">
           <img
-            src="imagens/doodles/stick-3.webp"
+            src="../imagens/doodles/stick-3.webp"
             alt=""
             class="absolute top-[56rem] left-2 w-96 opacity-40 hidden md:block"
           />
           <img
-            src="imagens/doodles/stick-2.webp"
+            src="../imagens/doodles/stick-2.webp"
             alt=""
             class="absolute top-[48rem] right-3 w-96 opacity-40 rotate-[10deg]"
           />
           <img
-            src="imagens/doodles/stick-1.webp"
+            src="../imagens/doodles/stick-1.webp"
             alt=""
             class="absolute bottom-[34rem] left-1 w-96 opacity-40 rotate-[6deg] hidden lg:block"
           />
           <img
-            src="imagens/doodles/stick-2.webp"
+            src="../imagens/doodles/stick-2.webp"
             alt=""
             class="absolute bottom-[34rem] right-6 w-96 opacity-40 rotate-[-8deg] hidden md:block"
           />
         </div>
         </main>
 
-        <site-footer base="../../"></site-footer>
+        <site-footer base="../"></site-footer>
       </div>
 
-      <site-sidebar base="../../" current="galeria"></site-sidebar>
+      <site-sidebar base="../" current="galeria"></site-sidebar>
     </div>
   </body>
 </html>

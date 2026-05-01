@@ -14,6 +14,7 @@
   <script src="../../components/site-header.js" defer></script>
   <script src="../../components/site-sidebar.js" defer></script>
   <script src="../../components/site-footer.js" defer></script>
+  <script src="../../components/motion-reveal.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       if (window.lucide && typeof window.lucide.createIcons === 'function') {
@@ -29,20 +30,7 @@
       <site-header base="../../" current="nossa-historia" hero-overlay></site-header>
 
       <main class="flex-1 w-full">
-        <!-- Stickers -->
-        <div class="pointer-events-none absolute inset-0 z-11 mx-auto w-full max-w-[min(100%,90rem)]" aria-hidden="true"
-        >
-          <img
-            src="../../imagens/doodles/stick-2.webp"
-            alt=""
-            class="absolute top-[46rem] left-1 w-96 opacity-20 hidden md:block"
-          />
-          <img
-            src="../../imagens/doodles/stick-1.webp"
-            alt=""
-            class="absolute top-[34rem] right-3 w-96 opacity-20 rotate-[10deg]"
-          />
-        </div>
+        
         <section
         class="relative min-h-[min(65vh,620px)] pt-28 pb-12 flex flex-col justify-end bg-cover bg-center bg-no-repeat z-12"
         style="background-image: url('../../imagens/banners/banner-sobre.webp');"
@@ -215,11 +203,17 @@
           </div>
         </section>
         <!-- Stickers -->
-        <div class="pointer-events-none absolute inset-0 z-0 mx-auto w-full max-w-[min(100%,90rem)]" aria-hidden="true">
+        <div class="pointer-events-none absolute inset-0 z-11 mx-auto w-full max-w-[min(100%,90rem)]" aria-hidden="true"
+        >
           <img
             src="../../imagens/doodles/stick-2.webp"
             alt=""
-            class="absolute top-[48rem] right-3 w-96 opacity-40 rotate-[10deg] hidden md:block"
+            class="absolute top-[46rem] left-1 w-96 opacity-20 hidden md:block"
+          />
+          <img
+            src="../../imagens/doodles/stick-1.webp"
+            alt=""
+            class="absolute top-[34rem] right-3 w-96 opacity-20 rotate-[10deg]"
           />
         </div>
       </main>
